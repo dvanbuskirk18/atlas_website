@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<title>AFEW</title>
+	</head>
+	<body>
+		<header>
+			<div id='header_title_img'><img src="images/ATLAS_text_logo.png"></div>
+			<nav>
+			</nav>
+		</header>
+		<nav id='top_horizontal'>
+			<ul>
+				<li><a href=''>Introduction</a></li>
+				<li><a href=''>World Maps</a></li>
+				<li><a href=''>Datascapes</a></li>
+				<li><a href=''>Biodiversity Hotspots</a></li>
+				<li><a href=''>Flora & Fauna</a></li>
+				<li><a href=''>Conclusion</a></li>
+			</ul>
+		</nav>
+		<div id='line'></div>
+		<div id='top'></div>
+		<!-- <div id='title'>
+			<h1>Biodiversity Hotspots</h1>
+			<p></p> -->
+		</div>
+		<div id='wrapper'>
+			<nav class='intra'>
+				<a href='#atlantic'>Atlantic Forest</a></br>
+				<a href='#'>California Floristic Province</a></br>
+				<a href='#'>Cape Floristic Region</a></br>
+				<a href='#'>Caribbean Islands</a></br>
+				<a href='#'>Caucasus</a></br>
+				<a href='#'>Mountains of Central Asia</a></br>
+				<a href='#'>Cerrado</a></br>
+				<a href='#'>Chilean Winter Rainfall Valdivian Forests</a></br>
+				<a href='#'>Coastal Forests of Eastern Africa</a></br>
+				<a href='#'>East Melanesian Islands</a></br>
+				<a href='#'>Eastern Afromontane</a></br>
+				<a href='#'>Forests of Eastern Australia</a></br>
+				<a href='#'>Guinean Forests of West Africa</a></br>
+				<a href='#'>Himalaya</a></br>
+				<a href='#'>Horn of Africa</a></br>
+				<a href='#'>Indo-Burma</a></br>
+				<a href='#'>Irano Anatolian</a></br>
+				<a href='#'>Japan</a></br>
+				<a href='#'>Madagascar & The Indian Ocean Islands</a></br>
+				<a href='#'>Madrean Pine-Oak Woodlands</a></br>
+				<a href='#'>Maputaland Pondoland Albany</a></br>
+				<a href='#'>Mediterranean Basin</a></br>
+				<a href='#'>Mesoamerica</a></br>
+				<a href='#'>New Caledonia</a></br>
+				<a href='#'>New Zealand</a></br>
+				<a href='#'>Philippines</a></br>
+				<a href='#'>Polynesia-Micronesia</a></br>
+				<a href='#'>Succulent Karoo</a></br>
+				<a href='#'>Sundaland</a></br>
+				<a href='#'>Southwest Australia</a></br>
+				<a href='#'>Mountains of Southwest China</a></br>
+				<a href='#'>Tropical Andes</a></br>
+				<a href='#'>Tumbes-Choco-Magdalena</a></br>
+				<a href='#'>Wallacea</a></br>
+				<a href='#'>Western Ghats and Sri Lanka</a></br>
+			</nav>
+			<main id='main_partial_width'>
+				<h2>Biodiverstiy Hotspots</h2>
+				<div class="slideshow-container">
+				  <div class="mySlides fade">
+				    <div class="numbertext">1 / 3</div>
+				    <img src="images/atlantic_forests.jpg" style="width:100%">
+				    <div class="text">Caption Text</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">2 / 3</div>
+				    <img src="images/atlantic_forests_ecoregions.jpg" style="width:100%">
+				    <div class="text">Caption Two</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">3 / 3</div>
+				    <img src="images/atlantic_forests_ecoregions_01.jpg" style="width:100%">
+				    <div class="text">Caption Three</div>
+				  </div>
+
+				  <div class="mySlides fade">
+				    <div class="numbertext">4 / 4</div>
+				    <img src="images/atlantic_forests_ecoregions_02.jpg" style="width:100%">
+				    <div class="text">Caption Four</div>
+				  </div>
+
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length} ;
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+				      dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+				<!--<script src="/js/pdfobject.js"></script>
+				<script>PDFObject.embed("/images/atlantic_forests.pdf", "#embed_test");</script>-->
+			</main>
+		</div>
+	</body>
+</html>

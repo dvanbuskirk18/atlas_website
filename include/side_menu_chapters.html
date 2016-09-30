@@ -1,0 +1,32 @@
+<div class="w3-accordion w3-amber">
+	<a href=""><button class="w3-btn-block w3-left-align">
+	Home
+	</button></a>
+
+	<a href=""><button onclick="myFunction('menu2')" class="w3-btn-block w3-left-align">
+	Chapters
+	</button></a>
+	<div id="menu2" class="w3-accordion-content w3-container">
+	<div w3-include-html='include/menu_chapters.html'></div>
+	</div>
+
+	<a href=""><button onclick="myFunction('menu3')" class="w3-btn-block w3-left-align">
+	About
+	</button></a>
+
+	<a href=""><button onclick="myFunction('menu4')" class="w3-btn-block w3-left-align">
+	Contact
+	</button></a>
+</div>
+
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>

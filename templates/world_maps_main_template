@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<title>AFEW</title>
+	</head>
+	<body>
+		<header>
+			<div id='header_title_img'><img src="images/ATLAS_text_logo.png"></div>
+			<nav>
+			</nav>
+		</header>
+		<nav id='top_horizontal'>
+			<ul>
+				<li><a href=''>Introduction</a></li>
+				<li><a href=''>World Maps</a></li>
+				<li><a href=''>Datascapes</a></li>
+				<li><a href=''>Biodiversity Hotspots</a></li>
+				<li><a href=''>Flora & Fauna</a></li>
+				<li><a href=''>Conclusion</a></li>
+			</ul>
+		</nav>
+		<div id='line'></div>
+		<div id='top'></div>
+		<div id='title_full_width'>
+			<h1>The Wolrd: World Maps</h1>
+			<p></p>
+		</div>
+		<div id='wrapper'>
+			<table id='grid_menu'>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+				<tr><td><div></div></td><td><div></div></td><td><div></div></td></tr>
+			</table>
+		</div>
+	</body>
+</html>

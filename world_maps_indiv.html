@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+		<!--<style>
+			.mySlides {display:none}
+		</style>-->
+		<title>AFEW</title>
+	</head>
+		<body>
+			<header>
+				<div id='header_title_img'><img src='images/ATLAS_text_logo.png'></div>
+				<nav class="top_horizontal">
+					<div w3-include-html='include/main_menu_list.html'></div>
+				</nav>
+			</header>
+
+			<div id='wrapper'>
+				<nav class="side_menu" style="position:initial">
+					<h3>World Maps:</h3>
+					<!--<div w3-include-html='include/menu_world_maps.html'></div>-->
+					<div>
+					<ul class="chapter_jump">
+						<li id="seismic" class="list"><a href="#">Seismic Activity</a></li>
+						<li id="atmos" class="list"><a href="#">Atmospheric Currents</a></li>
+						<li id="biomes"><a href="#">Biomes</a></li>
+						<li id="athromes"><a href="#">Athromes</a></li>
+						<li id="veg"><a href="#">Remnant Vegetation</a></li>
+						<li id="mammal"><a href="#">Threatened Mammals</a></li>
+						<li id="protect"><a href="#">Protected Areas</a></li>
+						<li id="biological"><a href="#">Biological Hotspots</a></li>
+						<li id="hotspot"><a href="#">Hotspots + - 17%</a></li>
+						<li id="regions"><a href="#">Eco-Regions + - 17%</a></li>
+						<li id="soils"><a href="#">Soils</a></li>
+						<li id="crops"><a href="#">Croplands</a></li>
+						<li id="meat"><a href="#">Meat Map</a></li>
+						<li id="degrade"><a href="#">Land Degradation</a></li>
+						<li id="tropics"><a href="#">Tropics (mangroves and coral reefs)</a></li>
+						<li id="deforest"><a href="#">Deforestation</a></li>
+						<li id="rivers"><a href="#">Rivers and Water Basins</a></li>
+						<li id="waters"><a href="#">Health of Waters</a></li>
+						<li id="access"><a href="#">Access to Water</a></li>
+						<li id="evolve"><a href="#">Evolution of Urbanization</a></li>
+						<li id="planet"><a href="#">Planetary Urbanization</a></li>
+						<li id="mega"><a href="#">Megaregions</a></li>
+						<li id="structures"><a href="#">Megastructures</a></li>
+						<li id="earthwork"><a href="#">Megaearthworks</a></li>
+						<li id="human"><a href="#">Human Movement</a></li>
+						<li id="pressure"><a href="#">Population Pressure</a></li>
+						<li id="world"><a href="#">World Health?</a></li>
+						<li id="energy"><a href="#">Energy</a></li>
+						<li id="nuclear"><a href="#">Nuclear Energy</a></li>
+						<li id="climate"><a href="#">Climate Change</a></li>
+						<li id="sea"><a href="#">Sea Level Rise</a></li>
+						<li id="displace"><a href="#">Environmental Displacement</a></li>
+						<li id="corrupt"><a href="#">Conflict and Corruption</a></li>
+						<li id="conflict"><a href="#">Conflict and Displacement</a></li>
+						<li id="planning"><a href="#">Biodiversity Planning</a></li>
+						<li id="spend"><a href="#">Conservation Spending</a></li>
+						<li id="corp"><a href="#">Corporations</a></li>
+						<li id="perform"><a href="#">Environmental Performance (Yale)</a></li>
+						<li id="intell"><a href="#">Landscape Intelligence</a></li>
+						<li id="tour"><a href="#">Ecotourism</a></li>
+						<li id="zoos"><a href="#">Zoos and Botanic Gardens</a></li>
+						<li id="religion"><a href="#">Religion</a></li>
+						<li id="utopia"><a href="#">Paradise and Utopia</a></li>
+					</ul>
+				</div>
+				</nav>
+
+				<div class="main">
+					<a id="enlarge" href=""><p>Click image for full-screen veiw.</p></a></br>
+					<div id="map_detail" class="partial">
+						<a href=""><img id="map_image" src="images/world_maps_test/world map megastructures_winkel tripel-01_980x598.png"></a>
+						
+					</div>
+					<div class="shifted_text partial">
+						</br>
+						<h1 id="map_title">Individual Map Name</h1>	
+						
+						<div id="map_text" w3-include-html='include/precis_text.html'></div>
+						<!--<iframe src="include/precis_text.html"></iframe>-->
+					</div>
+				</main><!--main-->
+			</div>
+			<footer>
+				<div class="footer_wrapper">
+					<div id='footer_menu'>
+						<div w3-include-html='include/main_menu_list.html'></div>
+					</div>
+				</div>
+			</footer>
+			<script>
+				w3IncludeHTML();
+			</script>
+			<script>
+				var map_image = document.getElementById("map_image");
+				var map_text = document.getElementById("map_text");
+				var map_title = document.getElementById("map_title");
+				var map_links = document.getElementById("wrapper").getElementsByTagName("li");
+				var i;
+
+				document.getElementById("seismic").addEventListener("click", function() { swap("seismic");
+				});
+				document.getElementById("atmos").addEventListener("click", function() { swap("atmos");
+				});
+				document.getElementById("biomes").addEventListener("click", function() { swap("biomes");
+				});
+				document.getElementById("athromes").addEventListener("click", function() { swap("athromes");
+				});
+				document.getElementById("veg").addEventListener("click", function() { swap("veg");
+				});
+				document.getElementById("mammal").addEventListener("click", function() { swap("mammal");
+				});
+				document.getElementById("protect").addEventListener("click", function() { swap("protect");
+				});
+				document.getElementById("biological").addEventListener("click", function() { swap("biological");
+				});
+				document.getElementById("hotspot").addEventListener("click", function() { swap("hotspot");
+				});
+				document.getElementById("regions").addEventListener("click", function() { swap("regions");
+				});
+				document.getElementById("soils").addEventListener("click", function() { swap("soils");
+				});
+				document.getElementById("crops").addEventListener("click", function() { swap("crops");
+				});
+				document.getElementById("meat").addEventListener("click", function() { swap("meat");
+				});
+				document.getElementById("degrade").addEventListener("click", function() { swap("degrade");
+				});
+				document.getElementById("tropics").addEventListener("click", function() { swap("tropics");
+				});
+				document.getElementById("deforest").addEventListener("click", function() { swap("deforest");
+				});
+				document.getElementById("rivers").addEventListener("click", function() { swap("rivers");
+				});
+				document.getElementById("waters").addEventListener("click", function() { swap("waters");
+				});
+				document.getElementById("access").addEventListener("click", function() { swap("access");
+				});
+				document.getElementById("evolve").addEventListener("click", function() { swap("evolve");
+				});
+				document.getElementById("planet").addEventListener("click", function() { swap("planet");
+				});
+				document.getElementById("mega").addEventListener("click", function() { swap("mega");
+				});
+				document.getElementById("structures").addEventListener("click", function() { swap("structures");
+				});
+				document.getElementById("earthwork").addEventListener("click", function() { swap("earthwork");
+				});
+				document.getElementById("human").addEventListener("click", function() { swap("human");
+				});
+				document.getElementById("pressure").addEventListener("click", function() { swap("pressure");
+				});
+				document.getElementById("world").addEventListener("click", function() { swap("world");
+				});
+				document.getElementById("energy").addEventListener("click", function() { swap("energy");
+				});
+				document.getElementById("nuclear").addEventListener("click", function() { swap("nuclear");
+				});
+				document.getElementById("climate").addEventListener("click", function() { swap("climate");
+				});
+				document.getElementById("sea").addEventListener("click", function() { swap("sea");
+				});
+				document.getElementById("displace").addEventListener("click", function() { swap("displace");
+				});
+				document.getElementById("corrupt").addEventListener("click", function() { swap("corrupt");
+				});
+				document.getElementById("conflict").addEventListener("click", function() { swap("conflict");
+				});
+				document.getElementById("planning").addEventListener("click", function() { swap("planning");
+				});
+				document.getElementById("spend").addEventListener("click", function() { swap("spend");
+				});
+				document.getElementById("corp").addEventListener("click", function() { swap("corp");
+				});
+				document.getElementById("perform").addEventListener("click", function() { swap("perform");
+				});
+				document.getElementById("intell").addEventListener("click", function() { swap("intell");
+				});
+				document.getElementById("tour").addEventListener("click", function() { swap("tour");
+				});
+				document.getElementById("zoos").addEventListener("click", function() { swap("zoos");
+				});
+				document.getElementById("religion").addEventListener("click", function() { swap("religion");
+				});
+				document.getElementById("utopia").addEventListener("click", function() { swap("utopia");
+				});
+
+				/*for (i = 0; i < map_links.length; i++) {
+					var id = map_links[i].id;
+					map_links[i].addEventListener("click", function() {
+						swap(id);
+					});
+				};*/
+
+				/*function swap(id){
+					changeImg(id);
+					changeText(id);
+					changeTitle(id);
+				};
+
+				function changeImg(id) { 
+					var path = "";
+					switch(id) {
+						case "seismic":
+							path = "world_map_biomes_hotspots_goode homolosine-01_980x418.png";
+							break;
+						case "atmos":
+							path = "";
+					}
+					map_image.src = "images/world_maps_test/" + path;
+				};
+
+				function changeText(id) { 
+					var text = "";
+					switch(id) {
+						case "seismic":
+							text = "test test";
+							break;
+						case "atmos":
+							text = "test test test";
+							break;
+						default:
+							text = "nope!"
+					}
+					map_text.innerHTML = text;
+				};*/
+				function highlight(id) {
+					document.getElementById(id).style.background = "#ffbf00";
+				};
+
+				function swap(id) { 
+					var title = "";
+					var image = "";
+					var text = "";
+					switch (id) {
+						case "seismic":
+							title = "Seismic Activity";
+							image = "";
+							map_text.outerHTML = '<div id="map_text" w3-include-html="include/world_map_text_seismic.html"></div>';
+							break;
+						case "atmos":
+							title = "Atmospheric Currents";
+							image = "";
+							text = "";
+							break;
+						case "biomes":
+							title = "Biomes";
+							image = ""
+							text = ""
+							break;
+						case "athromes":
+							title = "Athromes";
+							image = ""
+							text = ""
+							break;
+						case "veg":
+							title = "Remnant Vegetation";
+							image = ""
+							text = ""
+							break;
+						case "mammal":
+							title = "Threatened Mammals";
+							image = ""
+							text = ""
+							break;
+						case "protect":
+							title = "Protected Areas";
+							image = ""
+							text = ""
+							break;
+						case "biological":
+							title = "Biological Hotspots";
+							image = ""
+							text = ""
+							break;
+						case "hotspot":
+							title = "Hotspots + - 17%";
+							image = ""
+							text = ""
+							break;
+						case "regions":
+							title = "Eco-Regions + - 17";
+							image = ""
+							text = ""
+							break;
+						case "soils":
+							title = "Soils";
+							image = ""
+							text = ""
+							break;
+						case "crops":
+							title = "Croplands";
+							image = ""
+							text = ""
+							break;
+						case "meat":
+							title = "Meat Map";
+							image = ""
+							text = ""
+							break;
+						case "degrade":
+							title = "Land Degradation";
+							image = ""
+							text = ""
+							break;
+						case "tropics":
+							title = "Tropics (mangroves and coral reefs)";
+							image = ""
+							text = ""
+							break;
+						case "deforest":
+							title = "Deforestation";
+							image = ""
+							text = ""
+							break;
+						case "rivers":
+							title = "Rivers and Water Basins";
+							image = ""
+							text = ""
+							break;
+						case "waters":
+							title = "Health of Waters";
+							image = ""
+							text = ""
+							break;
+						case "access":
+							title = "Access to Water";
+							image = ""
+							text = ""
+							break;
+						case "evolve":
+							title = "Evolution of Urbanization";
+							image = ""
+							text = ""
+							break;
+						case "planet":
+							title = "Planetary Urbanization";
+							image = ""
+							text = ""
+							break;
+						case "mega":
+							title = "Megaregions";
+							image = ""
+							text = ""
+							break;
+						case "structures":
+							title = "Megastructures";
+							image = ""
+							text = ""
+							break;
+						case "earthwork":
+							title = "Megaearthworks";
+							image = ""
+							text = ""
+							break;
+						case "human":
+							title = "Human Movement";
+							image = ""
+							text = ""
+							break;
+						case "pressure":
+							title = "Population Pressure";
+							image = ""
+							text = ""
+							break;
+						case "world":
+							title = "World Health?";
+							image = ""
+							text = ""
+							break;
+						case "energy":
+							title = "Energy";
+							image = ""
+							text = ""
+							break;
+						case "nuclear":
+							title = "Nuclear Energy";
+							image = ""
+							text = ""
+							break;
+						case "climate":
+							title = "Climate Change";
+							image = ""
+							text = ""
+							break;
+						case "sea":
+							title = "Sea Level Rise";
+							image = ""
+							text = ""
+							break;
+						case "displace":
+							title = "Environmental Displacement";
+							image = ""
+							text = ""
+							break;
+						case "corrupt":
+							title = "Conflict and Corruption";
+							image = ""
+							text = ""
+							break;
+						case "conflict":
+							title = "Conflict and Displacement";
+							image = ""
+							text = ""
+							break;
+						case "planning":
+							title = "Biodiversity Planning";
+							image = ""
+							text = ""
+							break;
+						case "spend":
+							title = "Conservation Spending";
+							image = ""
+							text = ""
+							break;
+						case "corp":
+							title = "Corporations";
+							image = ""
+							text = ""
+							break;
+						case "perform":
+							title = "Environmental Performance (Yale)";
+							image = ""
+							text = ""
+							break;
+						case "intell":
+							title = "Landscape Intelligence";
+							image = ""
+							text = ""
+							break;
+						case "tour":
+							title = "Ecotourism";
+							image = ""
+							text = ""
+							break;
+						case "zoos":
+							title = "Zoos and Botanic Gardens";
+							image = ""
+							text = ""
+							break;
+						case "religion":
+							title = "Religion";
+							image = ""
+							text = ""
+							break;
+						case "utopia":
+							title = "Paradise and Utopia";
+							image = ""
+							text = ""
+							break;
+						case "":
+							title = "";
+							image = ""
+							text = ""
+							break;
+						default:
+							title = "nope!";
+
+					}
+					map_title.innerHTML = title;
+					map_image.src = "";
+					map_text = text;
+				}
+				/*function changeTitle(id) {
+					if (id == "seismic") {
+						map_title.innerHTML = "Seismic Activity";
+					} else {
+						map_title.innerHTML = "NOPE!"
+					}
+				}*/
+
+			</script>
+		</body>
+</html>

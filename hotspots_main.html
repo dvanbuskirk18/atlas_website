@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="js/sticky.js"></script>
+		<script type="text/javascript" src="js/drop_menu.js"></script>
+		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<!--<style>
+			.mySlides {display:none}
+		</style>-->
+		<title>AFEW - Biodiversity Hotspots</title>
+	</head>
+		<body>
+			<header>
+				<div id='header_title_img'><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
+				<!--<nav class="top_horizontal">
+					<div w3-include-html='include/main_menu_list.html'></div>
+				</nav>-->
+				<nav class="menu_btn">
+					<div w3-include-html='include/main_dropdown.html'></div>
+				</nav>
+			</header>
+			<div id="map_detail" class="full">
+				<a href=""><img onclick="open_hotspot()" src="images/World_Maps/1200px/world-maps-biological-hotspots-original-text.png"></a>
+			</div>
+
+			<div id='wrapper'>
+				<nav class="chapter_jump">
+					<h3>Hotspots:</h3>
+					<div id="hotspots_menu" w3-include-html='include/menu_hotspots.html'></div>
+				</nav>
+
+				<main>
+					<div class="shifted_text">
+						<h1>Hotspots + Ecoregions + Conflict Maps (Biodiversity)</h1>	
+						<div w3-include-html='include/precis_text.html'></div>
+					</div>
+				</div><!--main-->
+			</div>
+			<footer>
+				<div class="footer_wrapper">
+					<div id='footer_menu'>
+						<div w3-include-html='include/main_menu_list.html'></div>
+					</div>
+				</div>
+			</footer>
+			<script>
+				w3IncludeHTML();
+			</script>
+			<script>
+				function open_hotspot() {
+					window.open("images/test_slideshow/AFEW_California_Hotspots_AllPgs_full.pdf", "", "width=980");
+				}
+			</script>
+		</body>
+</html>

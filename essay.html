@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="jquery/jquery.js"></script>
+		<script src="jquery/jquery.sticky.js"></script>
+		<script type="text/javascript" src="js/sticky.js"></script>
+		<script type="text/javascript" src="js/drop_menu.js"></script>
+		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<title>AFEW - Introductory Essay</title>
+	</head>
+		<body>
+			<header>
+
+				<div id='header_title_img'><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
+				<!--<nav class="top_horizontal">
+					<div w3-include-html='include/main_menu_list.html'></div>
+				</nav>-->
+				<nav class="menu_btn">
+					<div w3-include-html='include/main_dropdown.html'></div>
+				</nav>
+			</header>
+			<div id='wrapper'>
+				<div id="sticker">
+				<nav class="chapter_jump">
+					<h3>Sections:</h3>
+					<div w3-include-html='include/menu_essay_jump.html'></div>
+				</nav>
+				</div>
+				<main>
+					<div class="shifted_text" style="position:relative; top:-20px;">
+						<h1>Introduction</h1>
+						<div w3-include-html='include/essay_text.html'></div>
+					</div>
+				</main>
+			</div>
+
+			<footer>
+				<div class="footer_wrapper">
+					<div id='footer_menu'>
+						<div w3-include-html='include/main_menu_list.html'></div>
+					</div>
+				</div>
+			</footer>
+			<script>
+				w3IncludeHTML();
+			</script>
+		</body>
+</html>

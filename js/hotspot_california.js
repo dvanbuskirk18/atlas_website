@@ -1,0 +1,1 @@
+PDFObject.embed("images/test_slideshow/AFEW_California_Hotspots_AllPgs_full.pdf");

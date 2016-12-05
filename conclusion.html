@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<script src="http://www.w3schools.com/lib/w3data.js"></script>
-		<script src="jquery/jquery.js"></script>
-		<script src="jquery/jquery.sticky.js"></script>
+		<script src="jquery/sticky/jquery.js"></script>
+		<script src="jquery/sticky/jquery.sticky.js"></script>
 		<script type="text/javascript" src="js/sticky.js"></script>
 		<script type="text/javascript" src="js/drop_menu.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,10 +14,17 @@
 	</head>
 		<body>
 			<header>
-				<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
-				<nav class="menu_btn">
-					<div w3-include-html='include/main_dropdown.html'></div>
-				</nav>
+				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
+				<!--<nav class="top_horizontal">
+					<div w3-include-html='include/main_menu_list.html'></div>
+				</nav>-->
+				<div class="header_wrapper">
+					<div w3-include-html='include/header.html'></div>
+					
+					<nav class="menu_btn">
+						<div w3-include-html='include/main_dropdown.html'></div>
+					</nav>
+					</div>
 			</header>
 			
 			<div id='wrapper'>
@@ -27,7 +34,7 @@
 					<div w3-include-html='include/main_menu_list.html'></div>
 				</nav>
 			</div>
-				<main style="position:relative; top:-32px">
+				<main>
 				<div class="shifted_text">
 					<div>
 						<figure class="text_center">

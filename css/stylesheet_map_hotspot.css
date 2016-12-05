@@ -1,0 +1,366 @@
+/*Hotspot menu*/
+.full {
+	position: relative;
+}
+#map_detail .map_name {
+	position: absolute;
+	display: inline-block;
+	/*top: 0;
+	left: 0;*/
+}
+#map_detail .map_name polygon {
+	fill: yellow;
+	cursor: pointer;
+}
+.map_name .selector {
+	cursor: pointer;
+	padding: 0;
+	width: 30%;
+	height: 30%;
+	opacity: 0;
+}
+.map_name .selector:hover {
+	opacity: .9;
+}
+
+/*.map_name {
+    position: relative;
+    display: inline-block;
+}*/
+
+.map_name .map_name_text {
+    visibility: hidden;
+    /*width: 100%;*/
+    padding: 5px;
+    text-align: center;
+    font-family: 'Hind', sans-serif;
+    font-size: 8pt;
+    color: #333;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 30%;
+}
+
+.map_name:hover .map_name_text {
+    visibility: visible;
+}
+#atlantic_forest,
+#atlantic_forest .selector {
+	width: 66px;
+	top: 369px;
+	left: 338px;
+}
+#atlantic_forest span {
+	width: 80px;
+}
+#cape_floristic,
+#cape_floristic .selector {
+	width: 18.5px;
+	top: 438px;
+	left: 536.5px;
+	z-index: 2;
+}
+#cape_floristic span {
+	width: 100px;
+}
+#cali_floristic, 
+#cali_floristic .selector {
+	width: 14px;
+	top: 246px; /*92px 154*/
+	left: 177px; /*177 px*/
+}
+#cali_floristic span {
+	width: 100px;
+}
+#cali_floristic {
+	/*top: 247px; /*92px 155*/
+	/*left: 177px; /*177 px*/
+}
+#caribbean_islands,
+#caribbean_islands .selector {
+	width: 67px;
+	top: 289px; /*154*/
+	left: 263px;
+	z-index: 2;
+}
+#caribbean_islands span {
+	width: 85px;
+}
+#caucasus_01,
+#caucasus_01 .selector {
+	width: 42px;
+	top: 236px;
+	left: 582px;
+}
+#cerrado_01,
+#cerrado_01 .selector {
+	width: 58px;
+	top: 372.5px;
+	left: 325px;
+}
+#chilean_forests, 
+#chilean_forests .selector {
+	width: 26px;
+	top: 421px;
+	left: 285px;
+}
+#chilean_forests span {
+	width: 120px;
+}
+#eastern_africa, 
+#eastern_africa .selector {
+	width: 29px;
+	top: 355.5px;
+	left: 575px;
+	z-index: 2;
+}
+#eastern_africa span {
+	width: 100px;
+}
+#melanesia,
+#melanesia .selector {
+	width: 68px;
+	top: 363px;
+	left: 866px;
+	z-index: 1;
+}
+#melanesia span {
+	width: 100px;
+}
+#afromontane_01,
+#afromontane_01 .selector {
+	width: 49px;
+	top: 301px;
+	left: 561px;
+	z-index: 0;
+}
+#afromontane_01 span { 
+	width: 100px;
+}
+#e_australia,
+#e_australia .selector {
+	width: 20px;
+	top: 401px;
+	left: 871px;
+	z-index: 2;
+}
+#e_australia span {
+	width: 100px;
+}
+#guinean_01, 
+#guinean_01 .selector {
+	width: 74px;
+	top: 328px;
+	left: 455px;
+}
+#guinean_01 span {
+	width: 100px;
+}
+#himalaya_01, 
+#himalaya_01 .selector {
+	width: 72px;
+	top: 265px;
+	left: 657px;
+}
+#horn_of_africa,
+#horn_of_africa .selector {
+	width: 56px;
+	top: 294px;
+	left: 583px;
+}
+#horn_of_africa span {
+	width: 75px;
+}
+#indo-burma_01,
+#indo-burma_01 .selector {
+	width: 68px;
+	top: 288px;
+	left: 712px;
+}
+#indo-burma_01 span {
+	width: 65px;
+}
+#iranoan-atolian, 
+#iranoan-atolian .selector {
+	width: 66px;
+	top: 250px;
+	left: 571px;
+}
+#iranoan-atolian span {
+	width: 80px;
+}
+#japan_01,
+#japan_01 .selector {
+	width: 55px;
+	top: 240px;
+	left: 780px;
+}
+#madagascar_01, 
+#madagascar_01 .selector {
+	width: 60px;
+	top: 370px;
+	left: 591px;
+	z-index: 0;
+}
+#madagascar_01 span {
+	width: 100px;
+}
+#madrean_01,
+#madrean_01 .selector {
+	width: 52px;
+	top: 272px;
+	left: 189px;
+}
+#madrean_01 span {
+	width: 100px;
+}
+#maputaland_01,
+#maputaland_01 .selector {
+	width: 25px;
+	top: 423px;
+	left: 551px;
+}
+#maputaland_01 span {
+	width: 100px;
+}
+#mediterranean_01, 
+#mediterranean_01 .selector {
+	width: 165px;
+	top: 239px;
+	left: 430px;
+}
+#mesoamerica_01,
+#mesoamerica_01 .selector {
+	width: 101px;
+	top: 286px;
+	left: 190px;
+}
+#central_asia_01,
+#central_asia_01 .selector {
+	width: 58px;
+	top: 238px;
+	left: 639px;
+}
+#central_asia_01 span {
+	width: 124px;
+}
+#sw_china_01,
+#sw_china_01 .selector {
+	width: 32px;
+	top: 271px;
+	left: 709px;
+}
+#sw_china_01 span {
+	width: 90px;
+}
+#new_caledonia,
+#new_caledonia .selector {
+	width: 35px;
+	top: 406px;
+	left: 903px;
+	z-index: 1;
+}
+#new_caledonia span {
+	width: 80px;
+}
+#new_zealand_l,
+#new_zealand_l .selector {
+	width: 33px;
+	top: 451px;
+	left: 22px;
+}
+#new_zealand_r,
+#new_zealand_r .selector {
+	width: 57px;
+	top: 436px;
+	left: 883px;
+}
+#new_zealand_l span,
+#new_zealand_r span {
+	width: 74px;
+}
+#philippines_01,
+#philippines_01 .selector {
+	width: 36px;
+	top: 304px;
+	left: 787px;
+}
+#polynesia-micronesia_l,
+#polynesia-micronesia_l .selector {
+	width: 113px;
+	top: 284.5px;
+	left: 16px;
+}
+#polynesia-micronesia_r,
+#polynesia-micronesia_r .selector {
+	width: 62px;
+	top: 263px;
+	left: 905px;
+	z-index: 0;
+}
+#polynesia-micronesia_l span,
+#polynesia-micronesia_r span {
+	width: 100px;
+}
+#sw_australia_01,
+#sw_australia_01 .selector {
+	width: 35px;
+	top: 427px;
+	left: 794px;
+}
+#sw_australia_01 span {
+	width: 100px;
+}
+#succulent_karoo,
+#succulent_karoo .selector {
+	width: 21px;
+	top: 429px;
+	left: 530px;
+}
+#succulent_karoo span {
+	width: 90px;
+}
+#sundaland_01,
+#sundaland_01 .selector {
+	width: 72px;
+	top: 335px;
+	left: 732px;
+}
+#tropical_andes,
+#tropical_andes .selector {
+	width: 49px;
+	top: 330px;
+	left: 276px;
+}
+#tropical_andes span {
+	width: 75px;
+}
+#tumbes-choco,
+#tumbes-choco .selector {
+	width: 49px;
+	top: 334px;
+	left: 247px;
+}
+#tumbes-choco span {
+	width: 128px;
+}
+#wallacea_01,
+#wallacea_01 .selector {
+	width: 46px;
+	top: 347px;
+	left: 796px;
+}
+#western_ghats,
+#western_ghats .selector {
+	width: 31px;
+	top: 302px;
+	left: 674px;
+}
+#western_ghats span {
+	width: 128px;
+}

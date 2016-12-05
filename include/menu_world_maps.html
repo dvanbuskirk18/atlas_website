@@ -1,45 +1,50 @@
 <ul class="chapter_jump">
-	<li id="demo"><a href="#">Seismic Activity</a></li>
-	<li><a href="#">Atmospheric Currents </a></li>
-	<li><a href="#">Biomes</a></li>
-	<li><a href="#">Anthromes</a></li>
-	<li><a href="#">Remnant Vegetation</a></li>
-	<li><a href="#">Threatened Mammals</a></li>
-	<li><a href="#">Protected Areas</a></li>
-	<li><a href="#">Biological Hotspots</a></li>
-	<li><a href="#">Hotspots + - 17%</a></li>
-	<li><a href="#">Eco-Regions + - 17%</a></li>
-	<li><a href="#">Soils</a></li>
-	<li><a href="#">Croplands</a></li>
-	<li><a href="#">Meat Map</a></li>
-	<li><a href="#">Land Degradation</a></li>
-	<li><a href="#">Tropics (mangroves and coral reefs)</a></li>
-	<li><a href="#">Deforestation</a></li>
-	<li><a href="#">Rivers and Water Basins</a></li>
-	<li><a href="#">Health of Waters</a></li>
-	<li><a href="#">Access to Water</a></li>
-	<li><a href="#">Evolution of Urbanization</a></li>
-	<li><a href="#">Planetary Urbanization</a></li>
-	<li><a href="#">Megaregions</a></li>
-	<li><a href="#">Megastructures</a></li>
-	<li><a href="#">Megaearthworks</a></li>
-	<li><a href="#">Human Movement</a></li>
-	<li><a href="#">Population Pressure</a></li>
-	<li><a href="#">World Health?</a></li>
-	<li><a href="#">Energy</a></li>
-	<li><a href="#">Nuclear Energy</a></li>
-	<li><a href="#">Climate Change</a></li>
-	<li><a href="#">Sea Level Rise</a></li>
-	<li><a href="#">Environmental Displacement</a></li>
-	<li><a href="#">Conflict and Corruption</a></li>
-	<li><a href="#">Conflict and Displacement</a></li>
-	<li><a href="#">Biodiversity Planning</a></li>
-	<li><a href="#">Conservation Spending</a></li>
-	<li><a href="#">Corporations</a></li>
-	<li><a href="#">Environmental Performance (Yale)</a></li>
-	<li><a href="#">Landscape Intelligence</a></li>
-	<li><a href="#">Ecotourism</a></li>
-	<li><a href="#">Zoos and Botanic Gardens</a></li>
-	<li><a href="#">Religion</a></li>
-	<li><a href="#">Paradise and Utopia</a></li>
+	<li id="seismic" onclick="open_map('seismic')"><a href="">Seismic Activity</a></li>
+	<li id="atmos" onclick="open_map('atmos')"><a href="">Atmospheric Currents </a></li>
+	<li id="ocean" onclick="open_map('ocean')"><a href="">Ocean Currents </a></li>
+	<li id="biomes" onclick="open_map('biomes')"><a href="">Biomes</a></li>
+	<li id="ecoregion" onclick="open_map('ecoregion')"><a href="">Eco-Regions</a></li>
+	<li id="anthromes" onclick="open_map('anthromes')"><a href="">Anthromes</a></li>
+	<li id="mammal" onclick="open_map('mammal')"><a href="">Threatened Mammals</a></li>
+	<!--<li id="veg" onclick="open_map('veg')"><a href="">Remnant Vegetation</a></li>-->
+	<li id="protect" onclick="open_map('protect')"><a href="">Protected Areas</a></li>
+	<li id="biological" onclick="open_map('biological')"><a href="">Biological Hotspots</a></li>
+	<li id="targets" onclick="open_map('targets')"><a href="">Biological Hotspots: Conservation Targets</a></li>
+	<li id="soils" onclick="open_map('soils')"><a href="">Soils</a></li>
+	<li id="crops" onclick="open_map('crops')"><a href="">Croplands</a></li>
+	<li id="meat" onclick="open_map('meat')"><a href="">Meat Map</a></li>
+	<!--<li id="hotspot" onclick="open_map('hotspot')"><a href="">Hotspots +/- 17%</a></li>-->
+	<li id="degrade" onclick="open_map('degrade')"><a href="">Land Degradation</a></li>
+	<li id="tropics" onclick="open_map('tropics')"><a href="">The Tropics</a></li>
+	<li id="deforest" onclick="open_map('deforest')"><a href="">Deforestation</a></li>
+	<li id="rivers" onclick="open_map('rivers')"><a href="">Rivers &amp; Wetlands</a></li>
+	<li id="waters" onclick="open_map('waters')"><a href="">Health of Waters</a></li>
+	<li id="access" onclick="open_map('access')"><a href="">Access to Water</a></li>
+	<li id="pre-evolve" onclick="open_map('pre-evolve')"><a href="">Evolution of Urbanization: Pre-Modern Era</a></li>
+	<li id="evolve" onclick="open_map('evolve')"><a href="">Evolution of Urbanization: Modern Era</a></li>
+	<!--<li id="planet" onclick="open_map('planet')"><a href="">Planetary Urbanization</a></li>-->
+	<!--<li id="mega" onclick="open_map('mega')"><a href="">Megaregions</a></li>-->
+	<li id="structures" onclick="open_map('structures')"><a href="">Mega-Structures</a></li>
+	<!--<li><a href="earthwork">Megaearthworks</a></li>-->
+	<!--<li><a href="human">Human Movement</a></li>-->
+	<li id="pressure" onclick="open_map('pressure')"><a href="">Population Pressure</a></li>
+	<!--<li id="world" onclick="open_map('world')"><a href="">World Health?</a></li>-->
+	<li id="energy" onclick="open_map('energy')"><a href="">Energy</a></li>
+	<li id="nuclear" onclick="open_map('nuclear')"><a href="">Nuclear Energy</a></li>
+	<li id="climate" onclick="open_map('climate')"><a href="">Climate Change</a></li>
+	<li id="sea" onclick="open_map('sea')"><a href="">Sea Level Rise</a></li>
+	<li id="displace" onclick="open_map('displace')"><a href="">Environmental Displacement</a></li>
+	<li id="corrupt" onclick="open_map('corrupt')"><a href="">Conflict &amp; Corruption</a></li>
+	<li id="conflict" onclick="open_map('conflict')"><a href="">Conflict &amp; Displacement</a></li>
+	<li id="planning" onclick="open_map('planning')"><a href="">Biodiversity Planning</a></li>
+	<li id="spend" onclick="open_map('spend')"><a href="">Conservation Spending</a></li>
+	<li id="corp" onclick="open_map('corp')"><a href="">Corporate Wealth</a></li>
+	<li id="perform" onclick="open_map('perform')"><a href="">Environmental Performance</a></li>
+	<li id="intell" onclick="open_map('intell')"><a href="">Landscape Intelligence</a></li>
+	<!--<li id="tour" onclick="open_map('tour')"><a href="">Ecotourism</a></li>-->
+	<li id="zoos" onclick="open_map('zoos')"><a href="">Genetic Stock</a></li>
+	<li id="religion" onclick="open_map('religion')"><a href="">Religion</a></li>
+	<!--<li id="utopia" onclick="open_map('utopia')"><a href="">Paradise and Utopia</a></li>-->
+	<li id="regions" onclick="open_map('regions')"><a href="">Eco-Regions +/- 17%</a></li>
+	<!--<li><a href="">Land Grabs &amp; Territorial Disputes</a></li>-->
 </ul>

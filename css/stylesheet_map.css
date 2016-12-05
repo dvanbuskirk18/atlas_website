@@ -1,4 +1,758 @@
-html, body {
-	height: 100%;
-	min-height: 100%;
+div#map_detail > div > p,
+div#map_detail > p {
+	font-family: 'Hind', sans-serif;
+	color: gray;
+	font-size: 8px;
+	line-height: 8px;
+}
+div#map_detail > div {
+	position: absolute;
+}
+/*Biological Hotspots*/
+div#map_detail > p {
+	color: #333;
+}
+#polynesia {
+	top: 253px;
+	left: 37px;
+}
+#california {
+	top: 150px;
+	left: 80px;
+}
+#madrean {
+	top: 185px;
+	left: 98px;
+}
+#mesoamerica {
+	top: 215px;
+	left: 200px;
+}
+#tembes {
+	top: 235px;
+	left: 187px;
+}
+#andes {
+	top: 298px;
+	left: 248px;
+}
+#chilean {
+	top: 350px;
+	left: 219px;
+}
+#caribbean {
+	top: 190px;
+	left: 285px;
+}
+#cerrado {
+	top: 270px;
+	left: 322px;
+}
+#atlantic {
+	top: 316px;
+	left: 358px;
+}
+#mediterranean {
+	top: 153px;
+	left: 411px;
+}
+#guinean {
+	top: 240px;
+	left: 440px;
+}
+#karoo {
+	top: 325px;
+	left: 470px;
+}
+#cape {
+	top: 343px;
+	left: 500px;
+}
+#afromontane {
+	top: 228px;
+	left: 531px;
+}
+#maputaland {
+	top: 330px;
+	left: 564px;
+}
+#east_africa {
+	top: 266px;
+	left: 592px;
+}
+#horn {
+	top: 230px;
+	left: 618px;
+}
+#madagascar {
+	top: 300px;
+	left: 612px;
+}
+#caucasus {
+	top: 132px;
+	left: 560px;
+}
+#irano {
+	top: 158px;
+	left: 613px;
+}
+#central_asia {
+	top: 143px;
+	left: 661px;
+}
+#himalaya {
+	top: 158px;
+	left: 673px;
+}
+#ghats {
+	top: 235px;
+	left: 678px;
+}
+#sw_china {
+	top: 155px;
+	left: 725px;
+}
+#japan01 {
+	top: 162px;
+	left: 796px;
+}
+#indo-burma {
+	top: 203px;
+	left: 765px;
+}
+#philippines01 {
+	top: 212px;
+	left: 811px;
+}
+#sundaland {
+	top: 265px;
+	left: 720px;
+}
+#sw_australia {
+	top: 345px;
+	left: 740px;
+}
+#wallacea {
+	top: 264px;
+	left: 800px;
+}
+#east_australia {
+	top: 325px;
+	left: 888px;
+}
+#melanesian {
+	top: 255px;
+	left: 907px;
+}
+#caledonia {
+	top: 312px;
+	left: 915px;
+}
+#new_zealand {
+	top: 376px;
+	left: 869px;
+}
+
+/*Environmental Displacement*/
+div#map_detail > div.upper {
+	top: 44px;
+}
+div#map_detail > div.right {
+	right: 5px;
+}
+div#map_detail > div.lower {
+	bottom: 48px;
+}
+
+#us {
+	/*left: 229px;*/
+	left: 170px;
+}
+#cuba {
+	/*left: 287px;*/
+	left: 227px;
+}
+#haiti {
+	/*left: 334px;*/
+	left: 274px;
+}
+#nigeria {
+	/*left: 507px;*/
+	left: 447px;
+}
+#niger {
+	/*right: 520px;*/
+	right: 460px;
+}
+#pakistan {
+	/*right: 417px;*/
+	right: 357px;
+}
+#bangladesh {
+	/*right: 364px;*/
+	right: 304px;
+}
+#china {
+	/*right: 315px;*/
+	right: 255px;
+}
+#japan {
+	/*right: 257px;*/
+	right: 197px;
+}
+#myanmar {
+	top: 164px;
+}
+#vietnam {
+	top: 185px;
+}
+#philippines {
+	top: 213px;
+}
+#indonesia {
+	top: 248px;
+}
+#mexico {
+	/*left: 234px;*/
+	left: 174px;
+}
+#colombia {
+	/*left: 304px;*/
+	left: 244px;
+}
+#chile {
+	/*left: 347px;*/
+	left: 287px;
+}
+#brazil {
+	/*left: 387px;*/
+	left: 327px;
+}
+#india {
+	/*right: 387px;*/
+	right: 327px;
+}
+#srilanka {
+	/*right: 345px;*/
+	right: 285px;
+}
+#thailand {
+	/*right: 298px;*/
+	right: 238px;
+}
+
+/*Conflict and Displacement*/
+div#map_detail > div.top {
+	top: 46px;
+}
+div#map_detail > div.mid_up {
+	bottom: 135px;
+}
+div#map_detail > div.mid_down {
+	bottom: 103px;
+}
+div#map_detail > div.bottom {
+	bottom: 54px;
+}
+#libya {
+	/*right: 501px;*/
+	right: 441px;
+}
+#ukraine {
+	/*right: 462px;*/
+	right: 402px;
+}
+#syria {
+	/*right: 419px;*/
+	right: 359px;
+}
+#iraq {
+	/*right: 380px;*/
+	right: 320px;
+}
+#afghanistan {
+	/*right: 328px;*/
+	right: 268px;
+}
+#nigeria2 {
+	/*right: 528px;*/
+	right: 468px;
+}
+#sudan {
+	/*right: 433px;*/
+	right: 373px;
+}
+#pakistan2 {
+	/*right: 350px;*/
+	right: 290px;
+}
+#myanmar2 {
+	/*right: 276px;*/
+	right: 216px;
+}
+#republic {
+	/*right: 495px;*/
+	right: 435px;
+}
+#south_sudan {
+	/*right: 428px;*/
+	right: 368px;
+}
+#yemen {
+	/*right: 376px;*/
+	right: 316px;
+}
+#colombia2 {
+	/*left: 350px;*/
+	left: 290px;
+}
+#drc {
+	/*right: 485px;*/
+	right: 425px;
+}
+#burundi {
+	/*right: 447px;*/
+	right: 387px;
+}
+#somalia {
+	/*right: 395px;*/
+	right: 335px;
+}
+
+/*Genetic Stock*/
+div#map_detail > p.number, span#num {
+	color: #00a18e;
+	font-size: 10px;
+}
+span#num {
+	font-size: 1em;
+	font-family: 'Hind', sans-serif;
+}
+div#map_detail > p {
+	position: absolute;
+	font-family: 'Hind', sans-serif;
+}
+div#map_detail > p.detail {
+	font-size: 7px;
+	line-height: 7px;
+}
+div#map_detail > p.high {
+	top: 39px;
+}
+/*div#map_detail > p.high_detail {
+	top: 54px;
+}*/
+div#map_detail > p.high1 {
+	top: 50px;
+}
+div#map_detail > p.high2 {
+	top: 56px;
+}
+div#map_detail > p.far_right {
+	right: 62px;
+}
+div#map_detail > p.far_left {
+	left: 44px;
+}
+div#map_detail > p.mid_left {
+	left: 60px;
+}
+#A, #A_detail {
+	/*left: 310px;*/
+	left: 250px;
+}
+#A_detail {
+	top: 36px;
+}
+#B, #B_detail {
+	/*left: 373px;*/
+	left: 313px;
+}
+#B_detail {
+	top: 47px;
+}
+#C, #C_detail {
+	/*left: 560px;*/
+	left: 500px;
+}
+#C_detail {
+	top: 29px;
+}
+#D, #D_detail {
+	/*left: 626px;*/
+	left: 566px;
+}
+#D_detail {
+	top: 33px;
+}
+#E, #E_detail {
+	/*left: 708px;*/
+	left: 648px;
+}
+#E_detail {
+	top: 39px;
+}
+#F, #F_detail {
+	/*left: 793px;*/
+	left: 733px;
+}
+#F_detail {
+	top: 29px;
+}
+#G, #G_detail {
+	/*left: 875px;*/
+	left: 815px;
+}
+#G_detail {
+	top: 36px;
+}
+#H {
+	top: 67px;
+}
+#H_detail {
+	top: 77px;
+	/*right: 65px;*/
+	right: 5px;
+}
+#I {
+	top: 92px;
+}
+#I_detail {
+	top: 102px;
+	/*right: 80px;*/
+	right: 20px;
+}
+#J {
+	top: 117px;
+}
+#J_detail {
+	top: 127px;
+	/*right: 63px;*/
+	right: 3px;
+}
+#K {
+	top: 144px;
+}
+#K_detail {
+	top: 152px;
+	/*right: 46px;*/
+	right: -16px;
+}
+#L {
+	top: 176px;
+}
+#L_detail {
+	top: 186px;
+	/*right: 42px;*/
+	right: -19px;
+}
+#M {
+	top: 201px;
+}
+#M_detail {
+	top: 211px;
+	/*right: 65px;*/
+	right: 5px;
+}
+#N {
+	top: 230px;
+}
+#N_detail {
+	top: 237px;
+	/*right: 42px;*/
+	right: -19px;
+}
+#O {
+	top: 227px;
+}
+#O_detail {
+	top: 236px;
+	/*left: 46px;*/
+	left: -14px;
+}
+#P {
+	top: 188px;
+}
+#P_detail {
+	top: 195px;
+	/*left: 51px;*/
+	left: -11px;
+}
+#Q {
+	top: 154px;
+}
+#Q_detail {
+	top: 168px;
+	/*left: 69px*/
+	left: 9px
+}
+#R {
+	top: 139px;
+	left: 70px;
+}
+#R_detail {
+	top: 147px;
+	/*left: 54px;*/
+	left: -5px;
+}
+#S {
+	top: 123px;
+}
+#S_detail {
+	top: 136px;
+	/*left: 69px;*/
+	left: 9px;
+}
+
+/*Sea Level Rise*/
+div#map_detail p.cities {
+	font-size: 6.5px;
+	color: white;
+}
+div#map_detail p.black {
+	color: black;
+}
+div#map_detail p.cities:hover {
+	font-size: 8px;
+	color: white;
+	font-weight: bold;
+}
+div#map_detail p.black:hover {
+	color: black;
+	font-weight: bold;
+}
+#sanfran {
+	top: 205px;
+	/*left: 216px;*/
+	left: 156px;
+}
+#la {
+	top: 220px;
+	/*left: 224px;*/
+	left: 164px;
+}
+#houston {
+	top: 239px;
+	/*left: 308px;*/
+	left: 248px;
+}
+#miami {
+	top: 253px;
+	/*left: 342px;*/
+	left: 282px;
+}
+#phila {
+	top: 210px;
+	/*left: 365px;*/
+	left: 305px;
+}
+#nyc {
+	top: 203px;
+	/*left: 370px;*/
+	left: 310px;
+}
+#havana {
+	top: 256px;
+	/*left: 315px;*/
+	left: 255px;
+}
+#belem {
+	top: 340px;
+	/*left: 415px;*/
+	left: 355px;
+}
+#rio {
+	top: 415px;
+	/*left: 430px;*/
+	left: 370px;
+}
+#buenos {
+	top: 454px;
+	/*left: 408px;*/
+	left: 348px;
+}
+#dakar {
+	top: 291px;
+	/*left: 481px;*/
+	left: 421px;
+}
+#harcourt {
+	top: 326px;
+	/*left: 526px;*/
+	left: 466px;
+}
+#capetown {
+	top: 446px;
+	/*left: 556px;*/
+	left: 496px;
+}
+#salaam {
+	top: 362px;
+	/*left: 647px;*/
+	left: 587px;
+}
+#mogadishu {
+	top: 339px;
+	/*left: 657px;*/
+	left: 597px;
+}
+#telavaiv {
+	top: 233px;
+	/*left: 606px;*/
+	left: 546px;
+}
+#lisbon {
+	top: 213px;
+	/*left: 503px;*/
+	left: 443px;
+}
+#bordeaux {
+	top: 192px;
+	/*left: 515px;*/
+	left: 455px;
+}
+#london {
+	top: 166px;
+	/*left: 543px;*/
+	left: 483px;
+}
+#copenhagen {
+	top: 159px;
+	/*left: 541px*/
+	left: 481px
+}
+#amsterdam {
+	top: 175px;
+	/*left: 552px;*/
+	left: 492px;
+}
+#stockholm {
+	top: 150px;
+	/*left: 578px;*/
+	left: 518px;
+}
+#stpeters {
+	top: 144px;
+	/*left: 599px;*/
+	left: 539px;
+}
+#volgograd {
+	top: 180px;
+	/*left: 640px;*/
+	left: 580px;
+}
+#venice {
+	top: 192px;
+	/*left: 565px;*/
+	left: 505px;
+}
+#istanbul {
+	top: 205px;
+	/*left: 609px;*/
+	left: 609px;
+}
+#beirut {
+	top: 226px;
+	/*left: 630px;*/
+	left: 570px;
+}
+#baghdad {
+	top: 224px;
+	/*left: 653px;*/
+	left: 593px;
+}
+#albasrah {
+	top: 231px;
+	/*left: 660px;*/
+	left: 600px;
+}
+#mumbai {
+	top: 272px;
+	/*left: 707px;*/
+	left: 647px;
+}
+#pondi {
+	top: 300px;
+	/*left: 752px;*/
+	left: 692px;
+}
+#kolkata {
+	top: 260px;
+	/*left: 741px;*/
+	left: 681px;
+}
+#dhaka {
+	top: 255px;
+	/*left: 779px;*/
+	left: 719px;
+}
+#hanoi {
+	top: 265px;
+	/*left: 794px;*/
+	left: 734px;
+}
+#bangkok {
+	top: 284px;
+	/*left: 806px;*/
+	left: 746px;
+}
+#hongkong {
+	top: 262px;
+	/*left: 832px;*/
+	left: 772px;
+}
+#taipei {
+	top: 248px;
+	/*left: 849px;*/
+	left: 789px;
+}
+#shanghai {
+	top: 228px;
+	/*left: 842px;*/
+	left: 782px;
+}
+#seoul {
+	top: 205px;
+	/*left: 825px;*/
+	left: 765px;
+}
+#beijing {
+	top: 197px;
+	/*left: 792px;*/
+	left: 732px;
+}
+#tokyo {
+	top: 210px;
+	/*left: 877px;*/
+	left: 817px;
+}
+#manila {
+	top: 284px;
+	/*left: 858px;*/
+	left: 798px;
+}
+#hochi {
+	top: 302px;
+	/*left: 823px;*/
+	left: 763px;
+}
+#jakarta {
+	top: 354px;
+	/*left: 823px;*/
+	left: 763px;
+}
+#perth {
+	top: 447px;
+	/*left: 807px;*/
+	left: 747px;
+}
+#melbourne {
+	top: 481px;
+	/*left: 881px;*/
+	left: 821px;
+}
+#sydney {
+	top: 463px;
+	/*left: 908px;*/
+	left: 848px;
 }

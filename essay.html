@@ -3,8 +3,8 @@
 	<head>
 		<script src="http://www.w3schools.com/lib/w3data.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="jquery/jquery.js"></script>
-		<script src="jquery/jquery.sticky.js"></script>
+		<script src="jquery/sticky/jquery.js"></script>
+		<script src="jquery/sticky/jquery.sticky.js"></script>
 		<script type="text/javascript" src="js/sticky.js"></script>
 		<script type="text/javascript" src="js/drop_menu.js"></script>
 		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
@@ -14,25 +14,33 @@
 	</head>
 		<body>
 			<header>
-
-				<div id='header_title_img'><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
+				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
 				<!--<nav class="top_horizontal">
 					<div w3-include-html='include/main_menu_list.html'></div>
 				</nav>-->
-				<nav class="menu_btn">
-					<div w3-include-html='include/main_dropdown.html'></div>
-				</nav>
+				<div class="header_wrapper">
+					<div w3-include-html='include/header.html'></div>
+					
+					<nav class="menu_btn">
+						<div w3-include-html='include/main_dropdown.html'></div>
+					</nav>
+					</div>
 			</header>
+
 			<div id='wrapper'>
+				<!--<h1 class="page_title upcase">Essay</h1>-->
+				<!--<h1 class="page_title upcase">Essay</h1>-->
+				<!--<nav class="jump_arrows"><a class="left_jump" href="">&#60;</a><a class="right_jump" href="">&#62;</a></nav>-->
 				<div id="sticker">
 				<nav class="chapter_jump">
-					<h3>Sections:</h3>
+					<!--<h3>Sections:</h3>-->
 					<div w3-include-html='include/menu_essay_jump.html'></div>
 				</nav>
 				</div>
 				<main>
 					<div class="shifted_text" style="position:relative; top:-20px;">
 						<h1>Introduction</h1>
+						<p id="sub_title">by Richard Weller</p>
 						<div w3-include-html='include/essay_text.html'></div>
 					</div>
 				</main>

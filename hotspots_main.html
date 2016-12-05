@@ -3,10 +3,11 @@
 	<head>
 		<script src="http://www.w3schools.com/lib/w3data.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="text/javascript" src="js/sticky.js"></script>
 		<script type="text/javascript" src="js/drop_menu.js"></script>
+		<script type="text/javascript" src="js/hotspot_open.js"></script>
 		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='css/stylesheet_map_hotspot.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
 		<!--<style>
 			.mySlides {display:none}
@@ -15,21 +16,189 @@
 	</head>
 		<body>
 			<header>
-				<div id='header_title_img'><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
+				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
 				<!--<nav class="top_horizontal">
 					<div w3-include-html='include/main_menu_list.html'></div>
 				</nav>-->
-				<nav class="menu_btn">
-					<div w3-include-html='include/main_dropdown.html'></div>
-				</nav>
+				<div class="header_wrapper">
+					<div w3-include-html='include/header.html'></div>
+					
+					<nav class="menu_btn">
+						<div w3-include-html='include/main_dropdown.html'></div>
+					</nav>
+					</div>
 			</header>
 			<div id="map_detail" class="full">
-				<a href=""><img onclick="open_hotspot()" src="images/World_Maps/1200px/world-maps-biological-hotspots-original-text.png"></a>
+				<h1 id="hotspot_title" class="page_title upcase">Hotspots</h1>
+				<img id="map" src="images/World_Maps/Hotspot_Menu/full.png">
+				
+				<!--<div class="map_name">
+					<svg>
+						<polygon class="hover_shape" points="200,10 250,190 160,210"/>
+						<span class="map_name_text">Tooltip text</span>
+					</svg>
+					<svg>
+						<polygon class="hover_shape" points="180,60 182,65 180,70"/>
+						<span class="map_name_text">Tooltip text</span>
+					</svg>
+				</div>-->
+				<div id="atlantic_forest" class="map_name">
+					<img onclick="open_hotspot('atlantic')" class="selector" src="images/World_Maps/Hotspot_Menu/atlantic.svg">
+					<span class="map_name_text">Atlantic Forest</span>
+				</div>
+				<div id="cali_floristic" class="map_name">
+					<img onclick="open_hotspot('california')" class="selector" src="images/World_Maps/Hotspot_Menu/california.svg">
+					<span class="map_name_text">California Floristic Province</span>
+				</div>
+				<div id="cape_floristic" class="map_name">
+					<img onclick="open_hotspot('cape')" class="selector" src="images/World_Maps/Hotspot_Menu/cape.svg">
+					<span class="map_name_text">Cape Floristic Region</span>
+				</div>
+				<div id="caribbean_islands" class="map_name">
+					<img onclick="open_hotspot('caribbean')" class="selector" src="images/World_Maps/Hotspot_Menu/caribbean.svg">
+					<span class="map_name_text">Caribbean Islands</span>
+				</div>
+				<div id="caucasus_01" class="map_name">
+					<img  onclick="open_hotspot('caucasus')" class="selector" src="images/World_Maps/Hotspot_Menu/caucasus.svg">
+					<span class="map_name_text">Caucasus</span>
+				</div>
+				<div id="cerrado_01" class="map_name">
+					<img onclick="open_hotspot('cerrado')" class="selector" src="images/World_Maps/Hotspot_Menu/cerrado.svg">
+					<span class="map_name_text">Cerrado</span>
+				</div>
+				<div id="chilean_forests" class="map_name">
+					<img onclick="open_hotspot('chile')" class="selector" src="images/World_Maps/Hotspot_Menu/chilean.svg">
+					<span class="map_name_text">Chilean Winter Rainfall Valdivian Forests</span>
+				</div>
+				<div id="eastern_africa" class="map_name">
+					<img onclick="open_hotspot('africa')" class="selector" src="images/World_Maps/Hotspot_Menu/coastal_africa.svg">
+					<span class="map_name_text">Coastal Forests of Eastern Africa</span>
+				</div>
+				<div id="melanesia" class="map_name">
+					<img onclick="open_hotspot('melanesian')" class="selector" src="images/World_Maps/Hotspot_Menu/melanesia.svg">
+					<span class="map_name_text">East Melanesian Islands</span>
+				</div>
+				<div id="afromontane_01" class="map_name">
+					<img onclick="open_hotspot('afromontane')" class="selector" src="images/World_Maps/Hotspot_Menu/afromontane.svg">
+					<span class="map_name_text">Eastern Afromontane</span>
+				</div>
+				<div id="e_australia" class="map_name">
+					<img onclick="open_hotspot('e_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/east_australia.svg">
+					<span class="map_name_text">Forests of Eastern Australia</span>
+				</div>
+				<div id="guinean_01" class="map_name">
+					<img onclick="open_hotspot('guinean')" class="selector" src="images/World_Maps/Hotspot_Menu/guinean.svg">
+					<span class="map_name_text">Guinean Forests of West Africa</span>
+				</div>
+				<div id="himalaya_01" class="map_name">
+					<img onclick="open_hotspot('himalaya')"class="selector" src="images/World_Maps/Hotspot_Menu/himalaya.svg">
+					<span class="map_name_text">Himalaya</span>
+				</div>
+				<div id="horn_of_africa" class="map_name">
+					<img onclick="open_hotspot('horn')" class="selector" src="images/World_Maps/Hotspot_Menu/horn_of_africa.svg">
+					<span class="map_name_text">Horn of Africa</span>
+				</div>
+				<div id="indo-burma_01" class="map_name">
+					<img onclick="open_hotspot('indo')" class="selector" src="images/World_Maps/Hotspot_Menu/indo-burma.svg">
+					<span class="map_name_text">Indo-Burma</span>
+				</div>
+				<div id="iranoan-atolian" class="map_name">
+					<img onclick="open_hotspot('irano')" class="selector" src="images/World_Maps/Hotspot_Menu/iranoan-atolian.svg">
+					<span class="map_name_text">Irano-Anatolian</span>
+				</div>
+				<div id="japan_01" class="map_name">
+					<img onclick="open_hotspot('japan')"class="selector" src="images/World_Maps/Hotspot_Menu/japan.svg">
+					<span class="map_name_text">Japan</span>
+				</div>
+				<div id="madagascar_01" class="map_name">
+					<img onclick="open_hotspot('madagascar')" class="selector" src="images/World_Maps/Hotspot_Menu/madagascar.svg">
+					<span class="map_name_text">Madagascar &amp; The Indian Ocean Islands</span>
+				</div>
+				<div id="madrean_01" class="map_name">
+					<img onclick="open_hotspot('madrean')" class="selector" src="images/World_Maps/Hotspot_Menu/madrean.svg">
+					<span class="map_name_text">Madrean Pine-Oak Woodlands</span>
+				</div>
+				<div id="maputaland_01" class="map_name">
+					<img onclick="open_hotspot('albany')" class="selector" src="images/World_Maps/Hotspot_Menu/maputaland.svg">
+					<span class="map_name_text">Maputaland Pondoland Albany</span>
+				</div>
+				<div id="mediterranean_01" class="map_name">
+					<img onclick="open_hotspot('basin')" class="selector" src="images/World_Maps/Hotspot_Menu/mediterranean.svg">
+					<span class="map_name_text">Mediterranean Basin</span>
+				</div>
+				<div id="mesoamerica_01" class="map_name">
+					<img onclick="open_hotspot('meso')" class="selector" src="images/World_Maps/Hotspot_Menu/mesoamerica.svg">
+					<span class="map_name_text">Mesoamerica</span>
+				</div>
+				<div id="central_asia_01" class="map_name">
+					<img onclick="open_hotspot('asia')" class="selector" src="images/World_Maps/Hotspot_Menu/central_asia.svg">
+					<span class="map_name_text">Mountains of Central Asia</span>
+				</div>
+				<div id="sw_china_01" class="map_name">
+					<img onclick="open_hotspot('china')" class="selector" src="images/World_Maps/Hotspot_Menu/sw_china.svg">
+					<span class="map_name_text">Mountains of Southwest China</span>
+				</div>
+				<div id="new_caledonia" class="map_name">
+					<img onclick="open_hotspot('caledonia')" class="selector" src="images/World_Maps/Hotspot_Menu/new_caledonia.svg">
+					<span class="map_name_text">New Caledonia</span>
+				</div>
+				<div id="new_zealand_l" class="map_name">
+					<img onclick="open_hotspot('zealand')" class="selector" src="images/World_Maps/Hotspot_Menu/new_zealand_l.svg">
+					<span class="map_name_text">New Zealand</span>
+				</div>
+				<div id="new_zealand_r" class="map_name">
+					<img onclick="open_hotspot('zealand')" class="selector" src="images/World_Maps/Hotspot_Menu/new_zealand_r.svg">
+					<span class="map_name_text">New Zealand</span>
+				</div>
+				<div id="philippines_01" class="map_name">
+					<img onclick="open_hotspot('philip')" class="selector" src="images/World_Maps/Hotspot_Menu/philippines.svg">
+					<span class="map_name_text">Philippines</span>
+				</div>
+				<div id="polynesia-micronesia_l" class="map_name">
+					<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/polymicro_l.svg">
+					<span class="map_name_text">Polynesia-Micronesia</span>
+				</div>
+				<div id="polynesia-micronesia_r" class="map_name">
+					<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/polymicro_r.svg">
+					<span class="map_name_text">Polynesia-micronesia</span>
+				</div>
+				<div id="sw_australia_01" class="map_name">
+					<img onclick="open_hotspot('s_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/sw_australia.svg">
+					<span class="map_name_text">Southwest Australia</span>
+				</div>
+				<div id="succulent_karoo" class="map_name">
+					<img onclick="open_hotspot('karoo')" class="selector" src="images/World_Maps/Hotspot_Menu/succulent_karoo.svg">
+					<span class="map_name_text">Succulent Karoo</span>
+				</div>
+				<div id="sundaland_01" class="map_name">
+					<img onclick="open_hotspot('sundaland')" class="selector" src="images/World_Maps/Hotspot_Menu/sundaland.svg">
+					<span class="map_name_text">Sundaland</span>
+				</div>
+				<div id="tropical_andes" class="map_name">
+					<img onclick="open_hotspot('andes')" class="selector" src="images/World_Maps/Hotspot_Menu/tropical_andes.svg">
+					<span class="map_name_text">Tropical Andes</span>
+				</div>
+				<div id="tumbes-choco" class="map_name">
+					<img onclick="open_hotspot('tumbes')" class="selector" src="images/World_Maps/Hotspot_Menu/tumbes.svg">
+					<span class="map_name_text">Tumbes-Choco-Magdalena</span>
+				</div>
+				<div id="wallacea_01" class="map_name">
+					<img onclick="open_hotspot('wallacea')" class="selector" src="images/World_Maps/Hotspot_Menu/wallacea.svg">
+					<span class="map_name_text">Wallacea</span>
+				</div>
+				<div id="western_ghats" class="map_name">
+					<img nclick="open_hotspot('ghats')" class="selector" src="images/World_Maps/Hotspot_Menu/western_ghats.svg">
+					<span class="map_name_text">Western Ghats &amp; Sri Lanka</span>
+				</div>
+				<!--<div id="cape_floristic" class="map_name">
+					<img class="selector" src="images/World_Maps/Hotspot_Menu/cape.svg">
+					<span class="map_name_text">Cape</span>
+				</div>-->
 			</div>
 
 			<div id='wrapper'>
 				<nav class="chapter_jump">
-					<h3>Hotspots:</h3>
+					<!--<h3>Hotspots:</h3>-->
 					<div id="hotspots_menu" w3-include-html='include/menu_hotspots.html'></div>
 				</nav>
 
@@ -50,10 +219,10 @@
 			<script>
 				w3IncludeHTML();
 			</script>
-			<script>
-				function open_hotspot() {
-					window.open("images/test_slideshow/AFEW_California_Hotspots_AllPgs_full.pdf", "", "width=980");
+			<!--<script>
+				function swap_map() {
+					document.getElementById("map")."images/World_Maps/Hotspot_Menu/tumbes.png"
 				}
-			</script>
+			</script>-->
 		</body>
 </html>

@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<script src="http://www.w3schools.com/lib/w3data.js"></script>
-		<script src="jquery/jquery.js"></script>
-		<script src="jquery/jquery.sticky.js"></script>
+		<script src="jquery/sticky/jquery.js"></script>
+		<script src="jquery/sticky/jquery.sticky.js"></script>
 		<script type="text/javascript" src="js/sticky.js"></script>
 		<script type="text/javascript" src="js/drop_menu.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,28 +14,33 @@
 	</head>
 		<body>
 			<header>
-				<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>
+				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
 				<!--<nav class="top_horizontal">
 					<div w3-include-html='include/main_menu_list.html'></div>
 				</nav>-->
-				<nav class="menu_btn">
-					<div w3-include-html='include/main_dropdown.html'></div>
-				</nav>
+				<div class="header_wrapper">
+					<div w3-include-html='include/header.html'></div>
+					
+					<nav class="menu_btn">
+						<div w3-include-html='include/main_dropdown.html'></div>
+					</nav>
+					</div>
 			</header>
 			
 			<div id='wrapper'>
-				<div id="sticker">
+				<!--<h1 class="page_title upcase">Precis</h1>-->
+				<!--<div id="sticker">
 				<nav class='chapter_jump'>
 					<h3>Chapters:</h3>
 					<div w3-include-html='include/main_menu_list.html'></div>
 				</nav>
-				</div>
+				</div>-->
 
-				<main style="position:relative; top:-32px">
-					<div class="shifted_text">
+				<main>
+					<div>
 					<div>
 						<figure class="text_center">
-							<img src="images/globe-planetary-urbanism.png
+							<img src="images/Essay_Images/Planetary_Urbanism.png
 							">
 							<figcaption></figcaption>
 						</figure>
@@ -44,8 +49,6 @@
 						<p>On May 20, 1570, Abraham Ortelius, book collector and engraver from Antwerp, published the <i>Theatrum Orbis Terrarum</i> (Epitome of the Theater of the World), the world's first atlas.<sup id="three"><a href="#3"> 3</a></sup> It laid bare a world of healthy ecoregions, ripe for colonization and exploitation. Some 450 years later this <i>Atlas for the End of the World</i> is a survey of what's left.</p>
 
 						<p>At face value atlases are just collections of maps and in that regard this one is no different. The maps in this collection are however quite specific. They show the difference between the United Nations Convention on Biological Diversity (CBD) Aichi target for achieving 17% global (terrestrial and inland water areas) protected habitat by 2020 and what is actually protected in the world's 35 biodiversity hotspots today (2015).<sup id="four"><a href="#4"> 4</a></sup> Hotspots are by definition the richest and most threatened biologically diverse regions on earth.<sup id="five"><a href="#5"> 5</a></sup></p>
-
-						<p>After each hotspot map condensed statistical information for the 144 nations who have sovereign jurisdiction over the hotspots is also provided. This data ranks these nations' levels of environmental performance, the status of their national biodiversity planning, their biocapacity relative to their ecological footprint and their respective levels of perceived corruption.</p>
 
 						<p>Each hotspot is then further examined at the level of its constituent ecoregions, each of which is assessed in relation to the 17% protected area target. In addition to this 'conflict maps' show the relationship between protected areas, land-use and urbanization in each hotspot. From the conflict maps each city with a population of 300,000 or more (a total of 420 cities across the 35 hotspots) is mapped in terms of its projected growth to the year 2030, revealing in broad terms where this growth is on a collision course with endangered species and remnant habitat.</p>
 
@@ -66,11 +69,11 @@
 						
 						<p><sup id="4"><a href="#four">4 </a></sup>See Convention on Biological Diversity, "Quick Guides for the Aichi Biodiversity Targets," <a target="_blank" href="https://www.cbd.int/nbsap/training/quick-guides/">https://www.cbd.int/nbsap/training/quick-guides/</a> (accessed June 1, 2016).</p>
 
-						<p><sup id="#five"><a href="#5">5 </a></sup>In 1988, Norman Myers first identified 10 global hotspots featuring exceptional concentration and endemism of plant species under unusual threat of destruction. According to Myers, E.O. Wilson has said hotspots were "the most important contribution to conservation biology of the last century". As found in Norman Myers &amp; Russell A. Mittermeier, "Impact and Acceptance of the Hotspots Strategy: Response to Ovadia and to Brummitt and Lughadha," <i>Conservation Biology</i> 17, no. 5 (2003): 1449-1450.</br>
+						<p><sup id="5"><a href="#five">5 </a></sup>In 1988, Norman Myers first identified 10 global hotspots featuring exceptional concentration and endemism of plant species under unusual threat of destruction. According to Myers, E.O. Wilson has said hotspots were "the most important contribution to conservation biology of the last century". As found in Norman Myers &amp; Russell A. Mittermeier, "Impact and Acceptance of the Hotspots Strategy: Response to Ovadia and to Brummitt and Lughadha," <i>Conservation Biology</i> 17, no. 5 (2003): 1449-1450.</br>
 						There are now 35 recognized hotspots. Together, these areas contain at least 50% of the world's total plant species and 42% of the world's terrestrial vertebrates as endemic. The original and unique habitat in these hotspots is at least 70% depleted and is under imminent threat of total destruction due to habitat fragmentation related to urbanization, agriculture, and related economic activities. Originally representing 16% of the Earth's surface, (excluding the 35th hotspot in North Eastern Australia which was added in 2010) the unique habitat of the hotspots has diminished to just 2.3%. As found in Russell A. Mittermeier, et al., <i>Hotspots Revisited: Earth's Biologically Richest and Most Endangered Terrestrial Ecoregions</i> (Washington DC: Conservation International and Cemex, 2004).</p>
-						<p><sup id="#6"><a href="#six">6 </a></sup>Convention on Biological Diversity, "List of Parties," <a target="_blank" href="https://www.cbd.int/information/parties.shtml">https://www.cbd.int/information/parties.shtml</a> (accessed June 1, 2016).</br>
-						196 nations are party to the Convention on Biological Diversity. 28 of these have not yet signed the Convention so as to make its terms legally binding. 
 
+						<p><sup id="6"><a href="#six">6 </a></sup>Convention on Biological Diversity, "List of Parties," <a target="_blank" href="https://www.cbd.int/information/parties.shtml">https://www.cbd.int/information/parties.shtml</a> (accessed June 1, 2016).</br>
+						196 nations are party to the Convention on Biological Diversity. 28 of these have not yet signed the Convention so as to make its terms legally binding. 
 						</p>
 					</div>
 				</div>

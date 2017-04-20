@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Nuclear Energy</title>
 	</head>
 		<body>
@@ -16,11 +17,13 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-nuclear_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Nuclear Energy</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-nuclear_goode-homolosine-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Nuclear Energy</h1>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -28,53 +31,55 @@
 					</div>-->
 
 					<!--<img src="../images/World_Maps/legends/">-->
-					<table>
-						<tr><td><img src="../images/World_Maps/legends/nuclear-energy-reactors.png"></td><td>Nuclear Reactors<sup> 1</sup></td></tr>
+					<table class="width_260">
+						<tr><td><img src="../images/World_Maps/legends/nuclear-energy-reactors.png"></td><td>Nuclear Reactors</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td><img src="../images/World_Maps/legends/nuclear-energy-accidents.png"></td><td>Nuclear Accidents &amp; Detonations<sup> 2, 3</sup></td></tr>
+						<tr><td><img src="../images/World_Maps/legends/nuclear-energy-accidents.png"></td><td>Nuclear Accidents &amp; Detonations</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td></td><td>National Uranium Deposits<sup> 4</sup></td></tr>
+						<tr><td></td><td>National Uranium Deposits</td></tr>
 						<tr><td></td><td><img src="../images/World_Maps/legends/nuclear-energy-uranium-gradient.png"></td></tr>
 						<tr><td></td><td>1 &#62;&#62;&#62;&#62;&#62;&#62;&#62; 351 deposits</td></tr>
 					</table>
 				</div>
 
 				<main>
-					<h1 id"map_title" class="upcase">Nuclear Energy</h1>
-					<h3 class="upcase sub-head">RESERVES, PRODUCTION, ACCIDENTS, DETONATIONS</h3>
-					<p>At the close of 2015 there were 439 operable nuclear reactors around the world.<sup id="one"><a href="#1"> 1</a></sup> Nuclear power production creates roughly 10% of the world's electricity supply. The industry representative, The World Nuclear Association, aims to increase that figure to 25% by 2050 and to that end, 66 new civil power reactors are under construction around the world and another 158 in planning stages. On average, reactors take about 6 years to build and last for 60.
-					</p>
-					<p>Despite a reputation tarnished by association with nuclear weaponry, reactor meltdowns at Three Mile Island (1979), Chernobyl (1986), and Fukushima (2013) and fears regarding waste stock-piles, the nuclear energy industry stands to benefit from its carbon neutral status. Although it uses significant amounts of water in its process, nuclear energy production can produce prodigious amounts of energy from relatively minor inputs. A kilogram of uranium 235, which constitutes 0.72% of mined uranium, releases the energy equivalent to 2,700 tons of coal. Estimates of global uranium supplies vary from lasting 80-270 years.
-					</p>
-					<p>The World Nuclear Association calculates that "[g]enerating enough electricity for one person produces just 30 grams of used fuel each year."<sup id="two"><a href="#2"> 2</a></sup> Used nuclear fuel, however, is radioactive and cancerous. There is about 240,000 tons of used fuel in storage world-wide, much of it at reactor sites. It must be stored inside thick structures of concrete or steel, or covered by a few meters of water for up to 50 years before its radioactivity has dropped to relatively safe levels.
-					</p>  
-					<p>Each year, nuclear power generation facilities worldwide produce about 200,000 m<sup>3</sup> of low and intermediate level radioactive waste, and about 10,000 m<sup>3</sup> of high level waste. A typical 1000 MWe light water reactor will generate about 200-350 m<sup>3</sup> low and intermediate level waste per year. This compares with an average 400,000 tons of ash produced from a coal-fired plant of the same power capacity. When nuclear power plants shut down, they are either dismantled and decontaminated or enclosed to await dismantling or, if radioactive material is to remain in situ, the whole facility is 'entombed'.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Nuclear Energy</h1>-->
+						<p>At the close of 2015 there were 439 operable nuclear reactors around the world.<sup id="one"><a href="#1"> 1</a></sup> Nuclear power production creates roughly 10% of the world's electricity supply. The industry representative, The World Nuclear Association, aims to increase that figure to 25% by 2050 and to that end, 66 new civil power reactors are under construction around the world and another 158 in planning stages. On average, reactors take about 6 years to build and last for 60.
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>World Nuclear Association, "World Nuclear Performance Report 2016," <a target="blank" href="http://www.world-nuclear.org/our-association/publications/online-reports/world-nuclear-performance-report-2016.aspx">http://www.world-nuclear.org/our-association/publications/online-reports/world-nuclear-performance-report-2016.aspx</a> (accessed September 9, 2016).</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>World Nuclear Association, "What are nuclear wastes and how are they managed?" <a target="blank" href="http://www.world-nuclear.org/nuclear-basics/what-are-nuclear-wastes.aspx">http://www.world-nuclear.org/nuclear-basics/what-are-nuclear-wastes.aspx</a> (accessed September 9, 2016).</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Rogers, Simon, 2011</br>
-							2. Sovalcool, Bejnamin, 2008</br>
-							3. Rogers, Simon, 2011</br>
-							4. IAEA, INFCIS, 2015
+						<p>Despite a reputation tarnished by association with nuclear weaponry, reactor meltdowns at Three Mile Island (1979), Chernobyl (1986), and Fukushima (2013) and fears regarding waste stock-piles, the nuclear energy industry stands to benefit from its carbon neutral status. Although it uses significant amounts of water in its process, nuclear energy production can produce prodigious amounts of energy from relatively minor inputs. A kilogram of uranium 235, which constitutes 0.72% of mined uranium, releases the energy equivalent to 2,700 tons of coal. Estimates of global uranium supplies vary from lasting 80-270 years.
 						</p>
-					</div>-->
+						<p>The World Nuclear Association calculates that "[g]enerating enough electricity for one person produces just 30 grams of used fuel each year."<sup id="two"><a href="#2"> 2</a></sup> Used nuclear fuel, however, is radioactive and cancerous. There is about 240,000 tons of used fuel in storage world-wide, much of it at reactor sites. It must be stored inside thick structures of concrete or steel, or covered by a few meters of water for up to 50 years before its radioactivity has dropped to relatively safe levels.
+						</p>  
+						<p class="last_para">Each year, nuclear power generation facilities worldwide produce about 200,000 m<sup>3</sup> of low and intermediate level radioactive waste, and about 10,000 m<sup>3</sup> of high level waste. A typical 1000 MWe light water reactor will generate about 200-350 m<sup>3</sup> low and intermediate level waste per year. This compares with an average 400,000 tons of ash produced from a coal-fired plant of the same power capacity. When nuclear power plants shut down, they are either dismantled and decontaminated or enclosed to await dismantling or, if radioactive material is to remain in situ, the whole facility is 'entombed'.
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>World Nuclear Association, "World Nuclear Performance Report 2016," <a target="blank" href="http://www.world-nuclear.org/our-association/publications/online-reports/world-nuclear-performance-report-2016.aspx">http://www.world-nuclear.org/our-association/publications/online-reports/world-nuclear-performance-report-2016.aspx</a> (accessed September 9, 2016).</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>World Nuclear Association, "What are nuclear wastes and how are they managed?" <a target="blank" href="http://www.world-nuclear.org/nuclear-basics/what-are-nuclear-wastes.aspx">http://www.world-nuclear.org/nuclear-basics/what-are-nuclear-wastes.aspx</a> (accessed September 9, 2016).</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Nuclear Reactors</strong></p>
+							<p>"Operational Nuclear Reactors," <i>The Guardian</i>, data sourced from the World Nuclear Association, <a target="blank" href="https://www.theguardian.com/news/datablog/2011/mar/18/nuclear-reactors-power-stations-world-list-map#data">https://www.theguardian.com/news/datablog/2011/mar/18/nuclear-reactors-power-stations-world-list-map#data</a> (accessed June 21, 2015).</p>
+
+							<p><strong>2. Nuclear Accidents</strong></p>
+							<p>Benjamin K. Sovacool, "The Cost of failure: A preliminary assessment of major energy accidents, 1907-2007," <i>Energy Policy</i> 36, no. 5 (2008): 1802-1820.</p>
+
+							<p>"Nuclear power plant accidents: listed and ranked since 1952," <i>The Guardian</i>, data partially sourced from the International Atomic Energy Authority, <a target="blank" href="https://www.theguardian.com/news/datablog/2011/mar/14/nuclear-power-plant-accidents-list-rank#data">https://www.theguardian.com/news/datablog/2011/mar/14/nuclear-power-plant-accidents-list-rank#data</a> (accessed June 21, 2015).</p>
+
+							<p><strong>3. National Uranium Deposits</strong></p>
+							<p>International Atomic Energy Agency (IAEA): Integrated Nuclear Fuel Cycle Information Systems (INFCIS), "World Distribution of Uranium Deposits," <a target="blank" href="https://infcis.iaea.org/UDEPO/UDEPOMain.asp?Order=1&amp;RPage=1&amp;Page=1&amp;RightP=List">https://infcis.iaea.org/UDEPO/UDEPOMain.asp?Order=1&amp;RPage=1&amp;Page=1&amp;RightP=List</a> (accessed June 21, 2015).</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_energy.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: energy</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_climate_change.html">next map: climate change &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

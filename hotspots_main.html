@@ -9,12 +9,13 @@
 		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='css/stylesheet_map_hotspot.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!--<style>
 			.mySlides {display:none}
 		</style>-->
-		<title>AFEW - Biodiversity Hotspots</title>
+		<title>AFEW - Hotspots</title>
 	</head>
-		<body>
+		<body class="body_outline">
 			<header>
 				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
 				<!--<nav class="top_horizontal">
@@ -26,193 +27,647 @@
 					<nav class="menu_btn">
 						<div w3-include-html='include/main_dropdown.html'></div>
 					</nav>
-					</div>
+				</div>
 			</header>
-			<div id="map_detail" class="full">
-				<h1 id="hotspot_title" class="page_title upcase">Hotspots</h1>
-				<img id="map" src="images/World_Maps/Hotspot_Menu/full.png">
-				
-				<!--<div class="map_name">
-					<svg>
-						<polygon class="hover_shape" points="200,10 250,190 160,210"/>
-						<span class="map_name_text">Tooltip text</span>
-					</svg>
-					<svg>
-						<polygon class="hover_shape" points="180,60 182,65 180,70"/>
-						<span class="map_name_text">Tooltip text</span>
-					</svg>
-				</div>-->
-				<div id="atlantic_forest" class="map_name">
-					<img onclick="open_hotspot('atlantic')" class="selector" src="images/World_Maps/Hotspot_Menu/atlantic.svg">
-					<span class="map_name_text">Atlantic Forest</span>
-				</div>
-				<div id="cali_floristic" class="map_name">
-					<img onclick="open_hotspot('california')" class="selector" src="images/World_Maps/Hotspot_Menu/california.svg">
-					<span class="map_name_text">California Floristic Province</span>
-				</div>
-				<div id="cape_floristic" class="map_name">
-					<img onclick="open_hotspot('cape')" class="selector" src="images/World_Maps/Hotspot_Menu/cape.svg">
-					<span class="map_name_text">Cape Floristic Region</span>
-				</div>
-				<div id="caribbean_islands" class="map_name">
-					<img onclick="open_hotspot('caribbean')" class="selector" src="images/World_Maps/Hotspot_Menu/caribbean.svg">
-					<span class="map_name_text">Caribbean Islands</span>
-				</div>
-				<div id="caucasus_01" class="map_name">
-					<img  onclick="open_hotspot('caucasus')" class="selector" src="images/World_Maps/Hotspot_Menu/caucasus.svg">
-					<span class="map_name_text">Caucasus</span>
-				</div>
-				<div id="cerrado_01" class="map_name">
-					<img onclick="open_hotspot('cerrado')" class="selector" src="images/World_Maps/Hotspot_Menu/cerrado.svg">
-					<span class="map_name_text">Cerrado</span>
-				</div>
-				<div id="chilean_forests" class="map_name">
-					<img onclick="open_hotspot('chile')" class="selector" src="images/World_Maps/Hotspot_Menu/chilean.svg">
-					<span class="map_name_text">Chilean Winter Rainfall Valdivian Forests</span>
-				</div>
-				<div id="eastern_africa" class="map_name">
-					<img onclick="open_hotspot('africa')" class="selector" src="images/World_Maps/Hotspot_Menu/coastal_africa.svg">
-					<span class="map_name_text">Coastal Forests of Eastern Africa</span>
-				</div>
-				<div id="melanesia" class="map_name">
-					<img onclick="open_hotspot('melanesian')" class="selector" src="images/World_Maps/Hotspot_Menu/melanesia.svg">
-					<span class="map_name_text">East Melanesian Islands</span>
-				</div>
-				<div id="afromontane_01" class="map_name">
-					<img onclick="open_hotspot('afromontane')" class="selector" src="images/World_Maps/Hotspot_Menu/afromontane.svg">
-					<span class="map_name_text">Eastern Afromontane</span>
-				</div>
-				<div id="e_australia" class="map_name">
-					<img onclick="open_hotspot('e_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/east_australia.svg">
-					<span class="map_name_text">Forests of Eastern Australia</span>
-				</div>
-				<div id="guinean_01" class="map_name">
-					<img onclick="open_hotspot('guinean')" class="selector" src="images/World_Maps/Hotspot_Menu/guinean.svg">
-					<span class="map_name_text">Guinean Forests of West Africa</span>
-				</div>
-				<div id="himalaya_01" class="map_name">
-					<img onclick="open_hotspot('himalaya')"class="selector" src="images/World_Maps/Hotspot_Menu/himalaya.svg">
-					<span class="map_name_text">Himalaya</span>
-				</div>
-				<div id="horn_of_africa" class="map_name">
-					<img onclick="open_hotspot('horn')" class="selector" src="images/World_Maps/Hotspot_Menu/horn_of_africa.svg">
-					<span class="map_name_text">Horn of Africa</span>
-				</div>
-				<div id="indo-burma_01" class="map_name">
-					<img onclick="open_hotspot('indo')" class="selector" src="images/World_Maps/Hotspot_Menu/indo-burma.svg">
-					<span class="map_name_text">Indo-Burma</span>
-				</div>
-				<div id="iranoan-atolian" class="map_name">
-					<img onclick="open_hotspot('irano')" class="selector" src="images/World_Maps/Hotspot_Menu/iranoan-atolian.svg">
-					<span class="map_name_text">Irano-Anatolian</span>
-				</div>
-				<div id="japan_01" class="map_name">
-					<img onclick="open_hotspot('japan')"class="selector" src="images/World_Maps/Hotspot_Menu/japan.svg">
-					<span class="map_name_text">Japan</span>
-				</div>
-				<div id="madagascar_01" class="map_name">
-					<img onclick="open_hotspot('madagascar')" class="selector" src="images/World_Maps/Hotspot_Menu/madagascar.svg">
-					<span class="map_name_text">Madagascar &amp; The Indian Ocean Islands</span>
-				</div>
-				<div id="madrean_01" class="map_name">
-					<img onclick="open_hotspot('madrean')" class="selector" src="images/World_Maps/Hotspot_Menu/madrean.svg">
-					<span class="map_name_text">Madrean Pine-Oak Woodlands</span>
-				</div>
-				<div id="maputaland_01" class="map_name">
-					<img onclick="open_hotspot('albany')" class="selector" src="images/World_Maps/Hotspot_Menu/maputaland.svg">
-					<span class="map_name_text">Maputaland Pondoland Albany</span>
-				</div>
-				<div id="mediterranean_01" class="map_name">
-					<img onclick="open_hotspot('basin')" class="selector" src="images/World_Maps/Hotspot_Menu/mediterranean.svg">
-					<span class="map_name_text">Mediterranean Basin</span>
-				</div>
-				<div id="mesoamerica_01" class="map_name">
-					<img onclick="open_hotspot('meso')" class="selector" src="images/World_Maps/Hotspot_Menu/mesoamerica.svg">
-					<span class="map_name_text">Mesoamerica</span>
-				</div>
-				<div id="central_asia_01" class="map_name">
-					<img onclick="open_hotspot('asia')" class="selector" src="images/World_Maps/Hotspot_Menu/central_asia.svg">
-					<span class="map_name_text">Mountains of Central Asia</span>
-				</div>
-				<div id="sw_china_01" class="map_name">
-					<img onclick="open_hotspot('china')" class="selector" src="images/World_Maps/Hotspot_Menu/sw_china.svg">
-					<span class="map_name_text">Mountains of Southwest China</span>
-				</div>
-				<div id="new_caledonia" class="map_name">
-					<img onclick="open_hotspot('caledonia')" class="selector" src="images/World_Maps/Hotspot_Menu/new_caledonia.svg">
-					<span class="map_name_text">New Caledonia</span>
-				</div>
-				<div id="new_zealand_l" class="map_name">
-					<img onclick="open_hotspot('zealand')" class="selector" src="images/World_Maps/Hotspot_Menu/new_zealand_l.svg">
-					<span class="map_name_text">New Zealand</span>
-				</div>
-				<div id="new_zealand_r" class="map_name">
-					<img onclick="open_hotspot('zealand')" class="selector" src="images/World_Maps/Hotspot_Menu/new_zealand_r.svg">
-					<span class="map_name_text">New Zealand</span>
-				</div>
-				<div id="philippines_01" class="map_name">
-					<img onclick="open_hotspot('philip')" class="selector" src="images/World_Maps/Hotspot_Menu/philippines.svg">
-					<span class="map_name_text">Philippines</span>
-				</div>
-				<div id="polynesia-micronesia_l" class="map_name">
-					<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/polymicro_l.svg">
-					<span class="map_name_text">Polynesia-Micronesia</span>
-				</div>
-				<div id="polynesia-micronesia_r" class="map_name">
-					<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/polymicro_r.svg">
-					<span class="map_name_text">Polynesia-micronesia</span>
-				</div>
-				<div id="sw_australia_01" class="map_name">
-					<img onclick="open_hotspot('s_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/sw_australia.svg">
-					<span class="map_name_text">Southwest Australia</span>
-				</div>
-				<div id="succulent_karoo" class="map_name">
-					<img onclick="open_hotspot('karoo')" class="selector" src="images/World_Maps/Hotspot_Menu/succulent_karoo.svg">
-					<span class="map_name_text">Succulent Karoo</span>
-				</div>
-				<div id="sundaland_01" class="map_name">
-					<img onclick="open_hotspot('sundaland')" class="selector" src="images/World_Maps/Hotspot_Menu/sundaland.svg">
-					<span class="map_name_text">Sundaland</span>
-				</div>
-				<div id="tropical_andes" class="map_name">
-					<img onclick="open_hotspot('andes')" class="selector" src="images/World_Maps/Hotspot_Menu/tropical_andes.svg">
-					<span class="map_name_text">Tropical Andes</span>
-				</div>
-				<div id="tumbes-choco" class="map_name">
-					<img onclick="open_hotspot('tumbes')" class="selector" src="images/World_Maps/Hotspot_Menu/tumbes.svg">
-					<span class="map_name_text">Tumbes-Choco-Magdalena</span>
-				</div>
-				<div id="wallacea_01" class="map_name">
-					<img onclick="open_hotspot('wallacea')" class="selector" src="images/World_Maps/Hotspot_Menu/wallacea.svg">
-					<span class="map_name_text">Wallacea</span>
-				</div>
-				<div id="western_ghats" class="map_name">
-					<img nclick="open_hotspot('ghats')" class="selector" src="images/World_Maps/Hotspot_Menu/western_ghats.svg">
-					<span class="map_name_text">Western Ghats &amp; Sri Lanka</span>
-				</div>
-				<!--<div id="cape_floristic" class="map_name">
-					<img class="selector" src="images/World_Maps/Hotspot_Menu/cape.svg">
-					<span class="map_name_text">Cape</span>
-				</div>-->
-			</div>
-
 			<div id='wrapper'>
-				<nav class="chapter_jump">
-					<!--<h3>Hotspots:</h3>-->
+				<h1 id="hotspot_title" class="page_title upcase">Hotspots</h1>
+				<!--<div class="map_detail" id="hotspot_menu">-->
+					
+					<!--<div class="hotspot-container">
+				  		<div>
+				  			<img class="hotspot_menu_img" src="images/World_Maps/Hotspot_Menu/hotspots_menu_main.png">
+				  		</div>
+				  	</div>
+					<div id="atlantic_forest" class="map_name">
+						<a href="hotspots/atlantic_forests.pdf"><img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/atlantic_forest.png"></a>
+						<span class="map_name_text">Atlantic Forest</span>
+					</div>
+					<div id="cali_floristic" class="map_name">
+						<a href=""><img onclick="open_hotspot('california')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/california_floristic.png"></a>
+						<span class="map_name_text">California Floristic Province</span>
+					</div>
+					<div id="cape_floristic" class="map_name">
+						<img onclick="open_hotspot('cape')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/cape_floristic.png">
+						<span class="map_name_text">Cape Floristic Region</span>
+					</div>
+					<div id="caribbean_islands" class="map_name">
+						<img onclick="open_hotspot('caribbean')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/caribbean.png">
+						<span class="map_name_text">Caribbean Islands</span>
+					</div>
+					<div id="caucasus_01" class="map_name">
+						<img  onclick="open_hotspot('caucasus')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/caucasus.png">
+						<span class="map_name_text">Caucasus</span>
+					</div>
+					<div id="cerrado_01" class="map_name">
+						<img onclick="open_hotspot('cerrado')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/cerrado.png">
+						<span class="map_name_text">Cerrado</span>
+					</div>
+					<div id="chilean_forests" class="map_name">
+						<img onclick="open_hotspot('chile')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/chilean_forests.png">
+						<span class="map_name_text">Chilean Winter Rainfall Valdivian Forests</span>
+					</div>
+					<div id="eastern_africa" class="map_name">
+						<img onclick="open_hotspot('africa')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/eastern_africa.png">
+						<span class="map_name_text">Coastal Forests of Eastern Africa</span>
+					</div>
+					<div id="melanesia" class="map_name">
+						<img onclick="open_hotspot('melanesian')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/melanesia.png">
+						<span class="map_name_text">East Melanesian Islands</span>
+					</div>
+					<div id="afromontane_01" class="map_name">
+						<img onclick="open_hotspot('afromontane')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/afromontane.png">
+						<span class="map_name_text">Eastern Afromontane</span>
+					</div>
+					<div id="e_australia" class="map_name">
+						<img onclick="open_hotspot('e_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/east_australia.png">
+						<span class="map_name_text">Forests of Eastern Australia</span>
+					</div>
+					<div id="guinean_01" class="map_name">
+						<img onclick="open_hotspot('guinean')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/guinean_forests.png">
+						<span class="map_name_text">Guinean Forests of West Africa</span>
+					</div>
+					<div id="himalaya_01" class="map_name">
+						<img onclick="open_hotspot('himalaya')"class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/himalaya.png">
+						<span class="map_name_text">Himalaya</span>
+					</div>
+					<div id="horn_of_africa" class="map_name">
+						<img onclick="open_hotspot('horn')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/horn_of_africa.png">
+						<span class="map_name_text">Horn of Africa</span>
+					</div>
+					<div id="indo-burma_01" class="map_name">
+						<img onclick="open_hotspot('indo')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/indo-burma.png">
+						<span class="map_name_text">Indo-Burma</span>
+					</div>
+					<div id="iranoan-atolian" class="map_name">
+						<img onclick="open_hotspot('irano')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/irano-anatolian.png">
+						<span class="map_name_text">Irano-Anatolian</span>
+					</div>
+					<div id="japan_01" class="map_name">
+						<img onclick="open_hotspot('japan')"class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/japan.png">
+						<span class="map_name_text">Japan</span>
+					</div>
+					<div id="madagascar_01" class="map_name">
+						<img onclick="open_hotspot('madagascar')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/madagascar.png">
+						<span class="map_name_text">Madagascar &amp; The Indian Ocean Islands</span>
+					</div>
+					<div id="madrean_01" class="map_name">
+						<img onclick="open_hotspot('madrean')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/madrean.png">
+						<span class="map_name_text">Madrean Pine-Oak Woodlands</span>
+					</div>
+					<div id="maputaland_01" class="map_name">
+						<img onclick="open_hotspot('albany')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/maputaland.png">
+						<span class="map_name_text">Maputaland Pondoland Albany</span>
+					</div>
+					<div id="mediterranean_01" class="map_name">
+						<img onclick="open_hotspot('basin')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/mediterranean.png">
+						<span class="map_name_text">Mediterranean Basin</span>
+					</div>
+					<div id="mesoamerica_01" class="map_name">
+						<img onclick="open_hotspot('meso')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/mesoamerica.png">
+						<span class="map_name_text">Mesoamerica</span>
+					</div>
+					<div id="central_asia_01" class="map_name">
+						<img onclick="open_hotspot('asia')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/central_asia.png">
+						<span class="map_name_text">Mountains of Central Asia</span>
+					</div>
+					<div id="sw_china_01" class="map_name">
+						<img onclick="open_hotspot('china')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/southwest_china.png">
+						<span class="map_name_text">Mountains of Southwest China</span>
+					</div>
+					<div id="new_caledonia" class="map_name">
+						<img onclick="open_hotspot('caledonia')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/new_caledonia.png">
+						<span class="map_name_text">New Caledonia</span>
+					</div>
+					<div id="new_zealand_r" class="map_name">
+						<img onclick="open_hotspot('zealand')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/new_zealand_right.png">
+						<span class="map_name_text">New Zealand</span>
+					</div>
+					<div id="philippines_01" class="map_name">
+						<img onclick="open_hotspot('philip')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/philippines.png">
+						<span class="map_name_text">Philippines</span>
+					</div>
+					<div id="polynesia-micronesia_l" class="map_name">
+						<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/polymicronesia_left.png">
+						<span class="map_name_text">Polynesia-Micronesia</span>
+					</div>
+					<div id="polynesia-micronesia_r" class="map_name">
+						<img onclick="open_hotspot('micro')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/polymicronesia_right.png">
+						<span class="map_name_text">Polynesia-micronesia</span>
+					</div>
+					<div id="sw_australia_01" class="map_name">
+						<img onclick="open_hotspot('s_australia')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/southwest_australia.png">
+						<span class="map_name_text">Southwest Australia</span>
+					</div>
+					<div id="succulent_karoo" class="map_name">
+						<img onclick="open_hotspot('karoo')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/succulent_karoo.png">
+						<span class="map_name_text">Succulent Karoo</span>
+					</div>
+					<div id="sundaland_01" class="map_name">
+						<img onclick="open_hotspot('sundaland')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/sundaland.png">
+						<span class="map_name_text">Sundaland</span>
+					</div>
+					<div id="tropical_andes" class="map_name">
+						<img onclick="open_hotspot('andes')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/tropical_andes.png">
+						<span class="map_name_text">Tropical Andes</span>
+					</div>
+					<div id="tumbes-choco" class="map_name">
+						<img onclick="open_hotspot('tumbes')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/tumbes.png">
+						<span class="map_name_text">Tumbes-Choco-Magdalena</span>
+					</div>
+					<div id="wallacea_01" class="map_name">
+						<img onclick="open_hotspot('wallacea')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/wallacea.png">
+						<span class="map_name_text">Wallacea</span>
+					</div>
+					<div id="western_ghats" class="map_name">
+						<img nclick="open_hotspot('ghats')" class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/western_ghats.png">
+						<span class="map_name_text">Western Ghats &amp; Sri Lanka</span>
+					</div>
+				</div>-->
+				<div class="map_detail" id="hotspot_menu">
+					<div class="hotspot-container">
+					  		<div>
+					  			<img class="hotspot_menu_img" src="images/World_Maps/Hotspot_Menu/hotspots_menu_main.png">
+					  		</div>
+					  	
+						<div id="atlantic_forest" class="map_name">
+							<a href="hotspots/atlantic_forests.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/atlantic_forest.png">
+							</a>
+							<span class="map_name_text">Atlantic Forest</span>
+						</div>
+						<div id="cali_floristic" class="map_name">
+							<a href="hotspots/california_floristic_province.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/california_floristic.png">
+							</a>
+							<span class="map_name_text">California Floristic Province</span>
+						</div>
+						<div id="cape_floristic" class="map_name">
+							<a href="hotspots/cape_floristic_region.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/cape_floristic.png">
+							</a>
+							<span class="map_name_text">Cape Floristic Region</span>
+						</div>
+						<div id="caribbean_islands" class="map_name">
+							<a href="hotspots/caribbean_islands.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/caribbean.png">
+							</a>
+							<span class="map_name_text">Caribbean Islands</span>
+						</div>
+						<div id="caucasus_01" class="map_name">
+							<a href="hotspots/caucasus.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/caucasus.png">
+							</a>
+							<span class="map_name_text">Caucasus</span>
+						</div>
+						<div id="cerrado_01" class="map_name">
+							<a href="hotspots/cerrado.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/cerrado.png">
+							</a>
+							<span class="map_name_text">Cerrado</span>
+						</div>
+						<div id="chilean_forests" class="map_name">
+							<a href="hotspots/chilean_valdivian_forests.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/chilean_forests.png">
+							</a>
+							<span class="map_name_text">Chilean Winter Rainfall Valdivian Forests</span>
+						</div>
+						<div id="eastern_africa" class="map_name">
+							<a href="hotspots/coastal_forests_of_eastern_africa.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/eastern_africa.png">
+							</a>
+							<span class="map_name_text">Coastal Forests of Eastern Africa</span>
+						</div>
+						<div id="melanesia" class="map_name">
+							<a href="hotspots/east_melanesian_islands.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/melanesia.png">
+							</a>
+							<span class="map_name_text">East Melanesian Islands</span>
+						</div>
+						<div id="afromontane_01" class="map_name">
+							<a href="hotspots/eastern_afromontane.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/afromontane.png">
+							</a>
+							<span class="map_name_text">Eastern Afromontane</span>
+						</div>
+						<div id="e_australia" class="map_name">
+							<a href="hotspots/forests_of_east_australia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/east_australia.png">
+							</a>
+							<span class="map_name_text">Forests of Eastern Australia</span>
+						</div>
+						<div id="guinean_01" class="map_name">
+							<a href="hotspots/guinean_forests_of_west_africa.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/guinean_forests.png">
+							</a>
+							<span class="map_name_text">Guinean Forests of West Africa</span>
+						</div>
+						<div id="himalaya_01" class="map_name">
+							<a href="hotspots/himalaya.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/himalaya.png">
+							</a>
+							<span class="map_name_text">Himalaya</span>
+						</div>
+						<div id="horn_of_africa" class="map_name">
+							<a href="hotspots/horn_of_africa.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/horn_of_africa.png">
+							</a>
+							<span class="map_name_text">Horn of Africa</span>
+						</div>
+						<div id="indo-burma_01" class="map_name">
+							<a href="hotspots/indo-burma.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/indo-burma.png">
+							</a>
+							<span class="map_name_text">Indo-Burma</span>
+						</div>
+						<div id="iranoan-atolian" class="map_name">
+							<a href="hotspots/irano-anatolian.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/irano-anatolian.png">
+							</a>
+							<span class="map_name_text">Irano-Anatolian</span>
+						</div>
+						<div id="japan_01" class="map_name">
+							<a href="hotspots/japan.pdf"><img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/japan.png"></a>
+							<span class="map_name_text">Japan</span>
+						</div>
+						<div id="madagascar_01" class="map_name">
+							<a href="hotspots/madagascar.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/madagascar.png">
+							</a>
+							<span class="map_name_text">Madagascar &amp; The Indian Ocean Islands</span>
+						</div>
+						<div id="madrean_01" class="map_name">
+							<a href="hotspots/madrean_woodlands.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/madrean.png">
+							</a>
+							<span class="map_name_text">Madrean Pine-Oak Woodlands</span>
+						</div>
+						<div id="maputaland_01" class="map_name">
+							<a href="hotspots/maputaland_pondoland_albany.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/maputaland.png">
+							</a>
+							<span class="map_name_text">Maputaland Pondoland Albany</span>
+						</div>
+						<div id="mediterranean_01" class="map_name">
+							<a href="hotspots/mediterranean_basin.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/mediterranean.png">
+							</a>
+							<span class="map_name_text">Mediterranean Basin</span>
+						</div>
+						<div id="mesoamerica_01" class="map_name">
+							<a href="hotspots/mesoamerica.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/mesoamerica.png">
+							</a>
+							<span class="map_name_text">Mesoamerica</span>
+						</div>
+						<div id="central_asia_01" class="map_name">
+							<a href="hotspots/mountains_of_central_asia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/central_asia.png">
+							</a>
+							<span class="map_name_text">Mountains of Central Asia</span>
+						</div>
+						<div id="sw_china_01" class="map_name">
+							<a href="hotspots/mountains_of_southwest_china.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/southwest_china.png">
+							</a>
+							<span class="map_name_text">Mountains of Southwest China</span>
+						</div>
+						<div id="new_caledonia" class="map_name">
+							<a href="hotspots/new_caledonia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/new_caledonia.png">
+							</a>
+							<span class="map_name_text">New Caledonia</span>
+						</div>
+						<div id="new_zealand_r" class="map_name">
+							<a href="hotspots/new_zealand.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/new_zealand_right.png">
+							</a>
+							<span class="map_name_text">New Zealand</span>
+						</div>
+						<div id="philippines_01" class="map_name">
+							<a href="hotspots/philippines.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/philippines.png">
+							</a>
+							<span class="map_name_text">Philippines</span>
+						</div>
+						<div id="polynesia-micronesia_l" class="map_name">
+							<a href="hotspots/polynesia-micronesia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/polymicronesia_left.png">
+							</a>
+							<span class="map_name_text">Polynesia-Micronesia</span>
+						</div>
+						<div id="polynesia-micronesia_r" class="map_name">
+							<a href="hotspots/polynesia-micronesia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/polymicronesia_right.png">
+							</a>
+							<span class="map_name_text">Polynesia-micronesia</span>
+						</div>
+						<div id="sw_australia_01" class="map_name">
+							<a href="hotspots/southwest_australia.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/southwest_australia.png">
+							</a>
+							<span class="map_name_text">Southwest Australia</span>
+						</div>
+						<div id="succulent_karoo" class="map_name">
+							<a href="hotspots/succulent_karoo.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/succulent_karoo.png">
+							</a>
+							<span class="map_name_text">Succulent Karoo</span>
+						</div>
+						<div id="sundaland_01" class="map_name">
+							<a href="hotspots/sundaland.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/sundaland.png">
+							</a>
+							<span class="map_name_text">Sundaland</span>
+						</div>
+						<div id="tropical_andes" class="map_name">
+							<a href="hotspots/tropical_andes.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/tropical_andes.png">
+							</a>
+							<span class="map_name_text">Tropical Andes</span>
+						</div>
+						<div id="tumbes-choco" class="map_name">
+							<a href="hotspots/tumbes-choco-magdalena.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/tumbes.png">
+							</a>
+							<span class="map_name_text">Tumbes-Choco-Magdalena</span>
+						</div>
+						<div id="wallacea_01" class="map_name">
+							<a href="hotspots/wallacea.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/wallacea.png">
+							</a>
+							<span class="map_name_text">Wallacea</span>
+						</div>
+						<div id="western_ghats" class="map_name">
+							<a href="hotspots/western_ghats_sri_lanka.pdf">
+								<img class="selector" src="images/World_Maps/Hotspot_Menu/map_layers/western_ghats.png">
+							</a>
+							<span class="map_name_text">Western Ghats &amp; Sri Lanka</span>
+						</div>
+					</div>
+					<span id="hotspot_main_caption">Click on a hotspot above to open a PDF of its corresponding maps or scroll down to menu of individual hotspot links below.</span>
+				</div>
+				<!--<nav class="chapter_jump">
 					<div id="hotspots_menu" w3-include-html='include/menu_hotspots.html'></div>
-				</nav>
+				</nav>-->
 
 				<main>
-					<div class="shifted_text">
-						<h1>Hotspots + Ecoregions + Conflict Maps (Biodiversity)</h1>	
-						<div w3-include-html='include/precis_text.html'></div>
+					<figure id="hotspot_menu_alt" class="header_fig">
+						<img src="images/World_Maps/Hotspot_Menu/hotspots_menu_main_cropped.png">
+						<figcaption>The world's biological hotspots</figcaption>
+					</figure>
+					<div class="text_column">
+						<!--<h1>Hotspot Maps, Ecoregion Maps and Conflict Maps</h1>-->	
+						<div id="hotspot-maps">
+						<h3>The Hotspot Maps</h3>
+						<p>Opening any of the hotspots hyperlinked in <span class="contents_shorten">the map above or in </span>the menu below leads to three sets of maps. First, a (black) map of the hotspot itself showing how much protected area (IUCN categories I-VI, plus NA lands) is currently in that hotspot; second, maps of each of the ecoregions within the hotspot showing how much protected area (IUCN categories I-VI, plus NA lands) exists at this finer grain; and finally, 'conflict maps' which zoom into each major city in the hotspot showing how these cities are growing in relation to remnant habitat and endangered species.<sup id="one"><a href="#1">1</a></sup></p>
+						<figure class="text_center">
+							<img src="images/Essay_Images/IndoBurma_Hotspot_2015-01.png">
+							<figcaption>Example of a hotspot map</figcaption>
+						</figure>
+						<p>The hotspot maps show protected areas (as of 2015) broken into three broad groups based on their primary management objectives as classified by the IUCN: categories I-IV; categories V-VI; and NA. The categories range from strictly protected nature reserves, wildlands and parks (I-IV) to areas of more lenient management with the potential for development and the sustainable use of natural resources (V-VI). Representing roughly 35% of the number of global protected areas tabulated, the NA category does not denote lax management policy, simply areas that for one reason or another have not adapted the IUCN management classification system.
+						<sup id="two"><a href="#2">2</a></sup></p>
+						<!--<p>Approximately 9% of the total number of protected areas globally have been occluded from the mapping because the sites lack key spatial information. The WDPA recommends using this data for more accurate representation of total area protected however many of the sites have no area reported and many overlap with the more accurately spatialized sites.
+						</p>-->
+						<p>The following methodology was utilized in calculating total protected areas and biodiversity target shortfalls. GIS shapefiles for protected areas<sup id="three"><a href="#3">3</a></sup> and hotspots<sup id="four"><a href="#4">4</a></sup> were downloaded from publicly accessible databases. Individual hotspots were isolated and separate datasets were created by partitioning protected areas into the three groups described above. Each new dataset was clipped to the boundary of the isolated hotspot, flattened to eliminate any overlapping areas, and then total protected area was calculated. Hotspot areas were calculated in the same projection, and a square equivalent to 17% of the hotspot's total area is drawn to scale beside the hotspot map. The three protected area groups are visually compared against the 17% target square. The resulting maps expose 21 hotspots short on protected areas and 14 that have reached global targets. The outlook, however, is more complex when further analyzed to account for the representative distribution of protected areas across each hotspot's constituent ecoregions.
+						</p>
 					</div>
-				</div><!--main-->
+					</br>
+					<div id='ecoregion'>
+						<h3>The Ecoregion Maps</h3>
+						<figure class="text_center">
+							<img class="img_outline" src="images/Essay_Images/IndoBurma_ECOREGIONS-01.png">
+							<figcaption>The Indo Burma hotspot broken down into its constituent ecoregions</figcaption>
+						</figure>
+						<p>As illustrated above with the example of the Indo-Burma hotspot, in this Atlas each of the world's hotspots are broken down into their constituent ecoregions so as to audit the protected area at that finer scale. Any one hotspot is composed of a number of ecoregions that may range from coastal mangroves to alpine shrub and grasslands. These ecoregions are regionally specific to geophysical and climatic forces &mdash; varying across changes in elevation, geology and rainfall. Their designation, however, is somewhat puritanical and antiquated &mdash; immune to political borders and changing land-uses. The elimination of these numerous cultural variables, while not practical for actionable conservation purposes, is helpful in distilling a vast array of vulnerable lands that most urgently require protection and restoration to meet the biological needs of a variety of species and ecological communities that have already undergone disruption and fragmentation.
+						</p>
+						<p>On our ecoregion maps which follow each of the hotspot maps, in comparison to the amount of existing protected area in each ecoregion, we highlight the amount of land that is neither protected nor evidently subject to intensive agricultural crop production. These extensive (light green) areas are lands that Erle Ellis refers to as "the remnant, recovering, and managed novel ecosystems formed by land use and its legacies &hellip; the predominant form of terrestrial ecosystems today and into the future."<sup id="five"><a href="#5">5</a></sup> It is in these weedy, feral territories, much of it probably used as grazing rangelands which have both low biodiversity and low agricultural value that the fate of much of the world's biodiversity will ultimately be decided. These are the degraded lands into which biodiversity is being forced and across which connectivity must be established if the adaptation of species to climate change is going to be facilitated. These are also lands likely to face increasing pressure from the world's ever expanding agricultural frontier.
+						</p>
+						<p>Determination of what we refer to as remnant habitat began with a rasterized depiction of land-cover classification on a high-resolution image of the world.<sup id="six"><a href="#6">6</a></sup> The raster was converted into a shapefile (vector), and specific layers removed (agriculture, barren, water/ice, urban). Depending on the degree to which these remaining lands are grazed they are theoretically viable terrestrial habitat, or at least areas that can be restored to create viable habitat without significant destruction to developed areas or crop systems. Importantly, we modified the remnant habitat delineation derived from our GIS analysis by first subtracting any overlapping protected areas. This ensured that only non-protected viable lands are included in our analysis. The remnant habitat was then clipped by the ecoregion outlines, and compressed in order to calculate its area. These values are re-drawn as squares at the same scale as the original map in order to demonstrate the additional land area within a given ecoregion that must be protected to meet the target (teal-green), and how much viable habitat remains in which to do so (light green).
+						</p>
+					</div>
+					</br>
+						<div id="bio-city">
+							<h3>Conflict Maps</h3>
+							<figure class="text_center">
+								<img class="img_outline" src="images/Essay_Images/IndoBurma_conflicts.png">
+								<figcaption>The indoburma Hotspot with zones of conflict between urban growth and biodiversity highlighted in orange</figcaption>
+							</figure>
+							<p>The map above is an example of a 'conflict map'. There is a conflict map for each of the world's hotspots. Whereas the hotspot maps and the ecoregion maps show protected areas and remnant habitat, the conflict maps identify areas (colored orange) where urban growth and remnant habitat (biodiversity) are on a collision course. The conflict maps show this at the scale of each hotspot but appended to the conflict maps is also a series of smaller circular maps which zoom in on each of the cities in the hotspot. Our choice of cities was determined by United Nations' urban population data, which defines cities as urban areas with 300,000 inhabitants or more.<sup id="seven"><a href="#7">7</a></sup> According to our analysis, 383 of the 422 cities in the world's biological hotspots are sprawling and can be expected to continue to sprawl directly into remnant habitat.
+							</p>
+							<p>These cities tend to be the major urban growth centers in the hotspots, but this is not to suggest that conflict is only occurring in these areas of  urban sprawl. The conflict maps and the zoomed-in city maps are very coarse and should be taken as only a cursory analysis conducted within the feasibility of this initial study. Although the Convention on Biological Diversity encourages what it refers to as 'biodiversity friendly city design' and 'holistic landscape management practices' at the sub-national scale, insofar as we can tell there is a marked lack of design and planning intelligence being applied at a whole-of-city scale to the relationship between biodiversity and urban growth in most of the 422 major cities in the hotspots.<sup id="eight"><a href="#8">8</a></sup>
+							</p>
+							<figure class="text_center">
+								<img class="img_outline" src="images/Essay_Images/IndoBurma_cities.png">
+								<figcaption>Examples of cities in the Indo Burma hotspot with conflict between urban growth and biodiversity</figcaption>
+							</figure>
+							<p>The way we have mapped each of these cities is to overlay their (2030) projected growth trajectories with existing landscape conditions to identity zones of immanent conflict between their growth and extant habitat. The growth area data projected out to 2030 for each city is sourced from the Seto Lab at Yale.<sup id="nine"><a href="#9">9</a></sup> Each grid possesses a possibility of urbanization (as explained in footnote <a href="#9">9</a>). We have extracted those that have a possibility of 50% or higher (areas more likely than not to become urbanized) as the growth projection zone. These urban growth projections are then overlaid on top of the remnant vegetation data from the Global Land Cover Facility<sup id="ten"><a href="#10">10</a></sup> and IUCN Red List<sup id="eleven"><a href="#11">11</a></sup> of ranges for 3,245 mammal species that are either critically endangered or endangered. Due to technical and time constraints, the research only used mammal species as a start to examine the potential conflicts that lie between immanent urban development and biodiversity. These maps draw attention to places in need of urban design strategies to mitigate such flashpoints.
+							</p>
+						</div>
+					</div>
+					<figure class="interior_full_fig">
+						<img class="img_outline" src="images/Essay_Images/conflict_methodology.png">
+						<figcaption>The overlay mapping method used to ascertain regions of conflict between future urban growth and biodiversity in the world's hotspots</figcaption>
+					</figure></br>
+					<div class="alt_menu">
+						<div w3-include-html='include/menu_hotspots_links.html'></div>
+					</div>
+					<!--<div class="grid_menu_wide">
+						<a href=""><div id=""><p>Atlantic Forest</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/atlantic_forests.jpg"></div></a>
+						
+						<a href=""><div id=""><p>California Floristic Province</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/california.jpg"></div></a>
+
+						<a href=""><div id="atmos" onclick="open_map('atmos')"><p>Cape Floristic Region</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/cape_floristic_region.jpg"></div></a>
+
+						<a href=""><div id="ocean" onclick="open_map('ocean')"><p>Caribbean Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/caribbean.jpg"></div></a>
+
+						<a href=""><div id="biomes" onclick="open_map('biomes')"><p>Caucasus</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/caucasus.jpg"></div></a>
+
+						<a href=""><div id="ecoregion" onclick="open_map('ecoregion')"><p>Cerrado</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/cerrado.jpg"></div></a>
+
+						<a href=""><div class="two_line_hotspot" id="anthromes" onclick="open_map('anthromes')"><p>Chilean Winter Rainfall Valdivian Forests</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/chilean.jpg"></div></a>
+
+						<a href=""><div class="two_line_hotspot" id="mammal" onclick="open_map('mammal')"><p>Coastal Forests of Eastern Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/coastal_forests_e_africa.jpg"></div></a>
+
+						<a href=""><div id="protect" onclick="open_map('protect')"><p>East Melanesian Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/east_melanesian_islands.jpg"></div></a>
+
+						<a href=""><div id="biological" onclick="open_map('biological')"><p>Eastern Afromontane</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/eastern_afromontane.jpg"></div></a>
+
+						<a href="#"><div id="targets" onclick="open_map('targets')"><p>Forests of Eastern Australia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/east_australia.jpg"></div></a>
+
+						<a href="#"><div id="conserve" onclick="open_map('conserve')"><p>Guinean Forests of West Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/guinean_w_africa.jpg"></div></a>
+
+						<a href="#"><div id="soils" onclick="open_map('soils')"><p>Himalaya</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/himalaya.jpg"></div></a>
+
+						<a href="#"><div id="crops" onclick="open_map('crops')"><p>Horn of Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/horn_of_africa.jpg"></div></a>
+
+						<a href="#"><div id="meat" onclick="open_map('meat')"><p>Indo-Burma</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/indo-burma.jpg"></div></a>
+
+						<a href="#"><div id="degrade" onclick="open_map('degrade')"><p>Irano-Anatolian</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/irano_anatolian.jpg"></div></a>
+
+						<a href="#"><div id="tropics" onclick="open_map('tropics')"><p>Japan</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/japan.jpg"></div></a>
+
+						<a href="#"><div class="two_line_hotspot" id="deforest" onclick="open_map('deforest')"><p>Madagascar &amp; The Indian Ocean Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/madagascar.jpg"></div></a>
+
+						<a href="#"><div id="rivers" onclick="open_map('rivers')"><p>Madrean Pine-Oak Woodlands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/madrean.jpg"></div></a>
+
+						<a href="#"><div id="waters" onclick="open_map('waters')"><p>Maputaland Pondoland Albany</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/maputaland.jpg"></div></a>
+
+						<a href="#"><div id="access" onclick="open_map('access')"><p>Mediterranean Basin</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/mediterranean.jpg"></div></a>
+
+						<a href="#"><div id="pre-evolve" onclick="open_map('pre-evolve')"><p>Mesoamerica</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/mesoamerica.jpg"></div></a>
+
+						<a href="#"><div id="evolve" onclick="open_map('evolve')"><p>Mountains of Central Asia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/central_asia.jpg"></div></a>
+
+						<a href="#"><div id="structures" onclick="open_map('structures')"><p>Mountains of Southwest China</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sw_china.jpg"></div></a>
+
+						<a href="#"><div id="pressure" onclick="open_map('pressure')"><p>New Caledonia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/new_caledonia.jpg"></div></a>
+
+						<a href="#"><div id="pressure" onclick="open_map('pressure')"><p>New Zealand</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/new_zealand.jpg"></div></a>
+
+						<a href="#"><div id="sprawl" onclick="open_map('sprawl')"><p>Philippines</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/philippines.jpg"></div></a>
+
+						<a href="#"><div id="energy" onclick="open_map('energy')"><p>Polynesia-Micronesia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/polynesia_micronesia.jpg"></div></a>
+
+						<a href="#"><div id="nuclear" onclick="open_map('nuclear')"><p>Southwest Australia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sw_australia.jpg"></div></a>
+
+						<a href="#"><div id="climate" onclick="open_map('climate')"><p>Succulent Karoo</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/succulent_karoo.jpg"></div></a>
+
+						<a href="#"><div id="sea" onclick="open_map('sea')"><p>Sundaland</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sundaland.jpg"></div></a>
+
+						<a href="#"><div onclick="open_map('displace')"><p>Tropical Andes</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/tropical_andes.jpg"></div></a>
+
+						<a href="#"><div id="corrupt" onclick="open_map('corrupt')"><p>Tumbes-Choco-Magdalena</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/tumbes.jpg"></div></a>
+
+						<a href="#"><div id="conflict" onclick="open_map('conflict')"><p>Wallacea</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/wallacea.jpg"></div></a>
+
+						<a href="#"><div id="planning" onclick="open_map('planning')"><p>Western Ghats &amp; Sri Lanka</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/western_ghats.jpg"></div></a>
+					</div>-->
+					<div class="grid_menu_wide">
+						<a href="hotspots/atlantic_forests.pdf"><div><p>Atlantic Forest</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/atlantic_forests.jpg"></div></a>
+						
+						<a href="hotspots/california_floristic_province.pdf"><div><p>California Floristic Province</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/california.jpg"></div></a>
+
+						<a href="hotspots/cape_floristic_region.pdf"><div><p>Cape Floristic Region</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/cape_floristic_region.jpg"></div></a>
+
+						<a href="hotspots/caribbean_islands.pdf"><div><p>Caribbean Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/caribbean.jpg"></div></a>
+
+						<a href="hotspots/caucasus.pdf"><div><p>Caucasus</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/caucasus.jpg"></div></a>
+
+						<a href="hotspots/cerrado.pdf"><div><p>Cerrado</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/cerrado.jpg"></div></a>
+
+						<a href="hotspots/chilean_valdivian_forests.pdf"><div class="two_line_hotspot"><p>Chilean Winter Rainfall Valdivian Forests</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/chilean.jpg"></div></a>
+
+						<a href="hotspots/coastal_forests_of_eastern_africa.pdf"><div><p>Coastal Forests of Eastern Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/coastal_forests_e_africa.jpg"></div></a>
+
+						<a href="hotspots/east_melanesian_islands.pdf"><div><p>East Melanesian Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/east_melanesian_islands.jpg"></div></a>
+
+						<a href="hotspots/eastern_afromontane.pdf"><div><p>Eastern Afromontane</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/eastern_afromontane.jpg"></div></a>
+
+						<a href="hotspots/forests_of_east_australia.pdf"><div><p>Forests of Eastern Australia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/east_australia.jpg"></div></a>
+
+						<a href="hotspots/guinean_forests_of_west_africa.pdf"><div><p>Guinean Forests of West Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/guinean_w_africa.jpg"></div></a>
+
+						<a href="hotspots/himalaya.pdf"><div><p>Himalaya</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/himalaya.jpg"></div></a>
+
+						<a href="hotspots/horn_of_africa.pdf"><div><p>Horn of Africa</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/horn_of_africa.jpg"></div></a>
+
+						<a href="hotspots/indo-burma.pdf"><div><p>Indo-Burma</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/indo-burma.jpg"></div></a>
+
+						<a href="hotspots/irano-anatolian.pdf"><div><p>Irano-Anatolian</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/irano_anatolian.jpg"></div></a>
+
+						<a href="hotspots/japan.pdf"><div><p>Japan</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/japan.jpg"></div></a>
+
+						<a href="hotspots/madagascar.pdf"><div class="two_line_hotspot"><p>Madagascar &amp; The Indian Ocean Islands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/madagascar.jpg"></div></a>
+
+						<a href="hotspots/madrean_woodlands.pdf"><div><p>Madrean Pine-Oak Woodlands</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/madrean.jpg"></div></a>
+
+						<a href="hotspots/maputaland_pondoland_albany.pdf"><div><p>Maputaland Pondoland Albany</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/maputaland.jpg"></div></a>
+
+						<a href="hotspots/mediterranean_basin.pdf"><div><p>Mediterranean Basin</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/mediterranean.jpg"></div></a>
+
+						<a href="hotspots/mesoamerica.pdf"><div><p>Mesoamerica</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/mesoamerica.jpg"></div></a>
+
+						<a href="hotspots/mountains_of_central_asia.pdf"><div><p>Mountains of Central Asia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/central_asia.jpg"></div></a>
+
+						<a href="hotspots/mountains_of_southwest_china.pdf"><div><p>Mountains of Southwest China</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sw_china.jpg"></div></a>
+
+						<a href="hotspots/new_caledonia.pdf"><div><p>New Caledonia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/new_caledonia.jpg"></div></a>
+
+						<a href="hotspots/new_zealand.pdf"><div><p>New Zealand</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/new_zealand.jpg"></div></a>
+
+						<a href="hotspots/philippines.pdf"><div><p>Philippines</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/philippines.jpg"></div></a>
+
+						<a href="hotspots/polynesia-micronesia.pdf"><div><p>Polynesia-Micronesia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/polynesia_micronesia.jpg"></div></a>
+
+						<a href="hotspots/southwest_australia.pdf"><div><p>Southwest Australia</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sw_australia.jpg"></div></a>
+
+						<a href="hotspots/succulent_karoo.pdf"><div><p>Succulent Karoo</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/succulent_karoo.jpg"></div></a>
+
+						<a href="hotspots/sundaland.pdf"><div><p>Sundaland</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/sundaland.jpg"></div></a>
+
+						<a href="hotspots/tropical_andes.pdf"><div><p>Tropical Andes</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/tropical_andes.jpg"></div></a>
+
+						<a href="hotspots/tumbes-choco-magdalena.pdf"><div><p>Tumbes-Choco-Magdalena</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/tumbes.jpg"></div></a>
+
+						<a href="hotspots/wallacea.pdf"><div><p>Wallacea</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/wallacea.jpg"></div></a>
+
+						<a href="hotspots/western_ghats_sri_lanka.pdf"><div><p>Western Ghats &amp; Sri Lanka</p><img class="hot_thumb" src="images/World_Maps/hotspot_thumbnails/western_ghats.jpg"></div></a>
+					</div>
+					<div class="text_column">
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>Mapping in general and atlases in particular pride themselves on accuracy and whilst we have stayed true to our sources, in the case of ever-changing environmental phenomena, maps are only as good as their most recent update. The protected area mapping upon which the hotspot maps and the ecoregion maps are based is z data from the World Database on Protected Areas (WDPA). The WDPA is a joint project of the IUCN and UNEP. It is considered the only database of protected areas globally.</p>
+							<p>Protected areas have increased globally by roughly 2% since 2013 when we began this research, but only a small proportion of that increase is in the hotspots. In broad terms, the relationship shown between CBD protected area targets and what is actually on the ground in both the hotspot maps and the ecoregion maps will remain valid, albeit at a coarse grain of resolution, for some years to come.
+							</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>Approximately 9% of the total number of protected areas globally have been occluded from the mapping because the sites lack key spatial information. The WDPA recommends using this data for more accurate representation of total area protected however many of the sites have no area reported and many overlap with the more accurately spatialized sites.</p>
+							<!--<p><sup id="79"><a href="#seventy-nine">79 </a></sup>
+								The WDPA is a joint project of the IUCN and UNEP. It is considered the only database of protected areas globally.
+							</p>-->
+							<p><sup id="3"><a href="#three">3 </a></sup>
+								IUCN &amp; UNEP-WCMC, <i>The World Database on Protected Areas (WDPA)</i> (Cambridge: UNEP-WCMC, 2015). Available at <a target="_blank" href="www.protectedplanet.net">www.protectedplanet.net</a>.
+							</p>
+							<p><sup id="4"><a href="#four">4 </a></sup>
+								Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="_blank" href="http://www.cepf.net/resources/hotspots/Pages/default.aspx">http://www.cepf.net/resources/hotspots/Pages/default.aspx</a> (accessed June 1st, 2016).
+							</p>
+							<p><sup id="5"><a href="#five">5 </a></sup>
+								Ellis, "Anthropogenic Taxonomies," 179.
+							</p>
+							<p><sup id="6"><a href="#six">6 </a></sup>
+								Sourced from the Institute of Environment and Sustainability at the Joint Research Centre of the European Commission, 2014. <a target="_blank" href="https://ec.europa.eu/jrc/en/about/institutes-and-directorates/jrc-ies">https://ec.europa.eu/jrc/en/about/institutes-and-directorates/jrc-ies</a> 
+							</p>
+							<p><sup id="7"><a href="#seven">7 </a></sup>
+								United Nations, <i>World Urbanization Prospects: The 2014 Revision</i> (United Nations: 2014). Available at <a target="_blank" href="https://esa.un.org/unpd/wup/Publications/Files/WUP2014-Highlights.pdf">https://esa.un.org/unpd/wup/Publications/Files/WUP2014-Highlights.pdf</a> (accessed June 1, 2016).
+							</p>
+							<p><sup id="8"><a href="#eight">8 </a></sup>
+								Convention on Biological Diversity, "COP 10 Decision X/22," <a target="_blank" href="https://www.cbd.int/decision/cop/default.shtml?id=12288">https://www.cbd.int/decision/cop/default.shtml?id=12288</a> (accessed June 1st, 2016).
+							</p>
+							<p><sup id="9"><a href="#nine">9 </a></sup>
+								Karen C. Seto, Burak G&#252;neralp, &amp; Lucy R. Hutyra, "Global Forecasts of Urban Expansion to 2030 and Direct Impacts on Biodiversity and Carbon Pools," <i>Proceedings of the National Academy of Science of the United States</i> 109, no. 40 (2012): 16083-16088.</p>
+								<p>Karen Seto and her team explain, "[t]he forecasts are developed in two phases. In the first phase, for each region we generate 1,000 estimates of aggregate amount of urban expansion by randomly drawing 1,000 values each from the corresponding probability density functions (PDFs) of projected GDP and urban population. We use the uncertainty ranges in population and GDP projections to estimate the corresponding PDFs. In the second phase, we use the aggregate amounts and simulate their spatial distribution using a spatially explicit grid-based land change model (44), which uses slope, distance to roads, population density, and land cover as the primary drivers of land change. Our analysis assumes no new road development. Significant changes in road development would change the spatial patterns but not the amount of new urban expansion."</p>
+							<!--<p><sup id="88"><a href="#eighty-eight">88 </a></sup>
+								Ibid.
+							</p>-->
+							<p><sup id="10"><a href="#ten">10 </a></sup>
+								Sourced from the Institute of Environment and Sustainability at the Joint Research Centre of the European Commission, 2014. <a target="_blank" href="https://ec.europa.eu/jrc/en/about/institutes-and-directorates/jrc-ies">https://ec.europa.eu/jrc/en/about/institutes-and-directorates/jrc-ies</a> (accessed May 1st, 2015)
+							</p>
+							<p><sup id="11"><a href="#eleven">11 </a></sup>
+								The IUCN Red List of Threatened Species, <a target="_blank" href="http://www.iucnredlist.org">http://www.iucnredlist.org</a> (accessed June 1, 2016).
+							</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="datascapes_main.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous chapter: datascapes</a>
+						</div>
+						<div class="next_chapter">
+							<a href="facts.html">next chapter: facts &amp; data	&#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
+				</main>
 			</div>
 			<footer>
 				<div class="footer_wrapper">
 					<div id='footer_menu'>
-						<div w3-include-html='include/main_menu_list.html'></div>
+						<div w3-include-html='include/footer.html'></div>
 					</div>
 				</div>
 			</footer>
@@ -221,7 +676,7 @@
 			</script>
 			<!--<script>
 				function swap_map() {
-					document.getElementById("map")."images/World_Maps/Hotspot_Menu/tumbes.png"
+					document.getElementById("map")."images/World_Maps/Hotspot_Menu/map_layers/tumbes.png"
 				}
 			</script>-->
 		</body>

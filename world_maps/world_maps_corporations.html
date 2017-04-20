@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Corporations</title>
 	</head>
 		<body>
@@ -16,113 +17,243 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-corporations_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Corporations: Multinational Corporations &amp; Wealth</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-corporations_goode-homolosine-01.png">
 				</div>
-				<div class="legend">
-					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
-					<!--<div class="side_bar">
-						<p></p>
-					</div>-->
+				<!--<h1 class="alt_title upcase">Corporations</h1>
+				<h2 class="upcase sub-head alt_title">Multinational Corporations &amp; Wealth</h2>-->
+				<main>
+					<div class="text_column">
+						<!--<h1 class="map_title upcase">Corporations</h1>
+						<h2 class="upcase sub-head map_title">Multinational Corporations &amp; Wealth</h2>-->
+						<div class="intext_legend">
+						<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
+						<!--<div class="side_bar">
+							<p></p>
+						</div>-->
 
-					<!--<img src="../images/World_Maps/legends/">-->
-					<table style="width:340px">
-						<tr><td><img src="../images/World_Maps/legends/corporations-multinationals.png"></td><td colspan="4" class="upcase left_align">Top 20 Wealthiest Multinationals (headquarters, 2014)<sup> 1</sup></br>Forbes Global 2000</td></tr>
-						<tr><td></td></tr>
-						<tr><td></td><td></td><td>1. ICBC</td><td></td><td>11. Royal Dutch Shell</td></tr>
-						<tr><td></td><td></td><td>2. China Construction Bank</td><td></td><td>12. Toyota</td></tr>
-						<tr><td></td><td></td><td>3. Agriculture Bank of China</td><td></td><td>13. Bank of America</td></tr>
-						<tr><td></td><td></td><td>4. JP Morgan Chase</td><td></td><td>14. HSBC</td></tr>
-						<tr><td></td><td></td><td>5. Berkshire Hathaway</td><td></td><td>15. Apple</td></tr>
-						<tr><td></td><td></td><td>6. Exxon Mobile</td><td></td><td>16. Citigroup</td></tr>
-						<tr><td></td><td></td><td>7. General Electric</td><td></td><td>17. BP</td></tr>
-						<tr><td></td><td></td><td>8. Wells Fargo</td><td></td><td>18. Chevron</td></tr>
-						<tr><td></td><td></td><td>9. Bank of China</td><td></td><td>19. Volkswagon</td></tr>
-						<tr><td></td><td></td><td>10. Petro China</td><td></td><td>20. Walmart</td></tr>
-						<tr><td></br></td></tr>
-						<tr><td></td><td colspan="4" class="upcase left_align">Top 20 Countries with headquarters of the 2000 Wealthiest Multinationals<sup> 2</sup></br>Forbes Global 2000</td></tr>
-						<tr><td></td><td colspan="4" class="upcase left_align"><img src="../images/World_Maps/legends/corporations-countries-gradient.png"></td></tr>
-						<tr><td></td></tr>
-						<tr><td></td><td></td><td>1. United States of America</td><td></td><td>11. Taiwan</td></tr>
-						<tr><td></td><td></td><td>2. Japan</td><td></td><td>12. Australia</td></tr>
-						<tr><td></td><td></td><td>3. China</td><td></td><td>13. Italy</td></tr>
-						<tr><td></td><td></td><td>4. United Kingdom</td><td></td><td>14. Russia</td></tr>
-						<tr><td></td><td></td><td>5. France</td><td></td><td>15. The Netherlands</td></tr>
-						<tr><td></td><td></td><td>6. South Korea</td><td></td><td>16. Spain</td></tr>
-						<tr><td></td><td></td><td>7. Canada</td><td></td><td>17. Sweden</td></tr>
-						<tr><td></td><td></td><td>8. India</td><td></td><td>18. Brazil</td></tr>
-						<tr><td></td><td></td><td>9. Germany</td><td></td><td>19. Saudi Arabia</td></tr>
-						<tr><td></td><td></td><td>10. Switzerland</td><td></td><td>20. Ireland</td></tr>
-						<tr><td></br></td></tr>
-						<tr><td><img src="../images/World_Maps/legends/corporations-hotspots.png"></td><td colspan="4">Hotspots<sup> 3</sup></td></tr>
-					</table>
-				</br></br>
+						<!--<img src="../images/World_Maps/legends/">-->
+						<table>
+							<tr><td><img src="../images/World_Maps/legends/corporations-multinationals.png"></td><td colspan="4" class="upcase left_align">Top 20 Wealthiest Multinationals (2014)</br> and their place in NEWSWEEK'S GREEN RANKINGS FOR 2016</td></tr>
+							<tr><td></td></tr>
+							<tr><td></td><td></td><td>1. ICBC <span style="font-size:.85em">(Ind. &amp; Commercial Bank of China)</span>, <span class="green_span">382nd</span></td><td></td><td>11. Royal Dutch Shell, <span class="green_span">121st</span></td></tr>
 
-					<table style="width:340px">
-						<tr><td colspan="2" class="upcase left_align">Top 20 on Newsweek's Green</br> Rankings for 2016</td></tr>
-						<tr><td></td></tr>
-						<tr><td></td><td>1. Shire PLC</td></tr>
-						<tr><td></td><td>2. Reckitt Benckiser Group PLC</td></tr>
-						<tr><td></td><td>3. BT Group PLC</td></tr>
-						<tr><td></td><td>4. Swisscom AG</td></tr>
-						<tr><td></td><td>5. Essilor international SA</td></tr>
-						<tr><td></td><td>6. NIKE Inc.</td></tr>
-						<tr><td></td><td>7. Unilever PLC</td></tr>
-						<tr><td></td><td>8. Sky PLC</td></tr>
-						<tr><td></td><td>9. Siemans AG</td></tr>
-						<tr><td></td><td>10. Schneider Electric SE</td></tr>
-						<tr><td></td><td>11. Biogen Inc.</td></tr>
-						<tr><td></td><td>12. Enbridge Inc.</td></tr>
-						<tr><td></td><td>13. Ecolab Inc.</td></tr>
-						<tr><td></td><td>14. Airbus Group NV</td></tr>
-						<tr><td></td><td>15. Commonwealth Bank of Australia</td></tr>
-						<tr><td></td><td>16. Metlife Inc.</td></tr>
-						<tr><td></td><td>17. Oracle Corp.</td></tr>
-						<tr><td></td><td>18. Koninklijke Phillips NV</td></tr>
-						<tr><td></td><td>19. Johnson and Johnson</td></tr>
-						<tr><td></td><td>20. Credit Agricole SA</td></tr>
-					</table>
-				</div>
+							<tr><td></td><td></td><td>2. China Construction Bank, <span class="green_span">420th</span></td><td></td><td>12. Toyota, <span class="green_span">107th</span></td></tr>
 
-				<main style="width:600px">
-					<h1 id"map_title" class="upcase">Corporations</h1>
-					<h3 class="upcase sub-head">Multinational Corporations &amp; Wealth</h3>
-					<p>As this map indicates, corporate wealth is concentrated and headquartered in Europe, the United States of America, and China. Primarily motivated by profit and heavily involved in systems of production and consumption known to be environmentally deleterious, many corporations are attempting to improve their environmental credentials. Corporate accountability is first and foremost to shareholders, but by extension corporations are accountable to society and increasingly aware, as is society, that environmental degradation as a consequence of profiteering is unacceptable.
-					</p>
-					<p>Over the last 50 years as the conservation movement has flourished world-wide so too has neo-liberal capitalism and the two are increasingly caught in a complicated political dance. Some, such as Peter Kareiva, former Chief Scientist and Vice President of the Nature Conservancy and present Director of the Institute of the Environment and Sustainability at UCLA, argue that the conservation landscape and the corporate landscape can work productively together.<sup id="one"><a href="#1"> 1</a></sup> Critics such as Robert Fletcher, Wolfram Dressler, and Bram Büscher question whether capitalism is structurally capable of taking genuine long term responsibility for ecosystem services.<sup id="two"><a href="#2"> 2</a></sup>
-					</p>
-					<p>Below the world's wealthiest 20 corporations (2014)<sup id="three"><a href="#3"> 3</a></sup> are cross referenced to Newsweek's 2016 Green Rankings of 500 of the world's major companies. Among other things, Newsweek's methodology includes assessing the performance of these companies in regard to energy consumption, greenhouse gas emissions, water, waste, and the degree to which revenue is derived from sustainable sources.<sup id="four"><a href="#4"> 4</a></sup> Though Apple comes close at 26th, none of the world's richest companies make it into Newsweek's top 20. As if to illustrate the fundamental contradiction between capitalism and environmentalism, nearly all of the world's wealthiest corporations (except Apple) rank extremely low in Newsweek's Green Rankings. 
-					</p>
-					<p>Along with the greening of theology, the greening of capitalism and a new definition of economic growth that includes the earth system is surely one of this century's greatest intellectual and practical challenge.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
+							<tr><td></td><td></td><td>3. Agriculture Bank of China, <span class="green_span">487th</span></td><td></td><td>13. Bank of America, <span class="green_span">273rd</span></td></tr>
 
-						<p><strong>2. </strong>
-						details</p>
+							<tr><td></td><td></td><td>4. JP Morgan Chase, <span class="green_span">249th</span></td><td></td><td>14. HSBC, <span class="green_span">(not in 500)</span></td></tr>
 
-						<p><strong>3. </strong>
-						details</p>
+							<tr><td></td><td></td><td>5. Berkshire Hathaway, <span class="green_span">430th</span></td><td></td><td>15. Apple, <span class="green_span">26th</span></td></tr>
 
-						<p><strong>4. </strong>
-						details
+							<tr><td></td><td></td><td>6. Exxon Mobile, <span class="green_span">129th</span></td><td></td><td>16. Citigroup, <span class="green_span">231st</span></td></tr>
+
+							<tr><td></td><td></td><td>7. General Electric, <span class="green_span">127th</span></td><td></td><td>17. BP, <span class="green_span">146th</span></td></tr>
+
+							<tr><td></td><td></td><td>8. Wells Fargo, <span class="green_span">283rd</span></td><td></td><td>18. Chevron, <span class="green_span">257th</span></td></tr>
+
+							<tr><td></td><td></td><td>9. Bank of China, <span class="green_span">423rd</span></td><td></td><td>19. Volkswagon, <span class="green_span">203rd</span></td></tr>
+
+							<tr><td></td><td></td><td>10. Petro China, <span class="green_span">374th</span></td><td></td><td>20. Walmart, <span class="green_span">280th</span></td></tr>
+							<tr><td></br></td></tr>
+
+							<tr><td></td><td colspan="4" class="upcase left_align">Top 20 Countries with headquarters of the 2000 Wealthiest Multinationals, Forbes Global 2000</td></tr>
+							<tr><td></td><td colspan="4" class="upcase left_align"><img src="../images/World_Maps/legends/corporations-countries-gradient.png"></td></tr>
+							<tr><td></td></tr>
+
+							<tr><td></td><td></td><td>1. United States of America</td><td></td><td>11. Taiwan</td></tr>
+
+							<tr><td></td><td></td><td>2. Japan</td><td></td><td>12. Australia</td></tr>
+
+							<tr><td></td><td></td><td>3. China</td><td></td><td>13. Italy</td></tr>
+
+							<tr><td></td><td></td><td>4. United Kingdom</td><td></td><td>14. Russia</td></tr>
+
+							<tr><td></td><td></td><td>5. France</td><td></td><td>15. The Netherlands</td></tr>
+
+							<tr><td></td><td></td><td>6. South Korea</td><td></td><td>16. Spain</td></tr>
+
+							<tr><td></td><td></td><td>7. Canada</td><td></td><td>17. Sweden</td></tr>
+
+							<tr><td></td><td></td><td>8. India</td><td></td><td>18. Brazil</td></tr>
+
+							<tr><td></td><td></td><td>9. Germany</td><td></td><td>19. Saudi Arabia</td></tr>
+
+							<tr><td></td><td></td><td>10. Switzerland</td><td></td><td>20. Ireland</td></tr>
+							
+							<tr><td></br></td></tr>
+
+							<tr><td></td><td colspan="5" class="upcase left_align">Top 20 on Newsweek's Green Rankings for 2016</td></tr>
+							<tr><td></td><td></td><td><span class="green_span">1.</span> Shire PLC</td><td></td><td><span class="green_span">11.</span> Biogen Inc.</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">2.</span> Reckitt Benckiser Group PLC</td><td></td><td><span class="green_span">12.</span> Enbridge Inc.</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">3.</span> BT Group PLC</td><td></td><td><span class="green_span">13.</span> Ecolab Inc.</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">4.</span> Swisscom AG</td><td></td><td><span class="green_span">14.</span> Airbus Group NV</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">5.</span> Essilor international SA</td><td></td><td><span class="green_span">15.</span> Commonwealth Bank of Australia</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">6.</span> NIKE Inc.</td><td></td><td><span class="green_span">16.</span> Metlife Inc.</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">7.</span> Unilever PLC</td><td></td><td><span class="green_span">17.</span> Oracle Corp.</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">8.</span> Sky PLC</td><td></td><td><span class="green_span">18.</span> Koninklijke Phillips NV</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">9.</span> Siemans AG</td><td></td><td><span class="green_span">19.</span> Johnson and Johnson</td></tr>
+
+							<tr><td></td><td></td><td><span class="green_span">10.</span> Schneider Electric SE</td><td></td><td><span class="green_span">20.</span> Credit Agricole SA</td></tr>
+							<tr><td></br></td></tr>
+							<tr><td><img src="../images/World_Maps/legends/corporations-hotspots.png"></td><td colspan="4">Hotspots</td></tr>
+						</table></br>
+						</div>
+
+						<div class="alt_table intext_legend">
+						<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
+						<!--<div class="side_bar">
+							<p></p>
+						</div>-->
+
+						<!--<img src="../images/World_Maps/legends/">-->
+						<table>
+							<tr><td><img src="../images/World_Maps/legends/corporations-multinationals.png"></td><td class="upcase left_align">Top 20 Wealthiest Multinationals (2014)</br> and their place in NEWSWEEK'S GREEN<br> RANKINGS FOR 2016</td></tr>
+							<tr><td></td></tr>
+							<tr><td></td><td>1. ICBC <span style="font-size:.85em">(Ind. &amp; Commercial Bank of China)</span>, <span class="green_span">382nd</span></td></tr>
+							<tr><td></td><td>2. China Construction Bank, <span class="green_span">420th</span></td></tr>
+							<tr><td></td><td>3. Agriculture Bank of China, <span class="green_span">487th</span></td></tr>
+							<tr><td></td><td>4. JP Morgan Chase, <span class="green_span">249th</span></td></tr>
+							<tr><td></td><td>5. Berkshire Hathaway, <span class="green_span">430th</span></td></tr>
+							<tr><td></td><td>6. Exxon Mobile, <span class="green_span">129th</span></td></tr>
+							<tr><td></td><td>7. General Electric, <span class="green_span">127th</span></td></tr>
+							<tr><td></td><td>8. Wells Fargo, <span class="green_span">283rd</span></td></tr>
+							<tr><td></td><td>9. Bank of China, <span class="green_span">423rd</span></td></tr>
+							<tr><td></td><td>10. Petro China, <span class="green_span">374th</span></td></tr>
+							<tr><td></td><td>11. Royal Dutch Shell, <span class="green_span">121st</span></td></tr>
+							<tr><td></td><td>12. Toyota, <span class="green_span">107th</span></td></tr>
+							<tr><td></td><td>13. Bank of America, <span class="green_span">273rd</span></td></tr>
+							<tr><td></td><td>14. HSBC, <span class="green_span">(not in 500)</span></td></tr>
+							<tr><td></td><td>15. Apple, <span class="green_span">26th</span></td></tr>
+							<tr><td></td><td>16. Citigroup, <span class="green_span">231st</span></td></tr>
+							<tr><td></td><td>17. BP, <span class="green_span">146th</span></td></tr>
+							<tr><td></td><td>18. Chevron, <span class="green_span">257th</span></td></tr>
+							<tr><td></td><td>19. Volkswagon, <span class="green_span">203rd</span></td></tr>
+							<tr><td></td><td>20. Walmart, <span class="green_span">280th</span></td></tr>
+							<tr><td><br></td></tr>
+
+
+							<tr><td></td><td class="upcase left_align">Top 20 Countries with headquarters<br> of the 2000 Wealthiest Multinationals,<br> Forbes Global 2000</td></tr>
+							<tr><td></td><td class="upcase left_align"><img src="../images/World_Maps/legends/corporations-countries-gradient.png"></td></tr>
+							<tr><td></td></tr>
+
+							<tr><td></td><td>1. United States of America</td></tr>
+							<tr><td></td><td>2. Japan</td></tr>
+							<tr><td></td><td>3. China</td></tr>
+							<tr><td></td><td>4. United Kingdom</td></tr>
+							<tr><td></td><td>5. France</td></tr>
+							<tr><td></td><td>6. South Korea</td></tr>
+							<tr><td></td><td>7. Canada</td></tr>
+							<tr><td></td><td>8. India</td></tr>
+							<tr><td></td><td>9. Germany</td></tr>
+							<tr><td></td><td>10. Switzerland</td></td></tr>
+							<tr><td></td><td>11. Taiwan</td></tr>
+							<tr><td></td><td>12. Australia</td></tr>
+							<tr><td></td><td>13. Italy</td></tr>
+							<tr><td></td><td>14. Russia</td></tr>
+							<tr><td></td><td>15. The Netherlands</td></tr>
+							<tr><td></td><td>16. Spain</td></tr>
+							<tr><td></td><td>17. Sweden</td></tr>
+							<tr><td></td><td>18. Brazil</td></tr>
+							<tr><td></td><td>19. Saudi Arabia</td></tr>
+							<tr><td></td><td>20. Ireland</td></tr>
+							
+							<tr><td></br></td></tr>
+
+							<tr><td></td><td class="upcase left_align">Top 20 on Newsweek's<br> Green Rankings for 2016</td></tr>
+							<tr><td></td><td><span class="green_span">1.</span> Shire PLC</td></tr>
+
+							<tr><td></td><td><span class="green_span">2.</span> Reckitt Benckiser Group PLC</td></tr>
+
+							<tr><td></td><td><span class="green_span">3.</span> BT Group PLC</td></tr>
+
+							<tr><td></td><td><span class="green_span">4.</span> Swisscom AG</td></tr>
+
+							<tr><td></td><td><span class="green_span">5.</span> Essilor international SA</td></tr>
+
+							<tr><td></td><td><span class="green_span">5.</span> Essilor international SA</td></tr>
+
+							<tr><td></td><td><span class="green_span">6.</span> NIKE Inc.</td></tr>
+
+							<tr><td></td><td><span class="green_span">7.</span> Unilever PLC</td></tr>
+
+							<tr><td></td><td><span class="green_span">8.</span> Sky PLC</td></tr>
+
+							<tr><td></td><td><span class="green_span">9.</span> Siemans AG</td></tr>
+
+							<tr><td></td><td><span class="green_span">10.</span> Schneider Electric SE</td></tr>
+
+							<tr><td></td><td><span class="green_span">11.</span> Biogen Inc.</td></tr>
+
+							<tr><td></td><td><span class="green_span">12.</span> Enbridge Inc.</td></tr>
+
+							<tr><td></td><td><span class="green_span">13.</span> Ecolab Inc.</td></tr>
+
+							<tr><td></td><td><span class="green_span">14.</span> Airbus Group NV</td></tr>
+
+							<tr><td></td><td><span class="green_span">15.</span> Commonwealth Bank of Australia</td></tr>
+
+							<tr><td></td><td><span class="green_span">16.</span> Metlife Inc.</td></tr>
+
+							<tr><td></td><td><span class="green_span">17.</span> Oracle Corp.</td></tr>
+
+							<tr><td></td><td><span class="green_span">18.</span> Koninklijke Phillips NV</td></tr>
+
+							<tr><td></td><td><span class="green_span">19.</span> Johnson and Johnson</td></tr>
+
+							<tr><td></td><td><span class="green_span">20.</span> Credit Agricole SA</td></tr>
+							<tr><td></br></td></tr>
+							<tr><td><img src="../images/World_Maps/legends/corporations-hotspots.png"></td><td colspan="4">Hotspots</td></tr>
+						</table></br>
+						</div>
+						
+						<p>As this map indicates, corporate wealth is concentrated and headquartered in Europe, the United States of America, and China. <!--Primarily motivated by profit and heavily involved in systems of production and consumption known to be environmentally deleterious, many corporations are attempting to improve their environmental credentials.--> Corporate accountability is first and foremost to shareholders, but by extension corporations are accountable to society and increasingly aware, as is society, that environmental degradation as a consequence of profiteering is unacceptable.
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>Peter Kareiva, Michelle Marvier, &amp; Robert Lalasz, "Conservation in the Anthropocene: Beyond Solitude and Fragility," <i>The Breakthrough</i>, no. 2 (2012), <a target="blank" href="http://thebreakthrough.org/index.php/journal/past-issues/issue-2/conservation-in-the-anthropocene">http://thebreakthrough.org/index.php/journal/past-issues/issue-2/conservation-in-the-anthropocene</a> (accessed September 25, 2015).</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>Bram B	&#252;scher, Wolfram Dressler, &amp; Robert Fletcher, <i>Nature<sup>TM</sup> Inc.: Environmental Conservation in the Neoliberal Age</i> (Tucson: University of Arizona Press, 2014), 13.</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>"The World's biggest public companies," Forbes (2014), <a target="blank" href="http://www.forbes.com/global2000/">http://www.forbes.com/global2000/</a> (accessed September 10, 2016).</p>
-						<p><sup id="4"><a href="#four">4 </a></sup>Newsweek, "Top Green Companies in the World 2016," <a target="blank" href="http://www.newsweek.com/green-2016/top-green-companies-world-2016">http://www.newsweek.com/green-2016/top-green-companies-world-2016</a> (accessed September 10, 2016).</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Forbes, 2014</br>
-							2. Ibid.</br>
-							3. Conservation International, 2011
+						<p>Over the last 50 years as the conservation movement has flourished world-wide so too has neo-liberal capitalism and the two are increasingly caught in a complicated political dance. Some, such as Peter Kareiva, former Chief Scientist and Vice President of the Nature Conservancy and present Director of the Institute of the Environment and Sustainability at UCLA, argue that the conservation landscape and the corporate landscape can work productively together.<sup id="one"><a href="#1"> 1</a></sup> Critics such as Robert Fletcher, Wolfram Dressler, and Bram B&#252;scher question whether capitalism is structurally capable of taking genuine long term responsibility for ecosystem services.<sup id="two"><a href="#2"> 2</a></sup>
 						</p>
-					</div>-->
+						<p>On the list above, the world's wealthiest 20 corporations (2014)<sup id="three"><a href="#3"> 3</a></sup> are cross referenced to Newsweek's 2016 Green Rankings of 500 of the world's major companies. Among other things, Newsweek's methodology includes assessing the performance of these companies in regard to energy consumption, greenhouse gas emissions, water, waste, and the degree to which revenue is derived from sustainable sources.<sup id="four"><a href="#4"> 4</a></sup> Though Apple comes close at 26th, none of the world's richest companies make it into Newsweek's top 20. As if to illustrate the fundamental contradiction between capitalism and environmentalism, nearly all of the world's wealthiest corporations (except Apple) rank extremely low in Newsweek's Green Rankings. 
+						</p>
+						<p class="last_para">Along with the greening of theology, the greening of capitalism and a new definition of economic growth that includes the earth system is surely one of this century's greatest intellectual and practical challenges.
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>Peter Kareiva, Michelle Marvier, &amp; Robert Lalasz, "Conservation in the Anthropocene: Beyond Solitude and Fragility," <i>The Breakthrough</i>, no. 2 (2012), <a target="blank" href="http://thebreakthrough.org/index.php/journal/past-issues/issue-2/conservation-in-the-anthropocene">http://thebreakthrough.org/index.php/journal/past-issues/issue-2/conservation-in-the-anthropocene</a> (accessed September 25, 2015).</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>Bram B	&#252;scher, Wolfram Dressler, &amp; Robert Fletcher, <i>Nature<sup>TM</sup> Inc.: Environmental Conservation in the Neoliberal Age</i> (Tucson: University of Arizona Press, 2014), 13.</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>"The World's biggest public companies," Forbes (2014), <a target="blank" href="http://www.forbes.com/global2000/">http://www.forbes.com/global2000/</a> (accessed September 10, 2016).</p>
+							<p><sup id="4"><a href="#four">4 </a></sup>Newsweek, "Top Green Companies in the World 2016," <a target="blank" href="http://www.newsweek.com/green-2016/top-green-companies-world-2016">http://www.newsweek.com/green-2016/top-green-companies-world-2016</a> (accessed September 10, 2016).</p>
+						</div>
+
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Top 20 Wealthiest Multinationals</strong></p>
+							<p>"The World's biggest public companies," Forbes (2014), <a target="blank" href="http://www.forbes.com/global2000/">http://www.forbes.com/global2000/</a> (accessed November 19, 2014).</p>
+
+							<p><strong>2. Top 20 Countries of the Wealthiest Multinationals</strong></p>
+							<p>"The World's biggest public companies," Forbes (2014), <a target="blank" href="http://www.forbes.com/global2000/">http://www.forbes.com/global2000/</a> (accessed November 19, 2014).</p>
+
+							<p><strong>3. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_conservation_spending.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: conservation spending</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_environmental_performance.html">next map: environmental performance &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

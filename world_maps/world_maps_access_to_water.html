@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Access to Water</title>
 	</head>
 		<body>
@@ -16,82 +17,97 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-access-to-water_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Access to Water</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-access-to-water_goode-homolosine-01.png">
 				</div>
-				<!--<div class="legend">
-					<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">
-					<div class="side_bar">
-						<p></p>
-					</div>
-				</div>-->
+				<!--<h1 class="alt_title upcase">Access to Water</h1>-->
+				<div class="legend">
+					<table class="width_260">
+						<tr><td colspan="2"><div class="upcase">FRESHWATER ACCESS</div>(major river basins, 2013)</td></tr>
+						<tr><td colspan="2"></td></tr>
+						<tr><td colspan="2">use as percentage of availability, annual/ seasonal variability, flood occurrence, drought severity, upstream storage, groundwater stress</td></tr>
+						<tr><td colspan="2"><img style="width:124px" src="../images/World_Maps/legends/access-to-water-gradient.png"></td></tr>
+						<tr><td colspan="2">low stress (10%) &#62;&#62;&#62;&#62; extremely high stress (>80%)</td></tr>
+						<tr><td><br></td></tr>
+
+						<tr><td colspan="2">CITIES WITH STRESSED WATER SOURCES (2014)</td></tr>
+						<tr><td><img style="width:8px" class="legend_mid" src="../images/World_Maps/legends/access-to-water-cities.png"></td><td>268,504,000 people live in the largest 20 cities affected by water shortages due to geographical or financial limitations</td></tr>
+						<tr><td><br></td></tr>
+						<tr><td><img class="legend_line" style="width:14px" src="../images/World_Maps/legends/access-to-water-rivers.png"></td><td>Rivers</td></tr>
+					</table>
+				</div>
 
 				<main>
-					<h1 id"map_title"><span class="upcase">Access to Water</span></h1>
-					<div class="legend" style="float:none">
-						<table class="wide_legend">
-							<tr><td colspan="2"><div class="upcase">FRESHWATER ACCESS</div>(major river basins, 2013)<sup> 1</sup></td></tr>
-							<tr><td colspan="2"></td></tr>
-							<tr><td colspan="2">use as percentage of availability, annual/ seasonal variability, flood occurrence, drought severity, upstream storage, groundwater stress</td></tr>
-							<tr><td colspan="2"><img style="width:124px" src="../images/World_Maps/legends/access-to-water-gradient.png"></td></tr>
-							<tr><td colspan="2">low stress (10%) &#62;&#62;&#62;&#62; extremely high stress (>80%)</td></tr>
-							<tr><td></br></td></tr>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Access to Water</h1>-->
+						<!--<div class="legend" style="float:none">
+							<table style="width:440px">
+								<tr><td colspan="2"><div class="upcase">FRESHWATER ACCESS</div>(major river basins, 2013)</td></tr>
+								<tr><td colspan="2"></td></tr>
+								<tr><td colspan="2">use as percentage of availability, annual/ seasonal variability, flood occurrence, drought severity, upstream storage, groundwater stress</td></tr>
+								<tr><td colspan="2"><img style="width:124px" src="../images/World_Maps/legends/access-to-water-gradient.png"></td></tr>
+								<tr><td colspan="2">low stress (10%) &#62;&#62;&#62;&#62; extremely high stress (>80%)</td></tr>
+								<tr><td><br></td></tr>
 
-							<tr><td colspan="2">CITIES WITH STRESSED WATER SOURCES (2014)<sup> 2</sup></td></tr>
-							<tr><td><img style="width:8px" class="legend_mid" src="../images/World_Maps/legends/access-to-water-cities.png"></td><td>268,504,000 people live in the largest 20 cities affected by water shortages due to geographical or financial limitations</td></tr>
-							<tr><td></br></td></tr>
-						</table>
-						<table style="width:380px">
-							<tr><td colspan="3">METROPOLIS POPULATIONS<sup> 3</sup></td></tr>
-							<tr><td>Tokyo (37,800,000)</td><td></td><td>Moscow (12,100,000)</td></tr>
-							<tr><td>Dehli (25,000,000)</td><td></td><td>Chongqing (12,900,000)</td></tr>
-							<tr><td>Shanghai (23,000,000)</td><td></td><td>Tianjin (10,900,000)</td></tr>
-							<tr><td>Mexico City (20,800,000)</td><td></td><td>Shenzhen (10,700,000)</td></tr>
-							<tr><td>Beijing (19,500,000)</td><td></td><td>London (10,200,000)</td></tr>
-							<tr><td>Karachi (16,000,000)</td><td></td><td>Bangalore (9,700,000)</td></tr>
-							<tr><td>Kolkata (14,800,000) </td><td></td><td>Lima (9,700,000)</td></tr>
-							<tr><td>Istanbul (14,000,000)</td><td></td><td>Channai (9,600,000)</td></tr>
-							<tr><td>Rio de Janeiro (12,800,000)</td><td></td><td>Hyderabad (8,700,000)</td></tr>
-							<tr><td>Los Angeles (12,300,000)</td><td></td><td>Wuhan (7,800,000)</td></tr>
-						</table>
-						<table>
-							<tr><td></br></td></tr>
-							<tr><td><img class="legend_line" style="width:14px" src="../images/World_Maps/legends/access-to-water-rivers.png"></td><td>Rivers<sup> 4</sup></td></tr>
-						</table>
-					</div>
-				</br></br>
-					<p>Whilst the United Nations reports that 2.1 billion people have gained access to improved water sanitation since 1990, 1.1 billion currently still lack easy access to fresh water.<sup id="one"><a href="#1"> 1</a></sup>  268.5 million people live in cities with stressed water supplies due to geographical and/or financial limitations. Those cities are: Tokyo (37,800,000), Delhi (25,000,000), Shanghai (23,000,000), Mexico City (20,800,000), Beijing (19,500,000) Karachi (16,000,000), Kolkata (14,800,000), Istanbul (14,000,000), Rio de Janeiro (12,800,000), Los Angeles (12,300,000), Moscow (12,100,000), Chongqing (12,900,000), Tianjin (10,900,000), Shenzhen (10,700,000), London (10,200,000), Bangalore (9,700,000), Lima (9,700,000), Chennai (9,600,000), Hyderabad (8,700,000) and Wuhan (7,800,000). It is estimated that in order to produce enough food for a global 2050 population, water supplies will have to double.<sup id="two"><a href="#2"> 2</a></sup> 
-					</p>
-					<p>There is plenty of water in the world but not always where settlements and farms are and not always in the form that we want it. Improved access to water can be achieved through less wasteful irrigation techniques (where 70% of all water is currently used), recycling grey and black water, altered consumption patterns and water sensitive urban design techniques which harvest storm water. Additionally, ocean water can be desalinated. As of mid-2015 there were 18,426 desalination plants across 150 countries supplying more than 300 million people with potable water.<sup id="three"><a href="#3"> 3</a></sup> Desalination plants are however extremely expensive and energy intensive.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+								<tr><td colspan="2">CITIES WITH STRESSED WATER SOURCES (2014)</td></tr>
+								<tr><td><img style="width:8px" class="legend_mid" src="../images/World_Maps/legends/access-to-water-cities.png"></td><td>268,504,000 people live in the largest 20 cities affected by water shortages due to geographical or financial limitations</td></tr>
+								<tr><td><br></td></tr>
+							</table>
+							<table style="width:380px">
+								<tr><td colspan="3">METROPOLIS POPULATIONS</td></tr>
+								<tr><td>Tokyo (37,800,000)</td><td></td><td>Moscow (12,100,000)</td></tr>
+								<tr><td>Dehli (25,000,000)</td><td></td><td>Chongqing (12,900,000)</td></tr>
+								<tr><td>Shanghai (23,000,000)</td><td></td><td>Tianjin (10,900,000)</td></tr>
+								<tr><td>Mexico City (20,800,000)</td><td></td><td>Shenzhen (10,700,000)</td></tr>
+								<tr><td>Beijing (19,500,000)</td><td></td><td>London (10,200,000)</td></tr>
+								<tr><td>Karachi (16,000,000)</td><td></td><td>Bangalore (9,700,000)</td></tr>
+								<tr><td>Kolkata (14,800,000) </td><td></td><td>Lima (9,700,000)</td></tr>
+								<tr><td>Istanbul (14,000,000)</td><td></td><td>Channai (9,600,000)</td></tr>
+								<tr><td>Rio de Janeiro (12,800,000)</td><td></td><td>Hyderabad (8,700,000)</td></tr>
+								<tr><td>Los Angeles (12,300,000)</td><td></td><td>Wuhan (7,800,000)</td></tr>
+							</table>
+							<table>
+								<tr><td><br></td></tr>
+								<tr><td><img class="legend_line" style="width:14px" src="../images/World_Maps/legends/access-to-water-rivers.png"></td><td>Rivers</td></tr>
+							</table>
+						</div>-->
+						<p>Whilst the United Nations reports that 2.1 billion people have gained access to improved water sanitation since 1990, 1.1 billion currently still lack easy access to fresh water.<sup id="one"><a href="#1"> 1</a></sup>  268.5 million people live in cities with stressed water supplies due to geographical and/or financial limitations. Those cities are: Tokyo (37,800,000), Delhi (25,000,000), Shanghai (23,000,000), Mexico City (20,800,000), Beijing (19,500,000) Karachi (16,000,000), Kolkata (14,800,000), Istanbul (14,000,000), Rio de Janeiro (12,800,000), Los Angeles (12,300,000), Moscow (12,100,000), Chongqing (12,900,000), Tianjin (10,900,000), Shenzhen (10,700,000), London (10,200,000), Bangalore (9,700,000), Lima (9,700,000), Chennai (9,600,000), Hyderabad (8,700,000) and Wuhan (7,800,000). It is estimated that in order to produce enough food for a global 2050 population, water supplies will have to double.<sup id="two"><a href="#2"> 2</a></sup> 
 						</p>
+						<p class="last_para">There is plenty of water in the world but not always where settlements and farms are and not always in the form that we want it. Improved access to water can be achieved through less wasteful irrigation techniques (where 70% of all water is currently used), recycling grey and black water, altered consumption patterns and water sensitive urban design techniques which harvest storm water. Additionally, ocean water can be desalinated. As of mid-2015 there were 18,426 desalination plants across 150 countries supplying more than 300 million people with potable water.<sup id="three"><a href="#3"> 3</a></sup> Desalination plants are however extremely expensive and energy intensive.
+						</p>
+						
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>United Nations Development Program, "Goal 6: Clean Water and Sanitation," <a target="blank" href="http://www.undp.org/content/undp/en/home/sdgoverview/post-2015-development-agenda/goal-6.html">http://www.undp.org/content/undp/en/home/sdgoverview/post-2015-development-agenda/goal-6.html</a> (accessed September 9, 2016).</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>H. D&#233;camps, "River networks as biodiversity hotlines," <i>C. R. Biol</i>. 334, no. 5-6 (2011): 420-434</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>International Desalination Association (IDA), "Desalination by the Numbers," <a target="blank" href="http://idadesal.org/desalination-101/desalination-by-the-numbers/">http://idadesal.org/desalination-101/desalination-by-the-numbers/</a> (accessed September 9, 2016).</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<p>Map created by Richard Weller, Claire Hoch, and Chieh Huang using data/information from the following sources:</p>
+							<p><strong>1. Fresh Water Access</strong></p>
+							<p>World Resources Institute, "Aqueduct Water Risk Atlas" (2013), <a target="blank" href="http://www.wri.org/resources/maps/aqueduct-water-risk-atlas">http://www.wri.org/resources/maps/aqueduct-water-risk-atlas</a> (accessed October 11, 2014). Physical Risk Quantity map of the Interactive map was used.</p>
+
+							<p><strong>2. Cities with Stressed Water Sources</strong></p>
+							<p>Robert I. McDonald, et al., "Water on an urban planet: Urbanization and the reach of urban water infrastructure," <i>Global Environmental Change</i> 27 (2014): 96-105. Data made available under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License: <a target="blank" href="https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode">https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode</a>.</p>
+
+							<p><strong>3. Metropolis Populations</strong></p>
+							<p>United Nations Department of Economic and Social Affairs Population Division, "World Population Prospects, the 2015 Revision," <a target="blank" href="https://esa.un.org/unpd/wpp/Download/Standard/Population/">https://esa.un.org/unpd/wpp/Download/Standard/Population/</a> (accessed July 20, 2016).</p>
+
+							<p><strong>4. Rivers</strong></p>
+							<p>Natural Earth, "Rivers + Lake centerlines," <a target="blank" href="http://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/">http://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-rivers-lake-centerlines/</a>.</p>
+						</div>
 					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>United Nations Development Program, "Goal 6: Clean Water and Sanitation," <a target="blank" href="http://www.undp.org/content/undp/en/home/sdgoverview/post-2015-development-agenda/goal-6.html">http://www.undp.org/content/undp/en/home/sdgoverview/post-2015-development-agenda/goal-6.html</a> (accessed September 9, 2016).</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>H. D&#233;camps, "River networks as biodiversity hotlines," <i>C. R. Biol</i>. 334, no. 5-6 (2011): 420-434</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>International Desalination Association (IDA), "Desalination by the Numbers," <a href="http://idadesal.org/desalination-101/desalination-by-the-numbers/">http://idadesal.org/desalination-101/desalination-by-the-numbers/</a> (accessed September 9, 2016).</p>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_health_of_waters.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: health of waters</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_evolution_of_urbanization_pre.html">next map: urbaniztion: pre-modern &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
 					</div>
-					<!--<div class="endnotes">
-						<p>1. World Resources Institute, 2013</br>
-						2. McDonald, Robert, 2014</br>
-						3. United Nations Population Division, 2014</br>
-						4. Natural Earth, 2014</br>
-						5. Conservation International, 2011</p>
-					</div>-->
 				</main>
 			</div>
 

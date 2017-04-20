@@ -139,8 +139,23 @@ function open_map(id) {
 		case "utopia":
 			path = "world_maps/world_maps_paradise_and_utopia.html";
 			break;
+		case "earth":
+			path = "world_maps/world_maps_earthsystem.html";
+			break;
+		case "global":
+			path = "world_maps/world_maps_global_landscape_connectivity.html";
+			break;
+		case "sprawl":
+			path = "world_maps/world_maps_cities_sprawling.html";
+			break;
+		case "conserve":
+			path = "world_maps/world_maps_ecoregions_conservation_targets.html";
+			break;
+		case "park":
+			path = "world_maps/world_maps_world_park.html";
+			break;
 		default:
 			title = "nope!";
 	}
-	window.open(path, "", "width=980");
+	window.open(path, "", "width=1100");
 };

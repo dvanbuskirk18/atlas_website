@@ -7,6 +7,7 @@
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../css/stylesheet_map.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Biological Hotspots</title>
 	</head>
 		<body>
@@ -17,10 +18,15 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-hotspots_goode homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Biological Hotspots</h1>
+				<figure class="map_fig">
+					<a href="../images/World_Maps/biological-hotspots-labels-title.pdf"><img src="../images/World_Maps/1200px/world-map-biological-hotspot-labels.png"></a>
+					<figcaption><a href="../images/World_Maps/biological-hotspots-labels-title.pdf">View full size PDF</a></figcaption>
+				</figure>
+				<!--<div class="full map_detail">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-hotspots_goode homolosine-01.png">
 					<p id="polynesia">Polynesia-Micronesia</p>
 					<p id="california">California Floristic Province</p>
 					<p id="madrean">Madrean Pine-Oak Woodlands</p>
@@ -56,57 +62,39 @@
 					<p id="melanesian">East Melanesian Islands</p>
 					<p id="caledonia">New Caledonia</p>
 					<p id="new_zealand">New Zealand</p>
-				</div>
-				<div class="legend">
-					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
-					<!--<div class="side_bar">
-						<p></p>
-					</div>-->
-
-					<!--<img src="../images/World_Maps/legends/">-->
-					<table>
-						<tr><td> </td></tr>
-					</table>
-				</div>
+				</div>-->
+				<!--<h1 class="alt_title upcase">Biological Hotspots</h1>-->
 
 				<main>
-					<h1 id"map_title" class="upcase">Biological Hotspots</h1>
-					<p>Biodiversity hotspots are defined as areas "[h]aving at least 1500 endemic plant species and having lost at least 70 per cent of their original habitat extent".<sup><a id="one" href="#1"> 1</a></sup> Together, the 35 hotspots contain at least 50% of the world's total plant species and 42% of the world’s terrestrial vertebrates as endemic. Originally representing 16% of the Earth's surface, the unique habitat of the hotspots has diminished to just 2.3%.<sup id="two"><a href="#2"> 2</a></sup> Consequently, conservation funding, research and activism have primarily focused on the urgency of preserving this remaining biodiversity to reduce the risk of extinction of "more than half of our natural heritage."<sup id="three" ><a href="#3"> 3</a></sup> Comprising 70% of the world's known languages, many of which are predicted to disappear by century's end, the hotspots are also remarkable for their cultural diversity, a vital clue perhaps, to our intertwined fates.<sup id="four"><a href="#4"> 4</a></sup>
-					</p>
-					<p>There are 144 nations under whose jurisdiction the hotspots collectively fall. As this atlas shows 14 of the 35 hotspots have reached or surpassed the Convention on Biological Diversity's (CBD) 2020 terrestrial protected area target of 17%, and 21 have not. However, the protected areas are also supposed to be representative of a nation's different ecoregions. The hotspots comprise <span style="color:red">398</span> ecoregions and of these, only <span style="color:red">179</span> have reached or surpassed the 17% target. <span style="color:red">201</span> have not. 
-					</p>
-					<p>There are 420 major cities in the hotspots (over 300,000 inhabitants), 244 of which are forecast to sprawl into extant, high biodiversity habitat.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+					<div class="text_column">
+						<!--<h1 class="map_title upcase">Biological Hotspots</h1>-->
+						<p>Biodiversity hotspots are defined as areas "[h]aving at least 1500 endemic plant species and having lost at least 70 per cent of their original habitat extent".<sup><a id="one" href="#1"> 1</a></sup> Together, the world's hotspots contain at least 50% of the world's total plant species and 42% of the world's terrestrial vertebrates as endemic. Originally representing 16% of the Earth's surface, the unique habitat of the hotspots has diminished to just 2.3%.<sup id="two"><a href="#2"> 2</a></sup> Consequently, conservation funding, research and activism have primarily focused on the urgency of preserving this remaining biodiversity to reduce the risk of extinction of "more than half of our natural heritage."<sup id="three" ><a href="#3"> 3</a></sup> Comprising 70% of the world's known languages, many of which are predicted to disappear by century's end, the hotspots are also remarkable for their cultural diversity, a vital clue perhaps, to our intertwined fates.<sup id="four"><a href="#4"> 4</a></sup>
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>Russell A. Mittermeier, et al., <i>Hotspots Revisited: Earth's Biologically Richest and Most Endangered Terrestrial Ecoregions</i> (Washington, DC: Conservation International and Cemex, 2004).</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>NB these figures are from Mittermeir, <i>Hotspots Revisited...</i> Hence they do not include the 35th designated hotspot of Forests of East Australia which was added in 2010. </p>
-						<p><sup id="3"><a href="#three">3 </a></sup>Mittermeir, <i>Hotspots Revisited</i>, 37. </p>
-						<p><sup id="4"><a href="#four">4 </a></sup>This figure includes areas of 'high biodiversity wilderness in addition to the hotspots. See Larry J. Gorenflo, et al., "Co-occurrence of Linguistic and Biological Diversity in Biodiversity Hotspots and High Biodiversity Wilderness Areas," <i>Proceedings of the National Academy of Science</i> 109, no. 21 (2012): 8032-8037.</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Natural Earth, 2014</br>
-							2. OpenFlights.org, 2014</br>
-							3. Natural Earth, 2014</br>
-							4. National Center for Ecological Analysis &amp; Synthesis, 2014</br>
-							5. Natural Earth, 2014</br>
-							6. Ibid.</br>
-							7. Conservation International, 2011 </br>
+						<p>There are 142 nations under whose jurisdiction the hotspots collectively fall. As this atlas shows 14 of the hotspots have reached or surpassed the Convention on Biological Diversity's (CBD) 2020 terrestrial protected area target of 17% (IUCN categories I-VI, plus NA lands), and 21 have not. However, the protected areas are also supposed to be representative of a nation's different ecoregions. The hotspots comprise 391 ecoregions and of these, only 170 have reached or surpassed the 17% target (IUCN categories I-VI, plus NA lands). 221 have not. 
 						</p>
-					</div>-->
+						<p class="last_para">There are 422 major cities in the hotspots (over 300,000 inhabitants), 383 of which are forecast to sprawl into extant, high biodiversity habitat.
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>Russell A. Mittermeier, et al., <i>Hotspots Revisited: Earth's Biologically Richest and Most Endangered Terrestrial Ecoregions</i> (Washington, DC: Conservation International and Cemex, 2004).</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>NB these figures are from Mittermeir, <i>Hotspots Revisited...</i> Hence they do not include the 35th and 36th designated hotspot of the Forests of East Australia which was added in 2010 and the North American Coastal Plain which was added in 2016. </p>
+							<p><sup id="3"><a href="#three">3 </a></sup>Mittermeir, <i>Hotspots Revisited</i>, 37. </p>
+							<p><sup id="4"><a href="#four">4 </a></sup>This figure includes areas of 'high biodiversity wilderness in addition to the hotspots. See Larry J. Gorenflo, et al., "Co-occurrence of Linguistic and Biological Diversity in Biodiversity Hotspots and High Biodiversity Wilderness Areas," <i>Proceedings of the National Academy of Science</i> 109, no. 21 (2012): 8032-8037.</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_protected_areas.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: protected areas</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_hotspots17.html">next map: hotspots: conservation targets &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

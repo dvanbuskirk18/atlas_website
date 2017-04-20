@@ -107,5 +107,5 @@ function open_hotspot(id) {
 			path = "hotspots/western_ghats_sri_lanka.pdf";
 			break;
 	}
-	window.open(path, "", "width=980", "titlebar=no");
+	window.open(path, "", "width=1100", "titlebar=no");
 };

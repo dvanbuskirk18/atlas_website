@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="jquery/sticky/jquery.js"></script>
+		<script src="jquery/sticky/jquery.sticky.js"></script>
+		<script type="text/javascript" src="js/sticky.js"></script>
+		<script type="text/javascript" src="js/drop_menu.js"></script>
+		<script type="text/javascript" src="js/map_open.js"></script>
+		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+
+		<title>AFEW - World Maps</title>
+	</head>
+		<body class="body_outline">
+			<header>
+				<!--<div id="header_title_img"><a href="precis.html"><img src='images/ATLAS_text_logo.png'></a></div>-->
+				<!--<nav class="top_horizontal">
+					<div w3-include-html='include/main_menu_list.html'></div>
+				</nav>-->
+				<div class="header_wrapper">
+					<div w3-include-html='include/header.html'></div>
+					
+					<nav class="menu_btn">
+						<div w3-include-html='include/main_dropdown.html'></div>
+					</nav>
+					</div>
+			</header>
+
+			<div id='wrapper'>
+				<h1 class="page_title upcase">World Maps</h1>
+
+				<!--<h3>World Maps:</h3>-->
+				<div>
+					<nav class="chapter_jump">
+						<!--<h3>World Maps:</h3>-->
+						<div w3-include-html='include/menu_world_maps.html'></div>
+					</nav>
+				</div>
+				<main class="grid_menu">
+					<!--<h1>The World: World Maps</h1></br>-->
+						<!--<div w3-include-html="include/menu_maps_grid.html"></div>-->
+
+						<a href="#"><div id="earth" onclick="open_map('earth')"><p>Earthsystem</p><div><img src="images/World_Maps/World_Maps_Thumbnails/"></div></div></a>
+						
+						<a href="#"><div id="seismic" onclick="open_map('seismic')"><p>Seismic Activity</p><div><img class="winkel" style="top:3px" src="images/World_Maps/World_Maps_Thumbnails/world-map-seismic_winkel3-01"></div></div></a>
+
+						<a href=""><div id="atmos" onclick="open_map('atmos')"><p>Atmospheric Currents</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world_map_ocean_currents-01.jpg"></div></div></a>
+
+						<a href=""><div id="ocean" onclick="open_map('ocean')"><p>Ocean Currents</p><div><img class="winkel" style="top:3px" src="images/World_Maps/World_Maps_Thumbnails/world-map-ocean-currents_winkel3-01.jpg"></div></div></a>
+
+						<a href="#"><div id="biomes" onclick="open_map('biomes')"><p>Biomes</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-biomes-hotspots_goode-homolosine-01.png"></div></div></a>
+
+						<a href=""><div id="ecoregion" onclick="open_map('ecoregion')"><p>Eco-Regions</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-ecoregions_goode homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="anthromes" onclick="open_map('anthromes')"><p>Anthromes</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-anthromes_goode-homolosine-01.png"></div></div></a>
+
+						<!--<a href="#"><div id="veg" onclick="open_map('veg')"><p>Remnant Vegetation</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-novel_ecologies_goode-homolosine-01.png"></div></div></a>-->
+
+						<a href="#"><div id="mammal" onclick="open_map('mammal')"><p>Threatened Mammals</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-redlisted-mammals_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="protect" onclick="open_map('protect')"><p>Protected Areas</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-PAs-verB_goode homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="biological" onclick="open_map('biological')"><p>Biological Hotspots</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-hotspots_goode homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div class="two_line" id="targets" onclick="open_map('targets')"><p>Biological Hotspots: Conservation Targets</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-hotspots_17percent_target_goode homolosine-01.jpg"></div></div></a>
+
+						<!--<a href="#"><div id="hotspot" onclick="open_map('hotspot')"><p>Hotspots + - 17%</p><div><img src=""></div></div></a>-->
+
+						<a href="#"><div id="soils" onclick="open_map('soils')"><p>Soils</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-soils_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="crops" onclick="open_map('crops')"><p>Croplands</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-cropland_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="meat" onclick="open_map('meat')"><p>Meat Map</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-pasture_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="degrade" onclick="open_map('degrade')"><p>Land Degradation</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-desertification_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="tropics" onclick="open_map('tropics')"><p>The Tropics</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-tropics_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="deforest" onclick="open_map('deforest')"><p>Deforestation</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-deforestation_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="rivers" onclick="open_map('rivers')"><p>Rivers &amp; Wetlands</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-rivers-wetlands_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="waters" onclick="open_map('waters')"><p>Health of Waters</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-water-quality_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="access" onclick="open_map('access')"><p>Access to Water</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-access-to-water_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div class="two_line" id="pre-evolve" onclick="open_map('pre-evolve')"><p>Evolution of Urbanization: Pre-Modern Era</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-evolution-of-urbanization_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div class="two_line" id="evolve" onclick="open_map('evolve')"><p>Evolution of Urbanization: Modern Era</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-evolution-of-urbanization-moderncities_goode-homolosine-01.jpg"></div></div></a>
+
+						<!--<a href="#"><div id="planet" onclick="open_map('planet')"><p>Planetary Urbanization</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-contemporary-urbanism_goode-homolosine-01.png"></div></div></a>-->
+
+						<!--<a href="#"><div id="mega" onclick="open_map('mega')"><p>Megaregions</p><div><img src=""></div></div></a>-->
+
+						<a href="#"><div id="structures" onclick="open_map('structures')"><p>Megastructures</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world-map-megastructures_winkel-tripel-01.jpg"></div></div></a>
+
+						<!--<a href="#"><div id="earthwork" onclick="open_map('earthwork')"><p>Megaearthworks</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-earthworks_goode-homolosine-01.png"></div></div></a>-->
+
+						<!--<a href="#"><div id="human" onclick="open_map('human')"><p>Human Movement</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world-map-transportation-01.jpg"></div></div></a>-->
+
+						<a href="#"><div id="pressure" onclick="open_map('pressure')"><p>Population Pressure</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-urbanization-population.1_goode homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="sprawl" onclick="open_map('sprawl')"><p>Cities Sprawling in Hotspots</p><div><img src="images/World_Maps/World_Maps_Thumbnails/"></div></div></a>
+
+						<!--<a href="#"><div id="world" onclick="open_map('world')"><p>World Health</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-health-disease_goode-homolosine-01.png"></div></div></a>-->
+
+						<a href="#"><div id="energy" onclick="open_map('energy')"><p>Energy</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-energy-resources_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="nuclear" onclick="open_map('nuclear')"><p>Nuclear Energy</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-nuclear_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="climate" onclick="open_map('climate')"><p>Climate Change</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world-map-climate-change_winkel3-01.jpg"></div></div></a>
+
+						<a href="#"><div id="sea" onclick="open_map('sea')"><p>Sea Level Rise</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world-map-sea-level-rise-80m_winkel3-01.jpg"></div></div></a>
+
+						<a href="#"><div class="two_line" id="displace" onclick="open_map('displace')"><p>Environmental Displacement</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-environmental-displacement-01-map-only.jpg"></div></div></a>
+
+						<a href="#"><div id="corrupt" onclick="open_map('corrupt')"><p>Conflict &amp; Corruption</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-conflict_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="conflict" onclick="open_map('conflict')"><p>Conflict &amp; Displacement</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-conflict-refugees_goode-homolsine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="planning" onclick="open_map('planning')"><p>Biodiversity Planning</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-biodiversity-planning-verB_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="spend" onclick="open_map('spend')"><p>Conservation Spending</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-conservation-spending_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="corp" onclick="open_map('corp')"><p>Corporate Wealth</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-corporations_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="perform" onclick="open_map('perform')"><p>Environmental Performance</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-enviro-performance_goode-homolosine-01.jpg"></div></div></a>
+
+						<a href="#"><div id="intell" onclick="open_map('intell')"><p>Landscape Intelligence</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-schools-bingos_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="tour" onclick="open_map('tour')"><p>Ecotourism</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-eco-heritage-sites _goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="zoos" onclick="open_map('zoos')"><p>Genetic Stock</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-botanic-gardens-genebanks_goode-homolosine1-01.jpg"></div></div></a>
+
+						<a href="#"><div id="religion" onclick="open_map('religion')"><p>Religion</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-religion_goode-homolosine-01.png"></div></div></a>
+
+						<a href="#"><div id="utopia" onclick="open_map('utopia')"><p>Paradise &amp; Utopia</p><div><img src="images/World_Maps/World_Maps_Thumbnails/world-map-utopia-paradise_goode-homolosine-01.png"></div></div></a>
+
+						<!--<a href="#"><div id="regions" onclick="open_map('regions')"><p>Eco-Regions + - 17%</p><div><img class="winkel" src="images/World_Maps/World_Maps_Thumbnails/world-map-ecoregions_winkel3-01.jpg"></div></div></a>-->
+
+						<a href="#"><div class="two_line" id="global" onclick="open_map('global')"><p>Global Landscape Connectivity Projects</p><div><img src="images/World_Maps/World_Maps_Thumbnails/"></div></div></a>
+
+						<a href="#"><div id="conserve" onclick="open_map('conserve')"><p>Ecoregions:  Conservation Targets</p><div><img src="images/World_Maps/World_Maps_Thumbnails/"></div></div></a>
+				</main>
+			</div>
+			<footer>
+				<div class="footer_wrapper">
+					<div id='footer_menu'>
+						<div w3-include-html='include/main_menu_list.html'></div>
+					</div>
+				</div>
+			</footer>
+			<script>
+				w3IncludeHTML();
+			</script>
+		</body>
+</html>

@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Conservation Spending</title>
 	</head>
 		<body>
@@ -16,65 +17,67 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-conservation-spending_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Conservation Spending</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-conservation-spending_goode-homolosine-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Conservation Spending</h1>-->
 				<div class="legend">
-					<div class="side_bar">
+					<!--<div class="side_bar">
 						<p>Between the years 2001 and 2008, global biodiversity conservation spending is estimated at $19.8 billion annually.<sup> 1</sup> A recent study estimated that in order to meet CBD targets for 2020 spending would need to increase by at least an order of magnitude.<sup> 2</sup></p>
-					</div>
-					<table style="width:260px">
-						<tr><td colspan="2" class="upcase left_align">National Biodiversity Conservation Spending</br> (2001-2008)<sup> 3</sup></td></tr>
+					</div>-->
+					<table class="width_260">
+						<tr><td colspan="2" class="upcase left_align">National Biodiversity Conservation Spending</br> (2001-2008)</td></tr>
 						<tr><td></td></tr>
-						<tr><td><div class="color_block"></div></td><td>domestic government, international donors, private philanthropy, conservation trust funds, debt swaps</td></tr>
-						<tr><td></td><td></td></tr>
-						<tr><td></td><td><img src="../images/World_Maps/legends/conservation-spending-gradient.png"></td></tr>
+						<!--<tr><td><div class="color_block"></div></td><td>domestic government, international donors, private philanthropy, conservation trust funds, debt swaps</td></tr>
+						<tr><td></td><td></td></tr>-->
+						<tr><td colspan="2"><img src="../images/World_Maps/legends/conservation-spending-gradient.png"></td></tr>
 						<tr><td></td><td>0 &#62;&#62;&#62;&#62;&#62;&#62;&#62; 7 billion US dollars</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td colspan="2" class="upcase left_align">International Aid Projects</br> (1990-2008)<sup> 4</sup></td></tr>
+						<tr><td colspan="2" class="upcase left_align">International Aid Projects</br> (1990-2008)</td></tr>
 						<tr><td></td></tr>
 						<tr><td><img class="legend_mid" src="../images/World_Maps/legends/conservation-spending-projections.png"></td><td>general environmental protection</td></tr>
 
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Conservation Spending</h1>
-					<h3 class="upcase sub-head">Domestic Spending &amp; International Aid</h3>
-					<p>Gaining an accurate account of global conservation spending, where it comes from and where it goes, is fraught with complications. According to a study by Waldron et al. the total annual expenditure on global biodiversity conservation between 2001 and 2008 was approximately 21.5 billion USD.<sup id="one"><a href="#1"> 1</a></sup> The bulk of the world's biodiversity budget comes from governments (in particular the United States and Germany) as well as the World Bank, but the big international non-government organizations (BINGOs such as Conservation International, the Nature Conservancy, the World Wildlife Fund, the African Wildlife Foundation, the Wilderness Conservation Society and Greenpeace also play significant roles in moving investment around the world. In 2014, these six not-for-profit BINGOs  together raised and then spent over 1.5 billion USD on conservation related projects and activism world-wide.<sup id="two"><a href="#2"> 2</a></sup>
-					</p>
-					<p>A 2011 study conducted for the Secretariat of the Convention of Biological Diversity concluded that it would take <span style="color:red">&mdash;77-81</span> billion USD per annum to achieve and maintain 17% terrestrial and 10% marine protected area as per Aichi target 11.<sup id="three"><a href="#3"> 3</a></sup> The report concluded that the cost of satisfying all 20 of the Aichi targets lies somewhere between 150-440 billion USD per year. In 2012, a study by environmental economists Donal McCarthy and Stuart Butchart used Important Bird Areas (IBAs) as a corollary for biodiversity more broadly and concluded that if the world's total IBAs (just over the Aichi target of 17% of terrestrial surface) were to be effectively protected and managed the cost would be 57.8 billion USD per year.<sup id="four"><a href="#4"> 4</a></sup> They extrapolated from this to conclude that the costs of securing and maintaining a global network of protected areas would be 76.1 billion USD annually &mdash; essentially corroborating the CBD's estimates.<sup id="five"><a href="#5"> 5</a></sup>
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Conservation Spending</h1>-->
+					
+						<p>Gaining an accurate account of global conservation spending, where it comes from and where it goes, is fraught with complications. According to a study by Waldron et al. the total annual expenditure on global biodiversity conservation between 2001 and 2008 was approximately 21.5 billion USD.<sup id="one"><a href="#1"> 1</a></sup> The bulk of the world's biodiversity budget comes from governments (in particular the United States and Germany) as well as the World Bank, but the big international non-government organizations (BINGOs such as Conservation International, the Nature Conservancy, the World Wildlife Fund, the African Wildlife Foundation, the Wilderness Conservation Society and Greenpeace) also play significant roles in moving investment around the world. In 2014, these six not-for-profit BINGOs  together raised and then spent over 1.5 billion USD on conservation related projects and activism world-wide.<sup id="two"><a href="#2"> 2</a></sup>
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>Anthony Waldron, et al., "Targeting global conservation funding to limit immediate biodiversity declines," <i>Proceedings of the National Academy of Sciences of the United States of America</i> 110, no. 29 (2013): 12144-12148. </p>
-						<p><sup id="2"><a href="#two">2 </a></sup>This figure is derived from annual accounts available at Charity Navigator, <a target="blank" href="http://www.charitynavigator.org">http://www.charitynavigator.org</a> (accessed June,1, 2016).</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>Convention on Biological Diversity High-level Panel on Global Assessment of Resources for Implementing the Strategic Plan for Biodiversity 2011-2020, "Resourcing the Aichi Biodiversity Targets: A First Assessment of the Resources Required for Implementing the Strategic Plan for Biodiversity 2011-2020." Available at <a target="blank" href="https://www.cbd.int/doc/meetings/fin/hlpgar-sp-01/official/hlpgar-sp-01-01-report-en.pdf">https://www.cbd.int/doc/meetings/fin/hlpgar-sp-01/official/hlpgar-sp-01-01-report-en.pdf</a> (accessed June 1, 2016).</p>
-						<p><sup id="4"><a href="#four">4 </a></sup>Donald P. McCarthy, et al., "Financial Costs of Meeting Global Biodiversity Conservation Targets: Current Spending and Unmet Needs," <i>Science</i> 338, no. 6109 (2012): 946-949.</p>
-						<p><sup id="5"><a href="#five">5 </a></sup>ibid</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Waldron, Anthony et al,, 2013</br>
-							2. McCarthy, DP et al, 2012</br>
-							3. Waldron, Anthony et al., 2013</br>
-							4. AidData 3.0, 2014
+						<p class="last_para">A 2011 study conducted for the Secretariat of the Convention of Biological Diversity concluded that it would take between 77 and 81 billion USD per annum to achieve and maintain 17% terrestrial and 10% marine protected area as per Aichi target 11.<sup id="three"><a href="#3"> 3</a></sup> The report concluded that the cost of satisfying all 20 of the Aichi targets lies somewhere between 150-440 billion USD per year. In 2012, a study by environmental economists Donal McCarthy and Stuart Butchart used Important Bird Areas (IBAs) as a corollary for biodiversity more broadly and concluded that if the world's total IBAs (just over the Aichi target of 17% of terrestrial surface) were to be effectively protected and managed the cost would be 57.8 billion USD per year.<sup id="four"><a href="#4"> 4</a></sup> They extrapolated from this to conclude that the costs of securing and maintaining a global network of protected areas would be 76.1 billion USD annually &mdash; essentially corroborating the CBD's estimates.<sup id="five"><a href="#5"> 5</a></sup>
 						</p>
-					</div>-->
+						
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>Anthony Waldron, et al., "Targeting global conservation funding to limit immediate biodiversity declines," <i>Proceedings of the National Academy of Sciences of the United States of America</i> 110, no. 29 (2013): 12144-12148. </p>
+							<p><sup id="2"><a href="#two">2 </a></sup>This figure is derived from annual accounts available at Charity Navigator, <a target="blank" href="http://www.charitynavigator.org">http://www.charitynavigator.org</a> (accessed June,1, 2016).</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>Convention on Biological Diversity High-level Panel on Global Assessment of Resources for Implementing the Strategic Plan for Biodiversity 2011-2020, "Resourcing the Aichi Biodiversity Targets: A First Assessment of the Resources Required for Implementing the Strategic Plan for Biodiversity 2011-2020." Available at <a target="blank" href="https://www.cbd.int/doc/meetings/fin/hlpgar-sp-01/official/hlpgar-sp-01-01-report-en.pdf">https://www.cbd.int/doc/meetings/fin/hlpgar-sp-01/official/hlpgar-sp-01-01-report-en.pdf</a> (accessed June 1, 2016).</p>
+							<p><sup id="4"><a href="#four">4 </a></sup>Donald P. McCarthy, et al., "Financial Costs of Meeting Global Biodiversity Conservation Targets: Current Spending and Unmet Needs," <i>Science</i> 338, no. 6109 (2012): 946-949.</p>
+							<p><sup id="5"><a href="#five">5 </a></sup>ibid</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. National Biodiversity Conservation Spending</strong></p>
+							<p>A. Waldron, et al., "Targeting global conservation funding to limit immediate biodiversity declines," <i>Proceedings of the National Academy of Sciences of the United States of America</i> 110, no. 29 (2013): 12144-12148. Available at <a target="blank" href="http://dx.doi.org/10.1073/pnas.1221370110">http://dx.doi.org/10.1073/pnas.1221370110</a>.</p>
+							<p>A. Waldron, et al., Data from: "Targeting global conservation funding to limit immediate biodiversity declines". Dryad Digital Repository (2013). Available at <a target="blank" href="http://dx.doi.org/10.5061/dryad.p69t1">http://dx.doi.org/10.5061/dryad.p69t1</a>.</p>
+
+							<p><strong>2. International Aid Projects</strong></p>
+							<p>Michael Tierney, et al., "More Dollars than Sense: Refining Our Knowledge of Development Finance Using AidData," <i>World Development</i> 39, no. 11 (2011): 1891-1906. Available at <a target="blank" href="AidData.org">AidData.org</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_biodiversity_planning.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: biodiversity planning</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_corporations.html">next map: corporations &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

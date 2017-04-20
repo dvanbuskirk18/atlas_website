@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Protected Areas</title>
 	</head>
 		<body>
@@ -16,20 +17,15 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-PAs-verB_goode homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Protected Areas</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-PAs-verB_goode homolosine-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Protected Areas</h1>-->
 				<div class="legend">
-					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
-					<!--<div class="side_bar">
-						<p>5xx,xxx km<sup>2</sup> of protected areas</br> 
-							xx% of the earth's land</br>
-							122,921 protected areas (i-vi)</br>
-							236 countries tabulated</p>
-						<p>The International Union for the Conservation of Nature defines a protected areas as "A clearly defined geographical space, recognized, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values."</p>
-					</div>-->
+					
 					<table class="width_260">
 						<tr><td><div class="color_bar" style="background:#597d57; height:80px"></div></td><td></td><td>Ia. Strict Nature Reserve</br>Ib. Wilderness Area</br>II. National Park</br>III. Natural Monument or Feature</br>IV. Habitat/Species Management Area</td></tr>
 						<tr><td></br></td></tr>
@@ -37,49 +33,49 @@
 						<tr><td></br></td></tr>
 						<tr><td><div class="color_block" style="background:#92a56d"></div></td><td></td><td>Not Applicable, Not Assigned or Not Reported</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td><div class="color_block" style="background:#dbb399"></div></td><td></td><td>Hotspots<sup> 2</sup></td></tr>
+						<tr><td><div class="color_block" style="background:#dbb399"></div></td><td></td><td>Hotspots</td></tr>
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Protected Areas</h1>
-					<h3 class="upcase sub-head">IUCN CATEGORIES I-VI<sup> 1</sup></h3>
-					<p>The International Union for the Conservation of Nature (IUCN) oversees the world's protected areas. Headquartered in Switzerland, the IUCN is the world's largest environmental organization.<sup id="one"><a href="#1"> 1</a></sup> The IUCN defines a protected area as "[a] clearly defined geographical space, recognized, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values."<sup id="two"><a href="#2"> 2</a></sup>
-					</p>
-					<p>There are six categories of protected area: 1a Strict Nature Reserves. 1b; Wilderness Areas. 2; National Park. 3; National Monument. 4; Habitat and Species Management Areas. 5; Protected landscape (modified landscapes of cultural ecological and scenic value) and 6; Protected Areas with Sustainable use of natural resources. From a biodiversity conservation perspective, categories 1-4 are preferable and in our mapping of the hotpots we draw a distinction between categories 1-4 and 4-6.  
-					</p>
-					<p>The increase in the world's protected estate corresponds precisely to the popularization of environmental movements since the 1960s. In 1962 there were 9,214 protected areas, now there are over 209,000. The 2014 United Nations Environment Program's Protected Area Report states that 15.4% of the world's terrestrial and inland waters, and 3.4% of the world's oceans are currently protected, that is 32.6 million km<sup>2</sup> (20.6 million km<sup>2</sup> of terrestrial and 12 million marine).<sup id="three"><a href="#3"> 3</a></sup> The global target for protected areas to which 196 nations are party<sup id="four"><a href="#4"> 4</a></sup> is stated in the Convention on Biological Diversity (CBD): "By 2020, at least 17 per cent of terrestrial and inland water areas and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscape and seascape."<sup id="five"><a href="#5"> 5</a></sup> According to the CBD's Global Biodiversity Outlook 4 Report, the target of legally protecting 17% of global terrestrial area by 2020 is likely to be met but the marine target of 10% is not.<sup id="six"><a href="#6"> 6</a></sup>
-					</p>
-					<p>In addition to the issue of quantity, protected areas face important issues of quality; they are typically fragmented and surrounded by incompatible land and maritime uses. Nor do they adequately represent the world's biodiversity. As this atlas attests, the 2020 target of 17% protected terrestrial area is currently only reached in 179 of the 398 ecoregions which constitute the hotspots.
-					</p>
-					<p>Despite the enormous achievement of increasing the global conservation estate in the last 50 years, protected areas are not without controversy. Critics argue that protected areas, known somewhat pejoratively as 'fortress conservation', reinforce a nature/culture duality and privilege an idyllic nature over the quotidian landscape. Some ecologists argue that protected areas which are surrounded by inimical land-uses cannot avoid long term extinction for the species they purport to protect. Some anthropologists and cultural geographers argue that protected areas have often ignored indigenous land rights and cultural practices, and that protected areas frame nature as either a victim, or an object of desire for global eco-tourism.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Protected Areas</h1>-->
+						<!--<h3 class="upcase sub-head">IUCN CATEGORIES I-VI<sup> 1</sup></h3>-->
+						<p>The International Union for the Conservation of Nature (IUCN) oversees the world's protected areas. Headquartered in Switzerland, the IUCN is the world's largest environmental organization.<sup id="one"><a href="#1"> 1</a></sup> The IUCN defines a protected area as "[a] clearly defined geographical space, recognized, dedicated and managed, through legal or other effective means, to achieve the long term conservation of nature with associated ecosystem services and cultural values."<sup id="two"><a href="#2"> 2</a></sup>
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>IUCN Protected Areas Programme, "50 Years of Working for Protected Areas: A brief history of IUCN World Commission on Protected Areas," (Gland, Switzerland: IUCN, 2010). Available at <a href="https://cmsdata.iucn.org/downloads/history_wcpa_15july_web_version_1.pdf">https://cmsdata.iucn.org/downloads/history_wcpa_15july_web_version_1.pdf</a>.</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>IUCN, "Protected Areas: About," <a href="https://www.iucn.org/theme/protected-areas/about">https://www.iucn.org/theme/protected-areas/about</a> (accessed September 6, 2016).</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>United Nations Environment Programme, "New UNEP Report Unveils World on Track to Meet 2020 Target for Protected Areas on Land and Sea," <i>United Nations Environment Programme</i> (UNEP) News Centre (November 13, 2014), <a href="United Nations Environment Programme, “New UNEP Report Unveils World on Track to Meet 2020 Target for Protected Areas on Land and Sea,” United Nations Environment Programme (UNEP) News Centre (November 13, 2014), http://www.unep.org/newscentre/Default.aspx?DocumentID=2812&amp;ArticleID=11070 (accessed June 1, 2016).">United Nations Environment Programme, “New UNEP Report Unveils World on Track to Meet 2020 Target for Protected Areas on Land and Sea,” United Nations Environment Programme (UNEP) News Centre (November 13, 2014), http://www.unep.org/newscentre/Default.aspx?DocumentID=2812&amp;ArticleID=11070 (accessed June 1, 2016).</a> (accessed June 1, 2016).</p>
-						<p><sup id="4"><a href="#four"> 4</a></sup>Convention on Biological Diversity, "List of Parties," <a href="https://www.cbd.int/information/parties.shtml">https://www.cbd.int/information/parties.shtml</a> (accessed June 22, 2016).</p>
-						<p><sup id="5"><a href="#five"> 5</a></sup>Convention on Biological Diversity, "Target 11 &mdash; Technical Rationale extended," <a href="https://www.cbd.int/sp/targets/rationale/target-11/">https://www.cbd.int/sp/targets/rationale/target-11/</a> (accessed September 6, 2016).</p>
-						<p><sup id="6"><a href="#six"> 6</a></sup>Secretariat of the Convention on Biological Diversity, <i>Global Biodiversity Outlook 4: A mid-term assessment of progress towards the implementation of the Strategic Plan for Biodiversity</i> (Montreal: 2014), 83. </p>
-					</div>
-					<div class="endnotes">
-						<p>1. IUCN, 2015</br>
-							2. Conservation International, 2011
+						<p>There are seven categories of protected area: Ia; Strict Nature Reserves. Ib; Wilderness Areas. II; National Park. III; National Monument. IV; Habitat and Species Management Areas. V; Protected landscape (modified landscapes of cultural ecological and scenic value) and VI; Protected Areas with Sustainable use of natural resources. From a biodiversity conservation perspective, categories I-IV are preferable and in our mapping of the hotpots we draw a distinction between categories I-IV and V-VI. Representing roughly 35% of the number of global protected areas tabulated, the NA category does not denote lax management policy, simply areas that for one reason or another have not adapted the IUCN management classification system.  
 						</p>
+						<p>The increase in the world's protected estate corresponds precisely to the popularization of environmental movements since the 1960s. In 1962 there were 9,214 protected areas, now there are over 209,000. The 2014 United Nations Environment Program's Protected Area Report states that 15.4% of the world's terrestrial and inland waters, and 3.4% of the world's oceans are currently protected, that is 32.6 million km<sup>2</sup> (20.6 million km<sup>2</sup> of terrestrial and 12 million marine).<sup id="three"><a href="#3"> 3</a></sup> The global target for protected areas to which 196 nations are party<sup id="four"><a href="#4"> 4</a></sup> is stated in the Convention on Biological Diversity (CBD): "By 2020, at least 17 per cent of terrestrial and inland water areas and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscape and seascape."<sup id="five"><a href="#5"> 5</a></sup> According to the CBD's Global Biodiversity Outlook 4 Report, the target of legally protecting 17% of global terrestrial area by 2020 is likely to be met but the marine target of 10% is not.<sup id="six"><a href="#6"> 6</a></sup>
+						</p>
+						<p>In addition to the issue of quantity, protected areas face important issues of quality; they are typically fragmented and surrounded by incompatible land and maritime uses. Nor do they adequately represent the world's biodiversity. As this atlas attests, the 2020 target of 17% protected terrestrial area is currently only reached in 170 of the 391 ecoregions which constitute the hotspots. This finding is based on all categories of IUCN protected areas plus the NA category of lands which are protected (in one form or another) but have not adopted the IUCN classification system.
+						</p>
+						<p class="last_para">Despite the enormous achievement of increasing the global conservation estate in the last 50 years, protected areas are not without controversy. Critics argue that protected areas, known somewhat pejoratively as 'fortress conservation', reinforce a nature/culture duality and privilege an idyllic nature over the quotidian landscape. Some ecologists argue that protected areas which are surrounded by inimical land-uses cannot avoid long term extinction for the species they purport to protect. Some anthropologists and cultural geographers argue that protected areas have often ignored indigenous land rights and cultural practices, and that protected areas frame nature as either a victim, or an object of desire for global eco-tourism.
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>IUCN Protected Areas Programme, "50 Years of Working for Protected Areas: A brief history of IUCN World Commission on Protected Areas," (Gland, Switzerland: IUCN, 2010). Available at <a target="blank" href="https://cmsdata.iucn.org/downloads/history_wcpa_15july_web_version_1.pdf">https://cmsdata.iucn.org/downloads/history_wcpa_15july_web_version_1.pdf</a>.</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>IUCN, "Protected Areas: About," <a target="blank" href="https://www.iucn.org/theme/protected-areas/about">https://www.iucn.org/theme/protected-areas/about</a> (accessed September 6, 2016).</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>United Nations Environment Programme, "New UNEP Report Unveils World on Track to Meet 2020 Target for Protected Areas on Land and Sea," <i>United Nations Environment Programme</i> (UNEP) News Centre (November 13, 2014), <a target="blank" href="http://www.unep.org/newscentre/Default.aspx?DocumentID=2812&amp;ArticleID=11070">http://www.unep.org/newscentre/Default.aspx?DocumentID=2812&amp;ArticleID=11070</a> (accessed June 1, 2016).</p>
+							<p><sup id="4"><a href="#four">4 </a></sup>Convention on Biological Diversity, "List of Parties," <a target="blank" href="https://www.cbd.int/information/parties.shtml">https://www.cbd.int/information/parties.shtml</a> (accessed June 22, 2016).</p>
+							<p><sup id="5"><a href="#five">5 </a></sup>Convention on Biological Diversity, "Target 11 &mdash; Technical Rationale extended," <a target="blank" href="https://www.cbd.int/sp/targets/rationale/target-11/">https://www.cbd.int/sp/targets/rationale/target-11/</a> (accessed September 6, 2016).</p>
+							<p><sup id="6"><a href="#six">6 </a></sup>Secretariat of the Convention on Biological Diversity, <i>Global Biodiversity Outlook 4: A mid-term assessment of progress towards the implementation of the Strategic Plan for Biodiversity</i> (Montreal: 2014), 83. </p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Protected Areas</strong></p>
+							<p>IUCN and UNEP-WCMC (2015). The World Database on Protected Areas (WDPA) [On-line], [November, 2015], Cambridge, UK: UNEP-WCMC. Available at: <a target="blank" href="www.protectedplanet.net">www.protectedplanet.net</a>.</p>
+
+							<p><strong>2. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_threatened_mammals.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: threatened mammals</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_biological_hotspots.html">next map: biological hotspots &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
 					</div>
 				</main>
 			</div>

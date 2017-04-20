@@ -1,34 +1,38 @@
-<div id="wrapper">
-	<main>
-		<div class="shifted_text">
-			<table>
-				<tr>
-				<td><img style="width:450px; display:inline" src="images/Datascapes/US-Footprint-per-capita-2012.png"></td>
-				<td><table style="font-size:.85em">
-					<tr><td colspan="5">Ecological Footprint (U.S. 2012)<sup>1</sup></td></tr>
-					<tr><td></td></tr>
-					<tr><td><div class="color_block" style="background:#8cc640"></div></td><td>Cropland</td><td></td><td><div class="color_block" style="background:#0770b9"></div></td><td>Fish</td></tr>
-					<tr><td></td></tr>
-					<tr><td><div class="color_block" style="background:#38b449"></div></td><td>Grazing</td><td></td><td><div class="color_block" style="background:#fbaf3a"></div></td><td>Built Up</td></tr>
-					<tr><td></td></tr>
-					<tr><td><div class="color_block" style="background:#089146"></div></td><td>Forest Product</td><td></td><td><div class="color_block" style="background:#04a99c"></div></td><td>Carbon</td></tr>
-				</table></td>
-				</tr>
-			</table>	
-
-			<!--<h1 id"map_title" class="upcase">Datascapes</h1>-->
-			<p>The 'datascapes' are visualizations designed to make quantities which are otherwise hard to comprehend intelligible. Data manifested in the visualizations are generally based on the ecological footprint of an average American which, for polemical purposes, is then extrapolated to a hypothetical global population of 10 billion people living at the same (American) standard<sup id="one"><a href="#1"> 1</a></sup> . The reason for using the figure of 10 billion people is that it is a round number roughly mid-way between the latest UN global population projections which suggest a range between 9.5 and 13.3 billion people by 2100.<sup id="two"><a href="#2"> 2</a></sup></p>
-			</p>
-			<p>The datascapes show that if the world were to live (in material terms) as contemporary Americans do, there would be a major discrepancy between global levels of consumption and what the earth, according to today's technologies, can reasonably provide. The datascapes do not intend to be alarmist nor pass moral judgment on highly consumptive lifestyles. What they do make clear, however, is that as large numbers of people aspire to higher material standards of living throughout the 21st century, if ecological calamity is to be avoided, our systems of production and consumption will need to be better designed and better tuned to the earth's systems. 
-			</p>
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://www.w3schools.com/lib/w3data.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<title>Datascapes</title>
+	</head>
+		<body>
+			<!--<header>
+				<div id='header_title_img'><img src='../images/ATLAS_text_logo.png'></div>
+				<nav class="top_horizontal">
+					<div w3-include-html='../include/main_menu_list.html'></div>
+				</nav>
+			</header>-->
 			
-			<div class="footnotes">
-				<p><sup id="1"><a href="#one">1 </a></sup>Global Footprint Network, "National Footprint Accounts," <a target="_blank" href="http://www.footprintnetwork.org/pt/index.php/GFN/page/footprint_data_and_results/">http://www.footprintnetwork.org/pt/index.php/GFN/page/footprint_data_and_results/</a> (accessed June 1st, 2016). </br>
-				NB There is a three-year delay in the process of calculating ecological footprints.
-				</p>
-				<p><sup id="2"><a href="#two">2 </a></sup>United Nations, Department of Economic and Social Affairs, Population Division, <i>World Population Prospects: The 2015 Revision, Key Findings and Advance Tables</i> (2015). Available at <a target="_blank" href="https://esa.un.org/unpd/wpp/Publications/">https://esa.un.org/unpd/wpp/Publications/</a>.
-				</p>
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_datascapes.html"></div>
+				<h1 id="subpage_title" class="page_title upcase"></h1>
+				<div class="full">
+					<img id="map_image" src="../images/Datascapes/American-vs-Tree-CO2.svg">
+				</div>
+				<main>
+					<div class="text_column">
+						<!--<h1 id"map_title" class="upcase">Title</h1>-->
+						<h3 class="upcase sub-head"></h3>
+						<p>Body Text</p>
+					</div>
+				</main>
 			</div>
-		</div>
-	</main>
-</div>
+
+			<script>
+				w3IncludeHTML();
+			</script>
+		</body>
+</html>

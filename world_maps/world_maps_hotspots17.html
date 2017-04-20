@@ -6,7 +6,8 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
-		<title>World Maps - Biodiversity Conservation Targets</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>World Maps - Hotspots: Conservation Targets</title>
 	</head>
 		<body>
 			<!--<header>
@@ -16,11 +17,14 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-hotspots_17percent_target_goode homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Hotspots: Conservation Targets</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-hotspots_17percent_target_goode homolosine-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Hotspots: Biodiversity Conservation Targets</h1>
+				<h2 class="alt_title upcase sub-head"></h2>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -32,38 +36,94 @@
 						<tr><td><div class="color_block" style="background:#00a18e"></div></td><td>Meet the 17% conservation target</td></tr>
 						<tr><td></td></tr>
 						<tr><td><div class="color_block" style="background:#c14803"></div></td><td>Miss the 17% conservation target</td></tr>
-					</table>
+					</table><br>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Biological Hotspots</h1>
-					<h3 class="upcase sub-head">Biodiversity Conservation Targets</h3>
-					<p>Body Text</p>
-					<p>Body Text 
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Hotspots: Biodiversity Conservation Targets</h1>
+						<h2 class="upcase sub-head"></h2>-->
+						<p>This map indicates which of the world's biological hotspots (2015 data) have reached the global Aichi target of 17% protected area (IUCN categories I-VI, plus NA lands) and which have not. Those that have are the 1) Cape Floristic Region, 2) the Caribbean Islands, 3) the Chilean Winter Rainfall Valdivian Forests, 4) the Coastal Forests of Eastern Africa, 5) the Forests of Eastern Australia, 6) the Guinean Forests of West Africa, 7) the Himalaya, 8) Japan, 9) the Mediterranean Basin, 10) Mesoamerica, 11) New Zealand, 12) the Tropical Andes, 13) the Western Ghats and Sri Lanka, and 14) the Succulent Karoo.
 						</p>
+						<div class="intext_legend">
+							<table>
+								<tr><td colspan="3">HOTSPOTS RANKED ACCORDING TO PROTECTED AREA<br> (2015 data, IUCN categories I-VI plus NA lands)</td></tr>
+								<tr><td>1. New Zealand 33.4%</td><td></td><td>19. New Caledonia 15.1%</td></tr>
+								<tr><td>2. Tropical Andes 23.8%</td><td></td><td>20. Madrean Pine-oak Woodlands 14.5%</td></tr>
+								<tr><td>3. Cape Floristic Region 25.7%</td><td></td><td>21. California Floristic Province 13.6%</td></tr>
+								<tr><td>4. Eastern Australia 23.5%</td><td></td><td>22. Indo-Burma 13.4%</td></tr>
+								<tr><td>5. Succulent Karoo 22%</td><td></td><td>23. Tumbes-Choco-Magdalena 11.9%</td></tr>
+								<tr><td>6. <span style="font-size:.9em;">Chilean Winter Rainfall Valdivian Forests 20.3%</span></td><td></td><td>24. Cerrado 11%</td></tr>
+								<tr><td>7. Western Ghats &amp; Sri Lanka 20.2%</td><td></td><td>25. Maputaland Pondoland Albany 9.7%</td></tr>
+								<tr><td>8. Mesoamerica 19.3%</td><td></td><td>26. Polynesia-Micronesia 9.7%</td></tr>
+								<tr><td>9. Himalaya 19.2%</td><td></td><td>27. Sundaland 9.6 %</td></tr>
+								<tr><td>10. Japan 19.1 %</td><td></td><td>28. Wallacea 9.5%</td></tr>
+								<tr><td>11. Mediterranean Basin 19%</td><td></td><td>29. Mountains of Central Asia 9.4%</td></tr>
+								<tr><td>12. Guinean Forests of West Africa 17.7%</td><td></td><td>30. <span style="font-size:.9em;">Madagascar &amp; The Indian Ocean Islands 9%</span></td></tr>
+								<tr><td>13. Caribbean Islands 17.6%</td><td></td><td>31. Caucasus 8.7%</td></tr>
+								<tr><td>14. Coastal Forests of Eastern Africa 17.6%</td><td></td><td>32. Atlantic Forests 8%</td></tr>
+								<tr><td>15. Eastern Afromontane 16.8%</td><td></td><td>33. Horn of Africa 7.7%</td></tr>
+								<tr><td>16. South Western Australia 16.4%</td><td></td><td>34. Irano-Anatolian 4.8%</td></tr>
+								<tr><td>17. Mountains of South West China 15.8%</td><td></td><td>35. East Melanesian Islands 2%</td></tr>
+								<tr><td>18. Philippines 15.2%</td><td></td><td></td></tr>
+							</table>
+						</div>
+						<div class="alt_table intext_legend">
+							<table>
+								<tr><td>HOTSPOTS RANKED ACCORDING<br> TO PROTECTED AREA<br> (2015 data, IUCN categories I-VI<br> plus NA lands)</td></tr>
+								<tr><td></td></tr>
+								<tr><td>1. New Zealand 33.4%</td></tr>
+								<tr><td>2. Tropical Andes 23.8%</td></tr>
+								<tr><td>3. Cape Floristic Region 25.7%</td></tr>
+								<tr><td>4. Eastern Australia 23.5%</td></tr>
+								<tr><td>5. Succulent Karoo 22%</td></tr>
+								<tr><td>6. <span style="font-size:.9em;">Chilean Winter Rainfall Valdivian Forests 20.3%</span></td></tr>
+								<tr><td>7. Western Ghats &amp; Sri Lanka 20.2%</td></tr>
+								<tr><td>8. Mesoamerica 19.3%</td></tr>
+								<tr><td>9. Himalaya 19.2%</td></tr>
+								<tr><td>10. Japan 19.1 %</td></tr>
+								<tr><td>11. Mediterranean Basin 19%</td></tr>
+								<tr><td>12. Guinean Forests of West Africa 17.7%</td></tr>
+								<tr><td>13. Caribbean Islands 17.6%</td></tr>
+								<tr><td>14. Coastal Forests of Eastern Africa 17.6%</td></tr>
+								<tr><td>15. Eastern Afromontane 16.8%</td></tr>
+								<tr><td>16. South Western Australia 16.4%</td></tr>
+								<tr><td>17. Mountains of South West China 15.8%</td></tr>
+								<tr><td>18. Philippines 15.2%</td></tr>
+								<tr><td>19. New Caledonia 15.1%</td></tr>
+								<tr><td>20. Madrean Pine-oak Woodlands 14.5%</td></tr>
+								<tr><td>21. California Floristic Province 13.6%</td></tr>
+								<tr><td>22. Indo-Burma 13.4%</td></tr>
+								</td></tr>
+								<tr><td>23. Tumbes-Choco-Magdalena 11.9%</td></tr>
+								<tr><td>24. Cerrado 11%</td></tr>
+								<tr><td>25. Maputaland Pondoland Albany 9.7%</td></tr>
+								<tr><td>26. Polynesia-Micronesia 9.7%</td></tr>
+								<tr><td>27. Sundaland 9.6 %</td></tr>
+								<tr><td>28. Wallacea 9.5%</td></tr>
+								<tr><td>29. Mountains of Central Asia 9.4%</td></tr>
+								<tr><td>30. <span style="font-size:.9em;">Madagascar &amp; The Indian Ocean Islands 9%</span></td></tr>
+								<tr><td>31. Caucasus 8.7%</td></tr>
+								<tr><td>32. Atlantic Forests 8%</td></tr>
+								<tr><td>33. Horn of Africa 7.7%</td></tr>
+								<tr><td>34. Irano-Anatolian 4.8%</td></tr>
+								<tr><td>35. East Melanesian Islands 2%</td></tr>
+							</table>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
 					</div>
-					<div class="endnotes">
-						<p>1. Natural Earth, 2014</br>
-							2. OpenFlights.org, 2014</br>
-							3. Natural Earth, 2014</br>
-							4. National Center for Ecological Analysis &amp; Synthesis, 2014</br>
-							5. Natural Earth, 2014</br>
-							6. Ibid.</br>
-							7. Conservation International, 2011 </br>
-						</p>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_biological_hotspots.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: biological hotspots</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_ecoregions_conservation_targets.html">next map: ecoregions: conservation targets &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
 					</div>
 				</main>
 			</div>

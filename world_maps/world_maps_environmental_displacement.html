@@ -7,6 +7,7 @@
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../css/stylesheet_map.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Environmental Displacement</title>
 	</head>
 		<body>
@@ -17,10 +18,18 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-environmental-displacement-01-no-text.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Environmental Displacement</h1>
+				<figure class="map_fig">
+					<a href="../images/World_Maps/environmental_displacement_legend.pdf">
+						<img src="../images/World_Maps/1200px/world-map-environmental-displacement-label.png">
+					</a>
+					<figcaption><a href="../images/World_Maps/environmental_displacement_legend.pdf">View full size PDF</a></figcaption>
+				</figure>
+				<!--<h1 class="alt_title upcase">Environmental Displacement</h1>-->
+				<!--<div class="full map_detail">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-environmental-displacement-01-no-text.png">
 					<div id="us" class="upper"><p>United States</br>3,196,807</p></div>
 					<div id="cuba" class="upper"><p>Cuba</br>1,365,730</p></div>
 					<div id="haiti" class="upper"><p>Haiti</br>1,815,450</p></div>
@@ -41,7 +50,7 @@
 					<div id="india" class="lower"><p>India</br>29,564,261</p></div>
 					<div id="srilanka" class="lower"><p>Sri Lanka</br>2,319,719</p></div>
 					<div id="thailand" class="lower"><p>Thailand</br>2,963,348</p></div>
-				</div>
+				</div>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -51,12 +60,12 @@
 					<!--<img src="../images/World_Maps/legends/">-->
 					<table class="width_260">
 						<tr><td class="upcase">Human Displacement</td></tr>
-						<tr><td>People displaced by natrual disaster (2008-2014)</td></tr>
+						<tr><td>People displaced by natural disaster (2008-2014)</td></tr>
 						<tr><td><img src="../images/World_Maps/legends/environmental-displacement-human.png"></td></tr>
 						<tr><td>6 &#62;&#62;&#62;&#62; 60,000,000 people</td></tr>
 						<tr><td></br></td></tr>
 						<tr><td class="upcase">Ecosystem  Displacement</td></tr>
-						<tr><td>Vulnerability of ecosystems to biome shifts due to climate change (1990-2100)</td></tr>
+						<tr><td>Vulnerability of ecosystems to biome shifts due to climate change</br> (1990-2100)</td></tr>
 						<tr><td><img src="../images/World_Maps/legends/environmental-displacement-ecosystems.png"></td></tr>
 						<tr><td>Very Low &#62;&#62;&#62;&#62; Very High</td></tr>
 					</table>
@@ -66,44 +75,43 @@
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Environmental Displacement</h1>
-					<p>This map documents the numbers of people displaced due to environmental factors between 2008 and 2014. Presenting a challenge to governments and NGOs such 'environmental refugees', who either migrate across borders or become internally displaced persons, fall outside the 1951 Refugee Convention which pertains only to persons fleeing war and/or persecution for reasons of race, religion, nationality, membership of a particular social group or political opinion.<sup id="one"><a href="#1"> 1</a></sup> According to the Internal Displacement Monitoring Centre's (IDMC) 2015 Global Estimates report, an average of 26.4 million people per year since 2008 have been displaced from their homes by disasters.<sup id="two"><a href="#2"> 2</a></sup>
-					</p> 
-					<p>Globally, 331 natural disasters were registered in 2015, causing 22,662 deaths and affecting 90.2 million people.<sup id="three"><a href="#3"> 3</a></sup> The sudden reasons for human displacement are droughts, wildfires, flooding, volcanic activity, earthquakes, and storms, but in addition to these are the more insidious creep of desertification through land degradation and the impact of rising seas along coasts and estuaries. The world is only beginning to grasp the foreboding problem of mass migrations due to climate change.
-					</p>
-					<p>The background coloring on the map represents degrees of vulnerability to environmental displacement forecast to 2100. According to the United Nations High Commissioner for Refugees (UNHCR) 59.5 million people currently live in the most vulnerable of these territories.<sup id="four"><a href="#4"> 4</a></sup> Just as the 196 nations who are party to the Convention in Biological Diversity must prepare National Biodiversity Strategy and Action Plans, 177 of these who have also signed the Paris Agreement must develop National Adaptation (to climate change) Plans. Ideally a nation would plan both the future of its biodiversity and the future of its peoples as an integrated landscape of resilience.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Environmental Displacement</h1>-->
+						<p>This map documents the numbers of people displaced due to environmental factors between 2008 and 2014. Presenting a challenge to governments and NGOs such 'environmental refugees', who either migrate across borders or become internally displaced persons, fall outside the 1951 Refugee Convention which pertains only to persons fleeing war and/or persecution for reasons of race, religion, nationality, membership of a particular social group or political opinion.<sup id="one"><a href="#1"> 1</a></sup> According to the Internal Displacement Monitoring Centre's (IDMC) 2015 Global Estimates report, an average of 26.4 million people per year since 2008 have been displaced from their homes by disasters.<sup id="two"><a href="#2"> 2</a></sup>
+						</p> 
+						<p>Globally, 331 natural disasters were registered in 2015, causing 22,662 deaths and affecting 90.2 million people.<sup id="three"><a href="#3"> 3</a></sup> The sudden reasons for human displacement are droughts, wildfires, flooding, volcanic activity, earthquakes, and storms, but in addition to these are the more insidious creep of desertification through land degradation and the impact of rising seas along coasts and estuaries. The world is only beginning to grasp the foreboding problem of mass migrations due to climate change.
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>UNHCR The Environment and Climate Change. Updated Version 2015. <a target="blank" href="UNHCR The Environment and Climate Change. Updated Version 2015. http://www.unhcr.org/en-us/540854f49">UNHCR The Environment and Climate Change. Updated Version 2015. http://www.unhcr.org/en-us/540854f49</a></p>
-						<p><sup id="2"><a href="#two">2 </a></sup>IDMC and the Norwegian Refugee Council. International Displacement Monitoring Center Global Estimates 2015: People Displaced by Disaster.  <a target="blank" href="http://www.internal-displacement.org/publications/2015/global-estimates-2015-people-displaced-by-disasters/">http://www.internal-displacement.org/publications/2015/global-estimates-2015-people-displaced-by-disasters/</a></p>
-						<p><sup id="3"><a href="#three">3 </a></sup>World Health Organization, "World Health Statistics 2016: Monitoring Health for the Sustainable Development Goals," Available at <a target="blank" href="http://www.who.int/gho/publications/world_health_statistics/2016/EN_WHS2016_TOC.pdf?ua=1">http://www.who.int/gho/publications/world_health_statistics/2016/EN_WHS2016_TOC.pdf?ua=1</a> (accessed June 1, 2016).</p>
-						<p><sup id="4"><a href="#four">4 </a></sup><span style="color:red">Claire to provide</span></p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Natural Earth, 2014</br>
-							2. OpenFlights.org, 2014</br>
-							3. Natural Earth, 2014</br>
-							4. National Center for Ecological Analysis & Synthesis, 2014</br>
-							5. Natural Earth, 2014</br>
-							6. Ibid.</br>
-							7. Conservation International, 2011 </br>
+						<p class="last_para">The background coloring on the map represents degrees of vulnerability to environmental displacement forecast to 2100. According to the United Nations High Commissioner for Refugees (UNHCR) 59.5 million people currently live in the most vulnerable of these territories.<!--<sup id="four"><a href="#4"> 4</a></sup>--> Just as the 196 nations who are party to the Convention in Biological Diversity must prepare National Biodiversity Strategy and Action Plans, 177 of these who have also signed the Paris Agreement must also develop National Adaptation (to climate change) Plans. Ideally a nation would plan both the future of its biodiversity and the future of its peoples as an integrated landscape of resilience.
 						</p>
-					</div>-->
+						
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>UNHCR The Environment and Climate Change. Updated Version 2015. <a target="blank" href="UNHCR The Environment and Climate Change. Updated Version 2015. http://www.unhcr.org/en-us/540854f49">UNHCR The Environment and Climate Change. Updated Version 2015. http://www.unhcr.org/en-us/540854f49</a></p>
+							<p><sup id="2"><a href="#two">2 </a></sup>IDMC and the Norwegian Refugee Council. International Displacement Monitoring Center Global Estimates 2015: People Displaced by Disaster.  <a target="blank" href="http://www.internal-displacement.org/publications/2015/global-estimates-2015-people-displaced-by-disasters/">http://www.internal-displacement.org/publications/2015/global-estimates-2015-people-displaced-by-disasters/</a></p>
+							<p><sup id="3"><a href="#three">3 </a></sup>World Health Organization, "World Health Statistics 2016: Monitoring Health for the Sustainable Development Goals," Available at <a target="blank" href="http://www.who.int/gho/publications/world_health_statistics/2016/EN_WHS2016_TOC.pdf?ua=1">http://www.who.int/gho/publications/world_health_statistics/2016/EN_WHS2016_TOC.pdf?ua=1</a> (accessed June 1, 2016).</p>
+							<!--<p><sup id="4"><a href="#four">4 </a></sup><span style="color:red">Claire to provide</span></p>-->
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Human Displacement</strong></p>
+							<p>Internal Displacement Monitoring Centre (IDMC) data as of 01/06/2015. Accessed on 19/06/2016 at <a target="blank" href="www.internal-displacement.org">www.internal-displacement.org</a>.</p>
+
+							<p><strong>2. Ecosystem Displacement</strong></p>
+							<p>Felix Eigenbrod, et al., "Vulnerability of ecosystems to climate change moderated by habitat intactness," <i>Global Change Biology</i> 21. no. 1 (2014): 275-286.</p>
+
+							<p><strong>3. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_sea_level_rise.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: sea level rise</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_conflict_and_corruption.html">next map: conflict &amp; corruption &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

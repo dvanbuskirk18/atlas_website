@@ -1,15 +1,15 @@
-div#map_detail > div > p,
-div#map_detail > p {
+div.map_detail > div > p,
+div.map_detail > p {
 	font-family: 'Hind', sans-serif;
 	color: gray;
 	font-size: 8px;
 	line-height: 8px;
 }
-div#map_detail > div {
+div.map_detail > div {
 	position: absolute;
 }
 /*Biological Hotspots*/
-div#map_detail > p {
+div.map_detail > p {
 	color: #333;
 }
 #polynesia {
@@ -154,14 +154,14 @@ div#map_detail > p {
 }
 
 /*Environmental Displacement*/
-div#map_detail > div.upper {
+div.map_detail > div.upper {
 	top: 44px;
 }
-div#map_detail > div.right {
+div.map_detail > div.right {
 	right: 5px;
 }
-div#map_detail > div.lower {
-	bottom: 48px;
+div.map_detail > div.lower {
+	top: 448px;
 }
 
 #us {
@@ -242,17 +242,17 @@ div#map_detail > div.lower {
 }
 
 /*Conflict and Displacement*/
-div#map_detail > div.top {
+div.map_detail > div.top {
 	top: 46px;
 }
-div#map_detail > div.mid_up {
-	bottom: 135px;
+div.map_detail > div.mid_up {
+	top: 390px;
 }
-div#map_detail > div.mid_down {
-	bottom: 103px;
+div.map_detail > div.mid_down {
+	top: 422px;
 }
-div#map_detail > div.bottom {
-	bottom: 54px;
+div.map_detail > div.bottom {
+	top: 471px;
 }
 #libya {
 	/*right: 501px;*/
@@ -320,7 +320,7 @@ div#map_detail > div.bottom {
 }
 
 /*Genetic Stock*/
-div#map_detail > p.number, span#num {
+div.map_detail > p.number, span#num {
 	color: #00a18e;
 	font-size: 10px;
 }
@@ -328,33 +328,33 @@ span#num {
 	font-size: 1em;
 	font-family: 'Hind', sans-serif;
 }
-div#map_detail > p {
+div.map_detail > p {
 	position: absolute;
 	font-family: 'Hind', sans-serif;
 }
-div#map_detail > p.detail {
+div.map_detail > p.detail {
 	font-size: 7px;
 	line-height: 7px;
 }
-div#map_detail > p.high {
-	top: 39px;
+div.map_detail > p.high {
+	top: 43px;
 }
-/*div#map_detail > p.high_detail {
+/*div.map_detail > p.high_detail {
 	top: 54px;
 }*/
-div#map_detail > p.high1 {
-	top: 50px;
+div.map_detail > p.high1 {
+	top: 54px;
 }
-div#map_detail > p.high2 {
-	top: 56px;
+div.map_detail > p.high2 {
+	top: 60px;
 }
-div#map_detail > p.far_right {
+div.map_detail > p.far_right {
 	right: 62px;
 }
-div#map_detail > p.far_left {
+div.map_detail > p.far_left {
 	left: 44px;
 }
-div#map_detail > p.mid_left {
+div.map_detail > p.mid_left {
 	left: 60px;
 }
 #A, #A_detail {
@@ -407,7 +407,7 @@ div#map_detail > p.mid_left {
 	top: 36px;
 }
 #H {
-	top: 67px;
+	top: 71px;
 }
 #H_detail {
 	top: 77px;
@@ -415,7 +415,7 @@ div#map_detail > p.mid_left {
 	right: 5px;
 }
 #I {
-	top: 92px;
+	top: 96px;
 }
 #I_detail {
 	top: 102px;
@@ -423,7 +423,7 @@ div#map_detail > p.mid_left {
 	right: 20px;
 }
 #J {
-	top: 117px;
+	top: 121px;
 }
 #J_detail {
 	top: 127px;
@@ -431,7 +431,7 @@ div#map_detail > p.mid_left {
 	right: 3px;
 }
 #K {
-	top: 144px;
+	top: 148px;
 }
 #K_detail {
 	top: 152px;
@@ -439,7 +439,7 @@ div#map_detail > p.mid_left {
 	right: -16px;
 }
 #L {
-	top: 176px;
+	top: 180px;
 }
 #L_detail {
 	top: 186px;
@@ -447,7 +447,7 @@ div#map_detail > p.mid_left {
 	right: -19px;
 }
 #M {
-	top: 201px;
+	top: 205px;
 }
 #M_detail {
 	top: 211px;
@@ -455,7 +455,7 @@ div#map_detail > p.mid_left {
 	right: 5px;
 }
 #N {
-	top: 230px;
+	top: 234px;
 }
 #N_detail {
 	top: 237px;
@@ -463,7 +463,7 @@ div#map_detail > p.mid_left {
 	right: -19px;
 }
 #O {
-	top: 227px;
+	top: 231px;
 }
 #O_detail {
 	top: 236px;
@@ -471,7 +471,7 @@ div#map_detail > p.mid_left {
 	left: -14px;
 }
 #P {
-	top: 188px;
+	top: 192px;
 }
 #P_detail {
 	top: 195px;
@@ -479,7 +479,7 @@ div#map_detail > p.mid_left {
 	left: -11px;
 }
 #Q {
-	top: 154px;
+	top: 158px;
 }
 #Q_detail {
 	top: 168px;
@@ -487,7 +487,7 @@ div#map_detail > p.mid_left {
 	left: 9px
 }
 #R {
-	top: 139px;
+	top: 143px;
 	left: 70px;
 }
 #R_detail {
@@ -496,7 +496,7 @@ div#map_detail > p.mid_left {
 	left: -5px;
 }
 #S {
-	top: 123px;
+	top: 127px;
 }
 #S_detail {
 	top: 136px;
@@ -505,19 +505,19 @@ div#map_detail > p.mid_left {
 }
 
 /*Sea Level Rise*/
-div#map_detail p.cities {
+div.map_detail p.cities {
 	font-size: 6.5px;
 	color: white;
 }
-div#map_detail p.black {
+div.map_detail p.black {
 	color: black;
 }
-div#map_detail p.cities:hover {
+div.map_detail p.cities:hover {
 	font-size: 8px;
 	color: white;
 	font-weight: bold;
 }
-div#map_detail p.black:hover {
+div.map_detail p.black:hover {
 	color: black;
 	font-weight: bold;
 }

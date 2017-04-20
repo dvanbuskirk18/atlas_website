@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Religion</title>
 	</head>
 		<body>
@@ -16,11 +17,13 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-religion_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Religion</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-religion_goode-homolosine-01.png">
 				</div>
+				<!--<h1 class="map_title upcase">Religion</h1>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -28,8 +31,8 @@
 					</div>-->
 
 					<!--<img src="../images/World_Maps/legends/">-->
-					<table style="width:260px">
-						<tr><td colspan="3" class="upcase left_align">Religious Affiliation<sup> 1</sup></td></tr>
+					<table class="width_260">
+						<tr><td colspan="3" class="upcase left_align">Religious Affiliation</td></tr>
 						<tr><td colspan="3" class="left_align">majority religion (10-100%)</br> 1990-2050 projections</td></tr>
 						<tr><td></br></td></tr>
 						<tr><td class="left_align">Christianity</td><td></td><td>Sikhism</td></tr>
@@ -45,8 +48,8 @@
 						<tr><td class="left_align"><img src="../images/World_Maps/legends/religion-affiliation-buddhism.png"></td><td></td><td><img src="../images/World_Maps/legends/religion-affiliation-none.png"></td></tr>
 					</table>
 					</br>
-					<table style="width:260px">
-						<tr><td colspan="2" class="upcase left_align">Pilgrimage destination<sup> 2</sup></td></tr>
+					<table class="width_260">
+						<tr><td colspan="2" class="upcase left_align">Pilgrimage destination</td></tr>
 						<tr><td></td></tr>
 						<tr><td><div class="color_block round sm" style="background:#231F20"></div></td><td>Chrisitanity/Judaism/Islam</td></tr>
 						<tr><td></td></tr>
@@ -63,46 +66,52 @@
 						<tr><td><div class="color_block round sm" style="background:#829B4E"></div></td><td>Shintoism</td></tr>
 						<tr><td></br></td></tr>
 					</table>
-					<table style="width:260px">
-						<tr><td class="left_align"><img class=" legend_high" src="../images/World_Maps/legends/religion-eden.png"></td><td class="upcase left_shift">Garden of Eden<sup> 3</sup></td></tr>
+					<table class="width_260">
+						<tr><td class="left_align"><img class=" legend_high" src="../images/World_Maps/legends/religion-eden.png"></td><td class="upcase left_shift">Garden of Eden</td></tr>
 						<tr><td></td></tr>
-						<tr><td class="left_align"><img class=" legend_line right_shift" src="../images/World_Maps/legends/religion-hotspots-thin.png"></td><td class="upcase left_shift">Hotspots<sup> 4</sup></td></tr>
+						<tr><td class="left_align"><img class=" legend_line right_shift" src="../images/World_Maps/legends/religion-hotspots-thin.png"></td><td class="upcase left_shift">Hotspots</td></tr>
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Religion</h1>
-					<h3 class="upcase sub-head"></h3>
-					<p>Because their shared foundational texts can be interpreted as venerating God and Man over other forms of life, the monotheistic religions of Judaism, Christianity, and Islam are implicated in the ecological crisis. As the history of humanity's relations with the natural world attests, the earth was better kept when our deities were in the ground not the sky, when they were female not male, and when they were many, not one. 
-					</p>
-					<p>Religions committed to a belief in human exceptionalism as well as a teleology that has the original sin at one end and heaven at the other have difficulty adapting their narratives to include biodiversity in meaningful and relevant ways. 
-					</p>
-					<p>Nonetheless, there are indications that the world's major religions are adapting their creationist narratives and moral codes to account for conditions of ecological crisis. Pope Frances' 2015 encyclical in which he wrote extensively in regard to biodiversity and humanity's role as steward of the earth is a remarkable case in point.<sup id="one"><a href="#1"> 1</a></sup> Perhaps an ecological worldview is not just a scientific paradigm shift, but will yet emerge as a new form of religion. Given that an overwhelming majority of people (well over five billion) are to some degree religious in their understanding of life, the general greening of theology is surely a prerequisite to conserving biodiversity and in so doing building a new identity for humanity as a constructive force in nature.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Religion</h1>-->
+						<h3 class="upcase sub-head"></h3>
+						<p>Because their shared foundational texts can be interpreted as venerating God and Man over other forms of life, the monotheistic religions of Judaism, Christianity, and Islam are implicated in the ecological crisis. As the history of humanity's relations with the natural world attests, the earth was better kept when our deities were in the ground not the sky, when they were female not male, and when they were many, not one. 
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>Pope Francis, "Loss of Biodiversity," in <i>Laudato Si: On Care for Our Common Home</i> (Vatican Press, 2015), 33.</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Johnson, Todd, et al., 2008</br>
-							2. Stoddard, Robert, 2004</br>
-							3. Hamblin, Dora Jane, 1987</br>
-							4. Conservation International, 2011
+						<p>Religions committed to a belief in human exceptionalism as well as a teleology that has the original sin at one end and heaven at the other have difficulty adapting their narratives to include biodiversity in meaningful and relevant ways. 
 						</p>
-					</div>-->
+						<p class="last_para">Nonetheless, there are indications that the world's major religions are adapting their creationist narratives and moral codes to account for conditions of ecological crisis. Pope Frances' 2015 encyclical in which he wrote extensively in regard to biodiversity and humanity's role as steward of the earth is a remarkable case in point.<sup id="one"><a href="#1"> 1</a></sup> Perhaps an ecological worldview is not just a scientific paradigm shift, but will yet emerge as a new form of religion. Given that an overwhelming majority of people (well over five billion) are to some degree religious in their understanding of life, the general greening of theology is surely a prerequisite to conserving biodiversity and in so doing building a new identity for humanity as a constructive force in nature.
+						</p>
+						
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>Pope Francis, "Loss of Biodiversity," in <i>Laudato Si: On Care for Our Common Home</i> (Vatican Press, 2015), 33.</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Religious Affiliation</strong></p>
+							<p>Todd M. Johnson, &amp; Brian J. Grim (eds), "World Religion Database," (Leiden, Boston: Brill, 2008). </p>
+
+							<p><strong>2. Pilgrimage Destination</strong></p>
+							<p>Robert Stoddard, "Major Pilgrimage Places of the World," in [S. M. Bhardwaj, G. Rinschede, &amp; A. Sievers] (eds) <i>Pilgrimage in the Old and New World</i> (Berlin: Dietrich Reimer Verlag, 1994), 17-36. Dataset available at <a target="blank" href="http://digitalcommons.unl.edu/geographyfacpub/3/">http://digitalcommons.unl.edu/geographyfacpub/3/</a> (accessed October 26, 2014).</p>
+
+							<p><strong>3. Garden of Eden</strong></p>
+							<p>Dora Jane Hamblin, "Has the Garden of Eden been located at last?" Lambert Dolphin's Library, <a target="blank" href="http://www.ldolphin.org/eden/">http://www.ldolphin.org/eden/</a> (accessed August 24, 2015).</p>
+							<p>W. F. Albright, "The Location of the Garden of Eden," <i>The American Journal of Semitic Languages and Literatures</i> 39, no. 1 (1922): 15-31.</p>
+
+							<p><strong>4. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_zoos_and_botanic_gardens.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: genetic stock</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_paradise_and_utopia.html">next map: paradise &amp; utopia &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

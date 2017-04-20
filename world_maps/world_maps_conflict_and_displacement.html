@@ -7,6 +7,7 @@
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../css/stylesheet_map.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Conflict &amp; Displacement</title>
 	</head>
 		<body>
@@ -17,10 +18,18 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-conflict-refugees_goode-homolsine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Conflict &amp; Displacement</h1>
+				<figure class="map_fig">
+					<a href="../images/World_Maps/conflict-displacement-labels-title.pdf">
+						<img src="../images/World_Maps/1200px/world-map-conflict-displacement-labels.png">
+					</a>
+					<figcaption><a href="../images/World_Maps/conflict-displacement-labels-title.pdf">View full size PDF</a></figcaption>
+				</figure>
+				<!--<h1 class="alt_title upcase">Conflict &amp; Displacement</h1>-->
+				<!--<div class="full map_detail">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-conflict-refugees_goode-homolsine-01.png">
 					<div id="libya" class="top"><p>Libya</br>447,018</p></div>
 					<div id="ukraine" class="top"><p>Ukraine</br>1,943,880</p></div>
 					<div id="syria" class="top"><p>Syria</br>11,690,327</p></div>
@@ -37,18 +46,12 @@
 					<div id="drc" class="bottom"><p>Democratic Republic of the Congo</br>2,928,327</p></div>
 					<div id="burundi" class="bottom"><p>Burundi</br>509,833</p></div>
 					<div id="somalia" class="bottom"><p>Somalia</br>2,350,997</p></div>
-				</div>
+				</div>-->
 				<div class="legend">
-					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
-					<!--<div class="side_bar">
-						<p></p>
-					</div>-->
-
-					<!--<img src="../images/World_Maps/legends/">-->
 					<table class="width_260">
-						<tr><td>Armed Conflict  Events (1989-2008)</td></tr>
+						<tr><td>Armed Conflict Events (1989-2008)</td></tr>
 						<tr><td><img src="../images/World_Maps/legends/conflict&amp;displacement-armed-conflict.png"></td></tr>
-						<tr><td>50km &#62;&#62;&#62;&#62; 1,300 km radius conflict zone extent</td></tr>
+						<tr><td>50km &#62;&#62;&#62;&#62; 1,300 km radius</br> conflict zone extent</td></tr>
 						<tr><td></br></td></tr>
 						<tr><td>Displaced Peoples</br> (country of origin- end of 2015)</td></tr>
 						<tr><td><img src="../images/World_Maps/legends/conflict&amp;displacement-origin.png"></td></tr>
@@ -60,45 +63,43 @@
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Conflict &amp; Displacement</h1>
-					<h3 class="upcase sub-head"></h3>
-					<p>Of the approximately 250 territorial disputes listed by the Central Intelligence Agency in 2014, at least 155 were occurring within the hotspots.<sup id="one"><a href="#1"> 1</a></sup> In 2015 unresolved and new conflicts took place in Afghanistan, Algeria, Armenia, Azerbaijan, Burundi, Egypt, El Salvador, Ethiopia, Guatemala, Honduras, Iraq, Israel, Kenya, Libya, Mali, Niger, Nigeria, Pakistan, Palestine, Philippines, Russia, South Sudan, Syria, the Central African Republic, the Democratic Republic of the Congo, Tunisia, Turkey, Ukraine, and Yemen. All of these nations except the Central African Republic, Niger, Mali, and the Ukraine contain biological hotspots within their sovereign jurisdiction.
-					</p>
-					<p>According to the UNHCR the global population of displaced people has increased in the last 20 years from 37.3 million in 1996 to 65.3 million in 2015.<sup id="two"><a href="#2"> 2</a></sup> In 2015, the largest 'exporters' of refugees were Afghanistan, the Central African Republic, Colombia, the Democratic Republic of Congo, Eritrea, Myanmar, Somalia, South Sudan, Sudan, Syria, The main takers of refugees were Chad, the Democratic Republic of Congo Ethiopia, Iran, Jordan, Kenya, Lebanon, Pakistan, Uganda, and Turkey. All of these nations except Chad contain hotspots within their sovereign jurisdiction.<sup id="three"><a href="#3">3</a></sup>
-					</p>
-					<p>There are currently 40.8 million people internally displaced world-wide.<sup id="four"><a href="#4"> 4</a></sup> Half the world's refugee population is under 18 years of age. Nations with the predominant numbers of internally displaced persons (IDPs) in 2015 were Afghanistan, Colombia, Democratic Republic of Congo, Iraq, Nigeria, Ukraine, Sudan, Syria, and Yemen. Again, all bar the Ukraine contain hotspots within their sovereign jurisdiction.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Conflict &amp; Displacement</h1>-->
+						<h3 class="upcase sub-head"></h3>
+						<p>Of the approximately 250 territorial disputes listed by the Central Intelligence Agency in 2014, at least 155 were occurring within the hotspots. In 2015 unresolved and new conflicts took place in Afghanistan, Algeria, Armenia, Azerbaijan, Burundi, Egypt, El Salvador, Ethiopia, Guatemala, Honduras, Iraq, Israel, Kenya, Libya, Mali, Niger, Nigeria, Pakistan, Palestine, Philippines, Russia, South Sudan, Syria, the Central African Republic, the Democratic Republic of the Congo, Tunisia, Turkey, Ukraine, and Yemen. All of these nations except the Central African Republic, Niger, Mali, and the Ukraine contain biological hotspots within their sovereign jurisdiction.
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup><span style="color:red">Claire whats the reference for this ? </span></p>
-						<p><sup id="2"><a href="#two">2 </a></sup>UNHCR, "Global Trends: Forced Displacement in 2015" (2015). Available at <a target="blank" href="http://www.unhcr.org/en-us/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html">http://www.unhcr.org/en-us/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html</a>.</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>ibid</p>
-						<p><sup id="4"><a href="#four">4 </a></sup>ibid</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Natural Earth, 2014</br>
-							2. OpenFlights.org, 2014</br>
-							3. Natural Earth, 2014</br>
-							4. National Center for Ecological Analysis &amp; Synthesis, 2014</br>
-							5. Natural Earth, 2014</br>
-							6. Ibid.</br>
-							7. Conservation International, 2011 </br>
+						<p>According to the UNHCR the global population of displaced people has increased in the last 20 years from 37.3 million in 1996 to 65.3 million in 2015.<sup id="one"><a href="#1"> 1</a></sup> In 2015, the largest 'exporters' of refugees were Afghanistan, the Central African Republic, Colombia, the Democratic Republic of Congo, Eritrea, Myanmar, Somalia, South Sudan, Sudan, Syria. The main takers of refugees were Chad, the Democratic Republic of Congo Ethiopia, Iran, Jordan, Kenya, Lebanon, Pakistan, Uganda, and Turkey. All of these nations except Chad contain hotspots within their sovereign jurisdiction.<sup id="two"><a href="#2"> 2</a></sup>
 						</p>
-					</div>-->
+						<p class="last_para">There are currently 40.8 million people internally displaced world-wide.<sup id="three"><a href="#3"> 3</a></sup> <!--Half the world's refugee population is under 18 years of age.-->Nations with the predominant numbers of internally displaced persons (IDPs) in 2015 were Afghanistan, Colombia, Democratic Republic of Congo, Iraq, Nigeria, Ukraine, Sudan, Syria, and Yemen. Again, all bar the Ukraine contain hotspots within their sovereign jurisdiction.
+						</p>
+						
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>UNHCR, "Global Trends: Forced Displacement in 2015" (2015). Available at <a target="blank" href="http://www.unhcr.org/en-us/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html">http://www.unhcr.org/en-us/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html</a>.</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>ibid.</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>ibid.</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Armed Conflict Events</strong></p>
+							<p>John Dittrich Hallberg, "PRIO Conflict Site 1989-2008: A Geo-Referenced Dataset on Armed Conflict," <i>Conflict Management and Peace Science</i> 29 (2012): 219-232. Dataset available at <a target="blank" href="https://www.prio.org/data/armed-conflict/conflict-site/">https://www.prio.org/data/armed-conflict/conflict-site/</a>.</p>
+
+							<p><strong>2. Displaced Peoples-country of origin</strong></p>
+							<p>UNHCR, "Global Trends: Forces Displacement in 2015," <a target="blank" href="http://www.unhcr.org/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html">http://www.unhcr.org/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html</a> (accessed June 26, 2016).</p>
+
+							<p><strong>3. Displaced peoples-country of asylum</strong></p>
+							<p>UNHCR, "Global Trends: Forces Displacement in 2015," <a target="blank" href="http://www.unhcr.org/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html">http://www.unhcr.org/statistics/unhcrstats/576408cd7/unhcr-global-trends-2015.html</a> (accessed June 26, 2016).</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_conflict_and_corruption.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: conflict &amp; corruption</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_biodiversity_planning.html">next map: biodiversity planning &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

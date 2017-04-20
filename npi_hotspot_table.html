@@ -10,342 +10,381 @@
 		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
-		<title>National Performance Index</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Hotspot Performance Index</title>
 	</head>
-		<body>
+		<body class="fixed_width">
 			<!--<header>
 			</header>-->
 			
-			<div id='wrapper'>
-				<h1>National Performance Index</h1>
-				
+			<div id='subpage_wrapper'>
+				<div w3-include-html="include/return_npi.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Hotspot Performance Index</h1>
+				<!--<h1 class="upcase" style="width: 700px">Hotspot Performance Index</h1>-->
+				<p id="npi_caption">Click on column headers to sort.</p>
 				<div class="npi">
 					<table id="npiHotTable" class="tablesorter">
 					<thead>
 							<th id="col_1"></th>
-							<th id="col_2">Hotspots</th>
-							<th id="col_3">Percentage of terrestrial protected area /17%</th>
-							<th id="col_4">Number of ecoregions with shortfall of 17% Aichi target</th>
-							<th id="col_5">Ranking</th>
-							<th id="col_6">Number of Ecoregions</th>
-							<th id="col_7">Number of ecoregions with shortfall of 17% Aichi Target</th>
+							<th id="col_2">Hotspot</th>
+							<th id="col_3">Percentage of terrestrial protected area /17% (IUCN categories plus NA lands) </th>
+							<!--<th id="col_4">Number of ecoregions with shortfall of 17% Aichi target</th>-->
+							<th id="col_4">Ranking /35</th>
+							<th id="col_5">Number of Ecoregions</th>
+							<th id="col_6">Number of ecoregions with shortfall from 17% Aichi Target (IUCN categories plus NA lands)</th>
+							<th id="col_7">Cities in conflict with biodiversity</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>1.</td>
-							<td><a onclick="open_hotspot('atlantic')" href="">Atlantic Forest</a></td>
+							<td><a href="hotspots/atlantic_forests.pdf">Atlantic Forest</a></td>
 							<td>8</td>
-							<td>9/15</td>
+							<!--<td>9/15</td>-->
 							<td>32</td>
 							<td>15</td>
 							<td>9</td>
+							<td>27/28</td>
 						</tr>
 						<tr>
 							<td>2.</td>
-							<td><a onclick="open_hotspot('california')" href="">California Floristic Province</a></td>
+							<td><a href="hotspots/california_floristic_province.pdf">California Floristic Province</a></td>
 							<td>13.6</td>
-							<td>5/7</td>
+							<!--<td>5/7</td>-->
 							<td>21</td>
 							<td>7</td>
 							<td>5</td>
+							<td>13/15</td>
 						</tr>
 						<tr>
 							<td>3.</td>
-							<td><a onclick="open_hotspot('cape')" href="">Cape Floristic Region</a></td>
+							<td><a href="hotspots/cape_floristic_region.pdf">Cape Floristic Region</a></td>
 							<td>25.7</td>
-							<td>1/2</td>
+							<!--<td>1/2</td>-->
 							<td>3</td>
 							<td>2</td>
 							<td>1</td>
+							<td>1/1</td>
 						</tr>
 						<tr>
 							<td>4.</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 							<td>17.6</td>
-							<td><span style="color:red">?/27</span></td>
+							<!--<td>?/27</td>-->
 							<td>13</td>
 							<td>20</td>
 							<td>9</td>
+							<td>8/8</td>
 						</tr>
 						<tr>
 							<td>5.</td>
-							<td><a onclick="open_hotspot('caucasus')" href="">Caucasus</a></td>
+							<td><a href="hotspots/caucasus.pdf">Caucasus</a></td>
 							<td>8.7</td>
-							<td>7/7</td>
+							<!--<td>7/7</td>-->
 							<td>31</td>
 							<td>7</td>
 							<td>7</td>
+							<td>10/11</td>
 						</tr>
 						<tr>
 							<td>6.</td>
-							<td><a onclick="open_hotspot('cerrado')" href="">Cerrado</a></td>
+							<td><a href="hotspots/cerrado.pdf">Cerrado</a></td>
 							<td>11</td>
-							<td>2/2</td>
+							<!--<td>2/2</td>-->
 							<td>24</td>
 							<td>2</td>
 							<td>2</td>
+							<td>14/14</td>
 						</tr>
 						<tr>
 							<td>7.</td>
-							<td><a onclick="open_hotspot('chile')" href="">Chilean Winter Rainfall Valdivian Forests</a></td>
+							<td><a href="hotspots/chilean_valdivian_forests.pdf">Chilean Winter Rainfall Valdivian Forests</a></td>
 							<td>20.3</td>
-							<td>1/3</td>
+							<!--<td>1/3</td>-->
 							<td>6</td>
 							<td>3</td>
 							<td>1</td>
+							<td>5/5</td>
 						</tr>
 						<tr>
 							<td>8.</td>
-							<td><a onclick="open_hotspot('africa')" href="">Coastal Forests of Eastern Africa</a></td>
+							<td><a href="hotspots/coastal_forests_of_eastern_africa.pdf">Coastal Forests of Eastern Africa</a></td>
 							<td>17.6</td>
-							<td>1/4</td>
+							<!--<td>1/4</td>-->
 							<td>13</td>
 							<td>4</td>
 							<td>1</td>
+							<td>3/3</td>
 						</tr>
 						<tr>
 							<td>9.</td>
-							<td><a onclick="open_hotspot('melanesian')" href="">East Melanesian Islands</a></td>
+							<td><a href="hotspots/east_melanesian_islands.pdf">East Melanesian Islands</a></td>
 							<td>2</td>
-							<td>5/5</td>
+							<!--<td>5/5</td>-->
 							<td>35</td>
 							<td>5</td>
 							<td>5</td>
+							<td>NA</td>
 						</tr>
 						<tr>
 							<td>10.</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 							<td>16.8</td>
-							<td>8/20</td>
+							<!--<td>8/20</td>-->
 							<td>15</td>
 							<td>20</td>
 							<td>8</td>
+							<td>13/15</td>
 						</tr>
 						<tr>
 							<td>11.</td>
-							<td><a onclick="open_hotspot('e_australia')" href="">Forests of Eastern Australia</a></td>
+							<td><a href="hotspots/forests_of_eastern_australia.pdf">Forests of Eastern Australia</a></td>
 							<td>23.5</td>
-							<td>0/2</td>
+							<!--<td>0/2</td>-->
 							<td>4</td>
 							<td>2</td>
 							<td>0</td>
+							<td>3/3</td>
 						</tr>
 						<tr>
 							<td>12.</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 							<td>17.7</td>
-							<td>5/10</td>
+							<!--<td>5/10</td>-->
 							<td>12</td>
 							<td>10</td>
 							<td>5</td>
+							<td>25/26</td>
 						</tr>
 						<tr>
 							<td>13.</td>
-							<td><a onclick="open_hotspot('himalaya')" href="">Himalaya</a></td>
+							<td><a href="hotspots/himalaya.pdf">Himalaya</a></td>
 							<td>19.2</td>
-							<td>9/13</td>
+							<!--<td>9/13</td>-->
 							<td>9</td>
 							<td>13</td>
 							<td>9</td>
+							<td>6/6</td>
 						</tr>
 						<tr>
 							<td>14.</td>
-							<td><a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 							<td>7.7</td>
-							<td>7/8</td>
+							<!--<td>7/8</td>-->
 							<td>33</td>
 							<td>8</td>
 							<td>7</td>
+							<td>8/9</td>
 						</tr>
 						<tr>
 							<td>15.</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma</a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma</a></td>
 							<td>13.4</td>
-							<td>23/33</td>
+							<!--<td>23/33</td>-->
 							<td>22</td>
 							<td>33</td>
 							<td>23</td>
+							<td>37/40</td>
 						</tr>
 						<tr>
 							<td>16.</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano-Anatolian</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano-Anatolian</a></td>
 							<td>4.8</td>
-							<td>7/7</td>
+							<!--<td>7/7</td>-->
 							<td>34</td>
 							<td>7</td>
 							<td>7</td>
+							<td>19/20</td>
 						</tr>
 						<tr>
 							<td>17.</td>
-							<td><a onclick="open_hotspot('japan')" href="">Japan</a></td>
+							<td><a href="hotspots/japan.pdf">Japan</a></td>
 							<td>19.1</td>
-							<td>4/9</td>
+							<!--<td>4/9</td>-->
 							<td>10</td>
 							<td>9</td>
 							<td>4</td>
+							<td>19/19</td>
 						</tr>
 						<tr>
 							<td>18.</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagascar &amp; The Indian Ocean Islands</a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagascar &amp; The Indian Ocean Islands</a></td>
 							<td>9</td>
-							<td>7/12</td>
+							<!--<td>7/12</td>-->
 							<td>30</td>
 							<td>12</td>
 							<td>7</td>
+							<td>0/1</td>
 						</tr>
 						<tr>
 							<td>19.</td>
-							<td><a onclick="open_hotspot('madrean')" href="">Madrean Pine-oak woodlands</a></td>
+							<td><a href="hotspots/madrean_woodlands.pdf">Madrean Pine-oak woodlands</a></td>
 							<td>14.5</td>
-							<td>5/8</td>
+							<!--<td>5/8</td>-->
 							<td>20</td>
 							<td>8</td>
 							<td>5</td>
+							<td>10/10</td>
 						</tr>
 						<tr>
 							<td>20.</td>
-							<td><a onclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a></td>
+							<td><a href="hotspots/maputaland_pondoland_albany.pdf">Maputaland Pondoland Albany</a></td>
 							<td>9.7</td>
-							<td>7/10</td>
+							<!--<td>7/10</td>-->
 							<td>25</td>
 							<td>10</td>
 							<td>7</td>
+							<td>5/5</td>
 						</tr>
 						<tr>
 							<td>21.</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 							<td>19</td>
-							<td>5/27</td>
+							<!--<td>5/27</td>-->
 							<td>11</td>
 							<td>27</td>
 							<td>5</td>
+							<td>57/65</td>
 						</tr>
 						<tr>
 							<td>22.</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 							<td>19.3</td>
-							<td><span style="color:red">?/35</span></td>
+							<!--<td>?/35</td>-->
 							<td>8</td>
 							<td>35</td>
 							<td>19</td>
+							<td>30/31</td>
 						</tr>
 						<tr>
 							<td>23.</td>
-							<td><a onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a></td>
+							<td><a href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a></td>
 							<td>9.4</td>
-							<td>5/6</td>
+							<!--<td>5/6</td>-->
 							<td>29</td>
 							<td>6</td>
 							<td>5</td>
+							<td>8/8</td>
 						</tr>
 						<tr>
 							<td>24.</td>
-							<td><a onclick="open_hotspot('china')" href="">Mountains of Southwest China</a></td>
+							<td><a href="hotspots/mountains_of_southwest_china.pdf">Mountains of Southwest China</a></td>
 							<td>15.8</td>
-							<td>1/3</td>
+							<!--<td>1/3</td>-->
 							<td>17</td>
 							<td>3</td>
 							<td>1</td>
+							<td>0/1</td>
 						</tr>
 						<tr>
 							<td>25.</td>
-							<td><a onclick="open_hotspot('caledonia')" href="">New Caledonia</a></td>
+							<td><a href="hotspots/new_caledonia.pdf">New Caledonia</a></td>
 							<td>15.1</td>
-							<td>2/2</td>
+							<!--<td>2/2</td>-->
 							<td>19</td>
 							<td>2</td>
 							<td>2</td>
+							<td>NA</td>
 						</tr>
 						<tr>
 							<td>26.</td>
-							<td><a onclick="open_hotspot('zealand')" href="">New Zealand</a></td>
+							<td><a href="hotspots/new_zealand.pdf">New Zealand</a></td>
 							<td>33.4</td>
-							<td>2/10</td>
+							<!--<td>2/10</td>-->
 							<td>1</td>
 							<td>10</td>
 							<td>2</td>
+							<td>2/2</td>
 						</tr>
 						<tr>
 							<td>27.</td>
-							<td><a onclick="open_hotspot('philip')" href="">Philippines</a></td>
+							<td><a href="hotspots/philippines.pdf">Philippines</a></td>
 							<td>15.2</td>
-							<td>11/12</td>
+							<!--<td>11/12</td>-->
 							<td>18</td>
 							<td>12</td>
 							<td>11</td>
+							<td>7/13</td>
 						</tr>
 						<tr>
 							<td>28.</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia-micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia-micronesia</a></td>
 							<td>9.7</td>
-							<td>2/22</td>
+							<!--<td>2/22</td>-->
 							<td>25</td>
 							<td>22</td>
 							<td>16</td>
+							<td>0/1</td>
 						</tr>
 						<tr>
 							<td>29.</td>
-							<td><a onclick="open_hotspot('s_australia')" href="">Southwest Australia</a></td>
+							<td><a href="hotspots/southwest_australia.pdf">Southwest Australia</a></td>
 							<td>16.4</td>
-							<td>3/5</td>
+							<!--<td>3/5</td>-->
 							<td>16</td>
 							<td>5</td>
 							<td>3</td>
+							<td>1/1</td>
 						</tr>
 						<tr>
 							<td>30.</td>
-							<td><a onclick="open_hotspot('karoo')" href="">Succulent Karoo</a></td>
+							<td><a href="hotspots/succulent_karoo.pdf">Succulent Karoo</a></td>
 							<td>22</td>
-							<td>0/1</td>
+							<!--<td>0/1</td>-->
 							<td>5</td>
 							<td>1</td>
 							<td>0</td>
+							<td>1/1</td>
 						</tr>
 						<tr>
 							<td>31.</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a></td>
 							<td>9.6</td>
-							<td>12/22</td>
+							<!--<td>12/22</td>-->
 							<td>27</td>
 							<td>22</td>
 							<td>12</td>
+							<td>31/31</td>
 						</tr>
 						<tr>
 							<td>32.</td>
-							<td><a onclick="open_hotspot('andes')" href="">Tropical Andes</a></td>
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes</a></td>
 							<td>23.8</td>
-							<td><span style="color:red">?/23</span></td>
+							<!--<td>?/23</td>-->
 							<td>2</td>
 							<td>23</td>
 							<td>10</td>
+							<td>29/29</td>
 						</tr>
 						<tr>
 							<td>33.</td>
-							<td><a onclick="open_hotspot('tumbes')" href="">Tumbes-Choco-Magdalena</a></td>
+							<td><a href="hotspots/tumbes-choco-magdalena.pdf">Tumbes-Choco-Magdalena</a></td>
 							<td>11.9</td>
-							<td>5/10</td>
+							<!--<td>5/10</td>-->
 							<td>23</td>
 							<td>10</td>
 							<td>5</td>
+							<td>3/3</td>
 						</tr>
 						<tr>
 							<td>34.</td>
-							<td><a onclick="open_hotspot('wallacea')" href="">Wallacea</a></td>
+							<td><a href="hotspots/wallacea.pdf">Wallacea</a></td>
 							<td>9.5</td>
-							<td>5/9</td>
+							<!--<td>5/9</td>-->
 							<td>28</td>
 							<td>9</td>
 							<td>5</td>
+							<td>1/1</td>
 						</tr>
 						<tr>
 							<td>35.</td>
-							<td><a onclick="open_hotspot('ghats')" href="">Western Ghats &amp; Sri Lanka</a></td>
+							<td><a href="hotspots/western_ghats_sri_lanka.pdf">Western Ghats &amp; Sri Lanka</a></td>
 							<td>20.2</td>
-							<td>3/7</td>
+							<!--<td>3/7</td>-->
 							<td>7</td>
 							<td>7</td>
 							<td>3</td>
+							<td>1/6</td>
 						</tr>
 
 					</tbody>	

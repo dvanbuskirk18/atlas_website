@@ -7,6 +7,7 @@
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../css/stylesheet_map.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Sea Level Rise</title>
 	</head>
 		<body>
@@ -17,10 +18,16 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-sea-level rise 80m_winkel3-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Sea Level Rise</h1>
+				<figure class="map_fig">
+					<a href="../images/World_Maps/sea-level-rise.pdf"><img src="../images/World_Maps/1200px/world-map-sea-level-rise-labels.png"></a>
+					<figcaption><a href="../images/World_Maps/sea-level-rise.pdf">View full size PDF</a></figcaption>
+				</figure>
+				<!--<h1 class="alt_title upcase">Sea Level Rise</h1>-->
+				<!--<div class="full map_detail">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-sea-level rise 80m_winkel3-01.png">
 					<p class="cities" id="sanfran">San Francisco</p>
 					<p class="cities" id="la">Los Angeles</p>
 					<p class="cities" id="houston">Houston</p>
@@ -71,77 +78,74 @@
 					<p class="cities" id=""></p>
 					<p class="cities" id=""></p>
 					<p class="cities" id=""></p>
-				
-				</div>
+				</div>-->
 				<!--<div class="legend">
 				</div>-->
-
+				<div class="legend">
+					<table class="width_260">
+						<!--<tr><td class="left_align" colspan="2">SEA LEVEL RISE BY 2100</td></tr>
+						<tr><td></td></tr>
+						<tr><td class="left_align" colspan="2"><strong>Scientists project a .74 meter sea level rise by 2100</strong></td></tr>
+						<tr><td></td></tr>
+						<tr><td class="left_align" colspan="2"><strong>115,585,818 or 1.2% of the world's population will be displaced</strong></br>(at 1 meter rise)</td></tr>
+						<tr><td></td></tr>
+						<tr><td></td><td>AFRICA: 35,290,256 or 1.7%</td></tr>
+						<tr><td></td><td>ASIA: 61,063,350 or 1%</td></tr>
+						<tr><td></td><td>OCEANIA: 265,306 or .6%</td></tr>
+						<tr><td></td><td>EUROPE: 12,884,349 or 2.9%</td></tr>
+						<tr><td></td><td>NORTH AMERICA: 3,409,487 or .5%</td></tr>
+						<tr><td></td><td>SOUTH AMERICA: 2,683,070 or .4%</td></tr>
+						<tr><td></td></tr>
+						<tr><td class="left_align" colspan="2"><strong>421,172 sq km or .3% of land on earth will be lost</strong></td></tr>
+						<tr><td></br></td></tr>
+						<tr><td class="left_align" colspan="2">SEA LEVEL RISE WHEN ALL THE ICE CAPS MELT</td></tr>
+						<tr><td></td></tr>
+						<tr><td class="left_align" colspan="2"><strong>Scientists project an 80.32 meter sea level rise if all the ice caps melt</strong></td></tr>
+						<tr><td></td></tr>-->
+						<tr><td><div class="color_block" style="background:#15423C"></div></td><td>80.32 meter rise (all ice caps melted)</br>Antarctica, Greenland, other ice caps, ice fi elds &amp; valley glaciers</td></tr>
+						<tr><td></td></tr>
+						<tr><td><div class="color_block" style="background:#C04803"></div></td><td>Inundated Urban Areas</br> 50 large cities displaced</td></tr>
+						<tr><td></td></tr>
+						<tr><td><div class="color_block" style="background:#F2DACD"></div></td><td>Hotspots</td></tr>
+					</table>
+				</div>
 				<main>
-					<h1 id"map_title" class="upcase">Sea Level Rise</h1>
-					<div class="legend" style="float:none">
-						<table style="width:570px">
-							<tr><td class="left_align" colspan="2">SEA LEVEL RISE BY 2100</td></tr>
-							<tr><td></td></tr>
-							<tr><td class="left_align" colspan="2"><strong>Scientists project a .74 meter sea level rise by 2100</strong><sup> 3</sup></td></tr>
-							<tr><td></td></tr>
-							<tr><td class="left_align" colspan="2"><strong>115,585,818 or 1.2% of the world's population will be displaced</strong><sup> 4</sup></br>(at 1 meter rise)</td></tr>
-							<tr><td></td></tr>
-							<tr><td></td><td>AFRICA: 35,290,256 or 1.7%</td></tr>
-							<tr><td></td><td>ASIA: 61,063,350 or 1%</td></tr>
-							<tr><td></td><td>OCEANIA: 265,306 or .6%</td></tr>
-							<tr><td></td><td>EUROPE: 12,884,349 or 2.9%</td></tr>
-							<tr><td></td><td>NORTH AMERICA: 3,409,487 or .5%</td></tr>
-							<tr><td></td><td>SOUTH AMERICA: 2,683,070 or .4%</td></tr>
-							<tr><td></td></tr>
-							<tr><td class="left_align" colspan="2"><strong>421,172 sq km or .3% of land on earth will be lost</strong><sup> 5</sup></td></tr>
-							<tr><td></br></td></tr>
-							<tr><td class="left_align" colspan="2">SEA LEVEL RISE WHEN ALL THE ICE CAPS MELT</td></tr>
-							<tr><td></td></tr>
-							<tr><td class="left_align" colspan="2"><strong>Scientists project an 80.32 meter sea level rise if all the ice caps melt</strong></td></tr>
-							<tr><td></td></tr>
-							<tr><td><div class="color_block" style="background:#15423C"></div></td><td>80.32 meter rise (all ice caps melted)<sup> 1</sup></br>Antarctica, Greenland, other ice caps, ice fi elds &amp; valley glaciers</td></tr>
-							<tr><td></td></tr>
-							<tr><td><div class="color_block" style="background:#C04803"></div></td><td>Inundated Urban Areas</br> 50 large cities displaced</td></tr>
-							<tr><td></td></tr>
-							<tr><td><div class="color_block" style="background:#F2DACD"></div></td><td>Hotspots<sup> 2</sup></td></tr>
-						</table>
-					</br></br>
-					</div>
-					<p>The climate has always been changing and the oceans have risen and fallen accordingly. Sea level is now 120 meters higher than it was 20,000 years ago; a world of more ice and land bridges unrecognizable to us now. Inversely, in warmer periods the oceans have been anywhere between 6 to 30 meters higher than where they are currently. The difference now is that we are both causal to and threatened by the changes taking place.
-					</p>
-
-					<p>This map shows the land which would be flooded if the ice caps melt in entirety, in which case the sea level would rise by 80.32 meters.<sup id="one"><a href="#1"> 1</a></sup> In this scenario, vast new coastlines and inland seas will be created and 50 of the world's major cities would become architectural reefs. Even if sea level rises only 0.74 meters by 2100—scientist's  conservative prediction—some 115 million people will likely be displaced and 420,000 km<sup>2</sup> of land will be lost to the encroaching seas.
-					</p>
-
-					<p>Adapting to rising sea levels involves three general strategies; 1) the construction of defensive structures, 2) so called 'nature based strategies' – a combination of preserving and reconstructing coastal landscapes so they buffer and absorb rising waters, and finally 3) gradual retreat from the coastline. All three are proving extremely difficult to achieve in places where hitherto the environment has been assumed to be more or less stable.
-					</p>
-
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+					<div class="text_column shifted_text_map1">
+						<!--<h1 class="map_title upcase">Sea Level Rise</h1>-->
+						
+						<p>The climate has always been changing and the oceans have risen and fallen accordingly. Sea level is now 120 meters higher than it was 20,000 years ago; a world of more ice and land bridges unrecognizable to us now. Inversely, in warmer periods the oceans have been anywhere between 6 to 30 meters higher than where they are currently. The difference now is that we are both causal to and threatened by the changes taking place.
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>R. Z Poore, R. S. Williams Jr., &amp; Christopher Tracy, "Sea level and climate," <i>US Geological Survey</i> Fact Sheet 002-00 (2000). Available at <a target="blank" href="http://pubs.usgs.gov/fs/fs2-00/">http://pubs.usgs.gov/fs/fs2-00/</a> (accessed December 2, 2014).</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>NASA Socioeconomic Data and Applications Center (SEDAC) of the Center for International Earth Science Information (CIESIN) / Columbia University, "Low Elevation Coastal Zone: Urban-Rural Population and Land Area Estimates version 2," (Palisades, NY: 2013). Available at <a target="blank" href="http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2">http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2</a> (accessed October 8, 2014).</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. Poore, R.Z., et al., 2011</br>
-							2. Conservation International, 2011</br>
-							3. IPCC, 2013</br>
-							4. CIESIN/ Columbia University, 2013</br>
-							5.  Ibid.
+
+						<p>This map shows the land which would be flooded if the ice caps melt in entirety, in which case the sea level would rise by 80.32 meters.<sup id="one"><a href="#1"> 1</a></sup> In this scenario, vast new coastlines and inland seas will be created and 50 of the world's major cities would become architectural reefs. Even if sea level rises only 0.74 meters by 2100 as is conservatively predicted some 115 million people will likely be displaced and 420,000 km<sup>2</sup> of land will be lost to the encroaching seas.<sup id="two"><a href="#2"> 2</a></sup>
 						</p>
-					</div>-->
+
+						<p class="last_para">Adapting to rising sea levels involves three general strategies, that is, 1) the construction of defensive structures, 2) so called 'nature based strategies' &mdash; a combination of preserving and reconstructing coastal landscapes so they buffer and absorb rising waters, and finally 3) gradual retreat from the coastline. All three are proving extremely difficult to achieve in places where hitherto the environment has been assumed to be more or less stable.
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>R. Z Poore, R. S. Williams Jr., &amp; Christopher Tracy, "Sea level and climate," <i>US Geological Survey</i> Fact Sheet 002-00 (2000). Available at <a target="blank" href="http://pubs.usgs.gov/fs/fs2-00/">http://pubs.usgs.gov/fs/fs2-00/</a> (accessed December 2, 2014).</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>NASA Socioeconomic Data and Applications Center (SEDAC) of the Center for International Earth Science Information (CIESIN) / Columbia University, "Low Elevation Coastal Zone: Urban-Rural Population and Land Area Estimates version 2," (Palisades, NY: 2013). Available at <a target="blank" href="http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2">http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2</a> (accessed October 8, 2014).</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. 80-meter rise</strong></p>
+							<p>R. Z Poore, R. S. Williams Jr., &amp; Christopher Tracy, "Sea level and climate," <i>US Geological Survey</i> Fact Sheet 002-00 (2000). Available at <a target="blank" href="http://pubs.usgs.gov/fs/fs2-00/">http://pubs.usgs.gov/fs/fs2-00/</a>.</p>
+
+							<p><strong>2. Displace Population and Land Lost numbers</strong></p>
+							<p>NASA Socioeconomic Data and Applications Center (SEDAC) of the Center for International Earth Science Information (CIESIN) / Columbia University, "Low Elevation Coastal Zone: Urban-Rural Population and Land Area Estimates version 2," (Palisades, NY: 2013). Available at <a target="blank" href="http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2">http://sedac.ciesin.columbia.edu/data/set/lecz-urban-rural-population-land-area-estimates-v2</a> (accessed October 8, 2014).</p>
+
+							<p><strong>3. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_climate_change.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: climate change</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_environmental_displacement.html">next map: environmental displacement &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

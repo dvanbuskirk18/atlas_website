@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Climate Change</title>
 	</head>
 		<body>
@@ -16,11 +17,13 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world map climate change_winkel3-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Climate Change</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world map climate change_winkel3-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Climate Change</h1>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -29,7 +32,7 @@
 
 					<!--<img src="../images/World_Maps/legends/">-->
 					<table class="width_260">
-						<tr><td colspan="2">GLOBAL AVERAGE TEMPERATURE CHANGE<sup> 1</sup></td></tr>
+						<tr><td colspan="2">GLOBAL AVERAGE TEMPERATURE CHANGE</td></tr>
 						<tr><td colspan="2">2081-2100</td></tr>
 						<tr><td colspan="2">(based on 1986- 2005 temperatures)</td></tr>
 						<tr><td></br></td></tr>
@@ -37,50 +40,51 @@
 						<tr><td colspan="2"><img src="../images/World_Maps/legends/climate-change-temp-gradient.png"></td></tr>
 						<tr><td colspan="2">1 &#62;&#62;&#62;&#62;&#62;&#62;&#62; 11&#176; centigrade</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td style="width:20px"><img src="../images/World_Maps/legends/climate-change-hotspots.png"></td><td>Hotspots<sup> 2</sup></td></tr>
+						<tr><td style="width:20px"><img src="../images/World_Maps/legends/climate-change-hotspots.png"></td><td>Hotspots</td></tr>
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Climate Change</h1>
-					<h3 class="upcase sub-head">PROJECTED SURFACE TEMPERATURE CHANGES </br>2081-2100</h3>
-					<p>In a synthesis report appended to the 5th report of the Intergovernmental Panel on Climate Change (IPCC) the introduction states "that human influence on the climate system is clear and growing, with impacts observed across all continents and oceans. Many of the observed changes since the 1950s are unprecedented over decades to millennia. The IPCC is now 95 percent certain that humans are the main cause of current global warming. In addition, the report finds that "the more human activities disrupt the climate, the greater the risks of severe, pervasive and irreversible impacts for people and ecosystems, and long-lasting changes in all components of the climate system...[s]tabilizing temperature increase to below 2&deg;C relative to pre-industrial levels will require an urgent and fundamental departure from business as usual. Moreover, the longer we wait to take action, the more it will cost and the greater the technological, economic, social and institutional challenges we will face."<sup id="one"><a href="#1"> 1</a></sup>
-					</p>
-					<p>The closest the world has come to legally binding coordinated climate change mitigation is the 2015 Paris Agreement to which 195 nations have (in principle) agreed to develop their own national approaches to "[h]olding the increase in the global average temperature to well below 2°C above pre-industrial levels and pursuing efforts to limit the temperature increase to 1.5&deg;C above pre-industrial levels, recognizing that this would significantly reduce the risks and impacts of climate change".<sup id="two"><a href="#2"> 2</a></sup> Whilst lauding the initiative (especially since it brings together the world's largest emitters: China and the United States), the European Union's Directorate General for Climate Action concludes that the sum total of measures proposed by the 189 individual nations who have prepared National Climate Plans will not be enough to achieve the agreement's primary aim of holding CO<sub>2</sub> emissions below a 2% increase.<sup id="three"><a href="#3"> 3</a></sup>
-					</p>
-					<p>Significant for global biodiversity is that the Paris Agreement also urges the retention of existing carbon sinks, which, if taken seriously, bodes well for the world's vegetated ecoregions and will encourage reforestation in accordance with Aichi target 15 of the Convention on Biological Diversity. Target 15 states that "[b]y 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 per cent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification."<sup id="four"><a href="#4"> 4</a></sup>
-					</p>
-					<p>Reducing carbon emissions at their source and sequestering carbon through vegetation as the world is planning to do are prudent measures. More radical geo-engineering proposals to manage a warming planet include chemically boosting the ocean's capacity to absorb carbon and altering the elemental composition of the atmosphere to enhance its albedo (deflection of light/heat).
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Climate Change</h1>-->
+						<h2 class="upcase sub-head">PROJECTED SURFACE TEMPERATURE CHANGES </br>2081-2100</h2>
+						<p>In a synthesis report appended to the 5th report of the Intergovernmental Panel on Climate Change (IPCC) the introduction states "that human influence on the climate system is clear and growing, with impacts observed across all continents and oceans. Many of the observed changes since the 1950s are unprecedented over decades to millennia. The IPCC is now 95 percent certain that humans are the main cause of current global warming." In addition, the report finds that "the more human activities disrupt the climate, the greater the risks of severe, pervasive and irreversible impacts for people and ecosystems, and long-lasting changes in all components of the climate system...[s]tabilizing temperature increase to below 2&#176;C relative to pre-industrial levels will require an urgent and fundamental departure from business as usual. Moreover, the longer we wait to take action, the more it will cost and the greater the technological, economic, social and institutional challenges we will face."<sup id="one"><a href="#1"> 1</a></sup>
 						</p>
-					</div>
-					<div class="footnotes">
-						<p><sup id="1"><a href="#one">1 </a></sup>
-							Rajendra K. Pachauri, <i>Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II, and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i> (Geneva, Switzerland: IPCC, 2014). Available at <a target="blank" href="http://www.ipcc.ch/pdf/assessment-report/ar5/syr/SYR_AR5_FINAL_full_wcover.pdf">http://www.ipcc.ch/pdf/assessment-report/ar5/syr/SYR_AR5_FINAL_full_wcover.pdf</a>.</p>
-						<p><sup id="2"><a href="#two">2 </a></sup>
-							The full text of the Paris Agreement is available at <a target="blank" href="http://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf">http://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf</a>.</p>
-						<p><sup id="3"><a href="#three">3 </a></sup>
-							European Commission, "Questions and answers on the Paris Agreement," <a target="blank" href="http://ec.europa.eu/clima/policies/international/negotiations/paris/docs/qa_paris_agreement_en.pdf">http://ec.europa.eu/clima/policies/international/negotiations/paris/docs/qa_paris_agreement_en.pdf</a> (accessed June 1, 2016)</p>
-						<p><sup id="4"><a href="#four">4 </a></sup>
-							Convention on Biological Diversity, “Aichi Biodiversity Targets,” <a target="blank" href="https://www.cbd.int/sp/targets/">https://www.cbd.int/sp/targets/</a> (accessed September 10, 2016).</p>
-					</div>
-					<!--<div class="endnotes">
-						<p>1. IPCC, 2013</br>
-							2. Conservation International, 2011
+						<p>The closest the world has come to legally binding coordinated climate change mitigation is the 2015 Paris Agreement to which 195 nations have (in principle) agreed to develop their own national approaches to "[h]olding the increase in the global average temperature to well below 2&#176;C above pre-industrial levels and pursuing efforts to limit the temperature increase to 1.5&deg;C above pre-industrial levels, recognizing that this would significantly reduce the risks and impacts of climate change".<sup id="two"><a href="#2"> 2</a></sup> Whilst lauding the initiative (especially since it brings together the world's largest emitters: China and the United States), the European Union's Directorate General for Climate Action concludes that the sum total of measures proposed by the 189 individual nations who have prepared National Climate Plans will not be enough to achieve the agreement's primary aim of holding CO<sub>2</sub> emissions below a 2% increase.<sup id="three"><a href="#3"> 3</a></sup>
 						</p>
-					</div>-->
+						<p>Significant for global biodiversity is that the Paris Agreement also urges the retention of existing carbon sinks, which, if taken seriously, bodes well for the world's vegetated ecoregions and will encourage reforestation in accordance with Aichi target 15 of the Convention on Biological Diversity. Target 15 states that "[b]y 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 per cent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification."<sup id="four"><a href="#4"> 4</a></sup>
+						</p>
+						<p>Reducing carbon emissions at their source and sequestering carbon through vegetation as the world is planning to do are prudent measures. More radical geoengineering proposals to manage a warming planet include chemically boosting the ocean's capacity to absorb carbon and altering the elemental composition of the atmosphere to enhance its albedo (deflection of light/heat).
+						</p>
+						<div class="footnotes">
+							<p><sup id="1"><a href="#one">1 </a></sup>
+								Rajendra K. Pachauri, <i>Climate Change 2014: Synthesis Report. Contribution of Working Groups I, II, and III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i> (Geneva, Switzerland: IPCC, 2014). Available at <a target="blank" href="http://www.ipcc.ch/pdf/assessment-report/ar5/syr/SYR_AR5_FINAL_full_wcover.pdf">http://www.ipcc.ch/pdf/assessment-report/ar5/syr/SYR_AR5_FINAL_full_wcover.pdf</a>.</p>
+							<p><sup id="2"><a href="#two">2 </a></sup>
+								The full text of the Paris Agreement is available at <a target="blank" href="http://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf">http://unfccc.int/files/essential_background/convention/application/pdf/english_paris_agreement.pdf</a>.</p>
+							<p><sup id="3"><a href="#three">3 </a></sup>
+								European Commission, "Questions and answers on the Paris Agreement," <a target="blank" href="http://ec.europa.eu/clima/policies/international/negotiations/paris/docs/qa_paris_agreement_en.pdf">http://ec.europa.eu/clima/policies/international/negotiations/paris/docs/qa_paris_agreement_en.pdf</a> (accessed June 1, 2016)</p>
+							<p><sup id="4"><a href="#four">4 </a></sup>
+								Convention on Biological Diversity, "Aichi Biodiversity Targets," <a target="blank" href="https://www.cbd.int/sp/targets/">https://www.cbd.int/sp/targets/</a> (accessed September 10, 2016).</p>
+						</div>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Projected Surface Temperature Changes</strong></p>
+							<p>IPCC, [T. F. Stocker, D. Qin, G.-K. Plattner, M. Tignor, S. K. Allen, J. Boschung, A. Nauels, Y. Xia, V. Bex, &amp; P. M. Midgley] (eds). IPCC, <i>Climate Change 2013: The Physical Science Basis. Contribution of Working Group 1 to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i> (Cambridge, UK and New York, NY: Cambridge University Press, 2013). Available at <a target="blank" href="http://www.ipcc.ch/report/ar5/wg1/">http://www.ipcc.ch/report/ar5/wg1/ (accessed October 15, 2016)</a>.</p>
+							<p>NB Surface temperature change projections are for Scenario RCP8.5:2081-2100.</p>
+
+							<p><strong>2. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
+					</div>
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_nuclear_energy.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: nuclear energy</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_sea_level_rise.html">next map: sea level rise &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

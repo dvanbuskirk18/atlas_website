@@ -10,22 +10,25 @@
 		<link href='w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>National Performance Index</title>
 	</head>
-		<body>
+		<body class="fixed_width">
 			<!--<header>
 			</header>-->
 			
-			<div id='wrapper'>
-				<h1>National Performance Index</h1>
-				
+			<div id='subpage_wrapper'>
+				<div w3-include-html="include/return_npi.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">National Performance Index</h1>
+				<!--<h1>National Performance Index</h1>-->
+				<p id="npi_caption">Click on column headers to sort.</p>
 				<div class="npi">
 					<table id="npiTable" class="tablesorter">
 					<thead>
 						<tr>
 							<th>Nation</th>
-							<th>Corruption /168</th>
-							<th>Environmental Performance Index /180</th>
+							<th>Corruption /168 (worst)</th>
+							<th>Yale Environmental Performance Index /180 (worst)</th>
 							<th>Status of national biodiversity planning</th>
 							<th>Evidence of spatial land use planning</th>
 							<th>Biocapacity/Ecological Footprint</th>
@@ -40,7 +43,7 @@
 							<td>original plan (2014)</td>
 							<td>no</td>
 							<td>0.5/0.8</td>
-							<td><a onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a>, <a onclick="open_hotspot('himalaya')" href="">Himalaya</a></td>
+							<td><a href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a>, <a href="hotspots/himalaya.pdf">Himalaya</a></td>
 						</tr>
 						<tr>
 							<td>Albania</td>
@@ -49,7 +52,7 @@
 							<td>revised plan (2016)</td>
 							<td>yes</td>
 							<td>1.2/2.2</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Algeria</td>
@@ -58,7 +61,7 @@
 							<td>original plan (2005)</td>
 							<td>no</td>
 							<td>2.1/2.1</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>American Samoa (USA)</td>
@@ -67,7 +70,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Anguilla (UK)</td>
@@ -76,7 +79,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Antigua and Barbuda</td>
@@ -85,7 +88,7 @@
 							<td>original plan (2014)</td>
 							<td>no</td>
 							<td>0.9/5.4</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Argentina</td>
@@ -94,7 +97,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>6.9/3.1</td>
-							<td><a onclick="open_hotspot('andes')" href="">Tropical Andes</a>, <a onclick="open_hotspot('chile')" href="">Chilean Winter Rainfall Valdivian forests</a>, <a onclick="open_hotspot('atlantic')" href="">Atlantic Forest</a></td>   
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes</a>, <a href="hotspots/chilean_valdivian_forests.pdf">Chilean Winter Rainfall Valdivian forests</a>, <a href="hotspots/atlantic_forests.pdf">Atlantic Forest</a></td>   
 						</tr>
 						<tr>
 							<td>Armenia</td>
@@ -103,7 +106,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>0.9/2.2</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a>, <a onclick="open_hotspot('caucasus')" href="">Caucasus</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a>, <a href="hotspots/caucasus.pdf">Caucasus</a></td>
 						</tr>
 						<tr>
 							<td>Aruba (Netherlands)</td>
@@ -112,7 +115,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>0.6/11.9</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Australia</td>
@@ -121,16 +124,16 @@
 							<td>revised plan (2010)</td>
 							<td>no</td>
 							<td>16.6/9.3</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a>, <a onclick="open_hotspot('s_australia')" href="">South West Australia</a>, <a onclick="open_hotspot('e_australia')" href="">Forests of Eastern Australia</a>, <a onclick="open_hotspot('zealand')" href="">New Zealand</a></td> 
+							<td><a href="hotspots/southwest_australia.pdf">South West Australia</a>, <a href="hotspots/forests_of_eastern_australia.pdf">Forests of Eastern Australia</a></td> 
 						</tr>
 						<tr>
 							<td>Azerbaijan</td>
 							<td>119</td>
 							<td>31</td>
-							<td>original plan (<span style="color:red">2006</span>)</td>
+							<td>original plan (2006)</td>
 							<td>no</td>
 							<td>0.9/2.3</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a>, <a onclick="open_hotspot('caucasus')" href="">Caucasus</a></td>  
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a>, <a href="hotspots/caucasus.pdf">Caucasus</a></td>  
 						</tr>
 						<tr>
 							<td>Bahamas</td>
@@ -139,7 +142,7 @@
 							<td>under revision</td>
 							<td>no</td>
 							<td>9.6/6.8</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Bangladesh</td>
@@ -148,7 +151,7 @@
 							<td>original plan (2006)</td>
 							<td>yes</td>
 							<td>0.4/0.7</td>
-							<td><a id="himalaya" onclick="open_hotspot('himalaya')" href="">Himalaya</a>, <a onclick="open_hotspot('indo')" href="">Indo-Burma</a></td>  
+							<td><a id="himalaya" href="hotspots/himalaya.pdf">Himalaya</a>, <a href="hotspots/indo-burma.pdf">Indo-Burma</a></td>  
 						</tr>
 						<tr>
 							<td>Barbados</td>
@@ -157,7 +160,7 @@
 							<td>original plan (2002)</td>
 							<td>no</td>
 							<td>0.2/4.5</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Belize</td>
@@ -166,7 +169,7 @@
 							<td>original plan (1998)</td>
 							<td>yes</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Benin</td>
@@ -175,7 +178,7 @@
 							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>0.9/1.4</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Bhutan</td>
@@ -184,7 +187,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>5.3/4.8</td>
-							<td><a onclick="open_hotspot('himalaya')" href="">Himalaya</a></td>
+							<td><a href="hotspots/himalaya.pdf">Himalaya</a></td>
 						</tr>
 						<tr>
 							<td>Bolivia</td>
@@ -193,7 +196,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>16.7/3</td>
-							<td><a onclick="open_hotspot('andes')" href="">Tropical Andes</a></td>
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes</a></td>
 						</tr>
 						<tr>
 							<td>Bosnia and Herzegovina</td>
@@ -202,7 +205,7 @@
 							<td>original plan (2008)</td>
 							<td>yes</td>
 							<td>1.6/3.1</td>
-							<td><a onclick="open_hotspot('cerrado')" href="">Cerrado</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Brazil</td>
@@ -211,7 +214,7 @@
 							<td>revised plan (2006)</td>
 							<td>no</td>
 							<td>9.1/3.1</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/cerrado.pdf">Cerrado</a></td>
 						</tr>
 						<tr>
 							<td>British Virgin Islands (UK)</td>
@@ -220,7 +223,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>2.1/2.9</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Brunei Darussalam</td>
@@ -229,7 +232,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>2.9/4.1</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Burundi</td>
@@ -238,7 +241,7 @@
 							<td>original plan (2000)</td>
 							<td>no</td>
 							<td>0.3/0.8</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Cambodia</td>
@@ -247,7 +250,7 @@
 							<td>original plan (2002)</td>
 							<td>no</td>
 							<td>1.1/1.2</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma </a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma </a></td>
 						</tr>
 						<tr>
 							<td>Cameroon</td>
@@ -256,7 +259,7 @@
 							<td>revised plan (2012)</td>
 							<td>yes</td>
 							<td>1.7/1.2</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Cape Verde</td>
@@ -265,7 +268,7 @@
 							<td>original plan (1999)</td>
 							<td>no</td>
 							<td>0.6/2.5</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin </a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin </a></td>
 						</tr>
 						<tr>
 							<td>Caribbean Netherlands</td>
@@ -274,7 +277,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Cayman Islands</td>
@@ -283,7 +286,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>0.3/5.7</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Chile</td>
@@ -292,7 +295,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>3.6/4.4</td>
-							<td><a onclick="open_hotspot('andes')" href="">Tropical Andes</a>, <a onclick="open_hotspot('chile')" href="">Chilean Winter Rainfall Valdivian forests</a></td> 
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes</a>, <a href="hotspots/chilean_valdivian_forests.pdf">Chilean Winter Rainfall Valdivian forests</a></td> 
 						</tr>
 						<tr>
 							<td>China</td>
@@ -301,7 +304,7 @@
 							<td>revised plan (2010)</td>
 							<td>no</td>
 							<td>0.9/3.4</td>
-							<td><a onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a>, <a onclick="open_hotspot('himalaya')" href="">Himalaya</a>, <a onclick="open_hotspot('china')" href="">Mountains of South West China</a>, <a onclick="open_hotspot('indo')" href="">Indo-Burma</a></td>  
+							<td><a href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a>, <a href="hotspots/himalaya.pdf">Himalaya</a>, <a href="hotspots/mountains_of_southwest_china.pdf">Mountains of South West China</a>, <a href="hotspots/indo-burma.pdf">Indo-Burma</a></td>  
 						</tr>
 						<tr>
 							<td>Clipperton Island (France)</td>
@@ -310,7 +313,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Colombia</td>
@@ -319,7 +322,7 @@
 							<td>revised plan (2012)</td>
 							<td>no</td>
 							<td>3.6/1.9</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a>, <a onclick="open_hotspot('tumbes')" href="">Tumbes-Choco-Magdalena</a>, <a onclick="open_hotspot('andes')" href="">Tropical Andes </a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a>, <a href="hotspots/tumbes-choco-magdalena.pdf">Tumbes-Choco-Magdalena</a>, <a href="hotspots/tropical_andes.pdf">Tropical Andes </a></td>
 						</tr>
 						<tr>
 							<td>Comoros</td>
@@ -328,7 +331,7 @@
 							<td>original plan (2000)</td>
 							<td>no</td>
 							<td>0.3/1</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagascar and Indian Ocean Islands</a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagascar and Indian Ocean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Congo, Democratic Republic of</td>
@@ -337,7 +340,7 @@
 							<td>revised plan (2002)</td>
 							<td>NBSAP inaccesible</td>
 							<td>3.1/0.8</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Cook Islands (New Zealand)</td>
@@ -346,7 +349,7 @@
 							<td>original plan (2002)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Costa Rica</td>
@@ -355,7 +358,7 @@
 							<td>original plan (1999)</td>
 							<td>no</td>
 							<td>1.5/2.8</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Croatia</td>
@@ -364,7 +367,7 @@
 							<td>revised plan (2008)</td>
 							<td>no</td>
 							<td>2.8/3.9</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Cuba</td>
@@ -373,7 +376,7 @@
 							<td>revised plan (2006)</td>
 							<td>no</td>
 							<td>0.8/2</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Cyprus</td>
@@ -382,7 +385,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>0.3/4.2</td>
-							<td><a id="basin" onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a id="basin" href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Djibouti</td>
@@ -391,7 +394,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>0.8/2.2</td>
-							<td><a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Dominica</td>
@@ -400,7 +403,7 @@
 							<td>revised plan (2013)</td>
 							<td>no</td>
 							<td>1/2.6</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Dominican Republic</td>
@@ -409,7 +412,7 @@
 							<td>original plan (2011)</td>
 							<td>no</td>
 							<td>0.6/1.5</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Ecuador</td>
@@ -418,7 +421,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>2.2/2.2</td>
-							<td><a onclick="open_hotspot('tumbes')" href="">Tumbes-Choco-Magdalena</a>, <a onclick="open_hotspot('andes')" href="">Tropical Andes</a></td>
+							<td><a href="hotspots/tumbes-choco-magdalena.pdf">Tumbes-Choco-Magdalena</a>, <a href="hotspots/tropical_andes.pdf">Tropical Andes</a></td>
 						</tr>
 						<tr>
 							<td>Egypt</td>
@@ -427,7 +430,7 @@
 							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>0.6/2.2</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane </a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane </a></td>
 						</tr>
 						<tr>
 							<td>El Salvador</td>
@@ -436,16 +439,16 @@
 							<td>revised plan (2013)</td>
 							<td>yes</td>
 							<td>0.6/2.1</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
-							<td>Equatorial Guineana</td>
+							<td>Equatorial Guinea</td>
 							<td>na</td>
 							<td>90</td>
 							<td>revised plan (2015)</td>
 							<td>yes</td>
 							<td>4.4/4</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Eritrea</td>
@@ -454,7 +457,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>1.3/0.4</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Ethiopia</td>
@@ -463,7 +466,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>0.6/1</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Fiji</td>
@@ -472,7 +475,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>2.4/2.9</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>France</td>
@@ -481,7 +484,7 @@
 							<td>revised plan (2011)</td>
 							<td>no</td>
 							<td>3.1/5.1</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin </a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin </a></td>
 						</tr>
 						<tr>
 							<td>French Southern and Antarctic Lands (France)</td>
@@ -490,7 +493,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagascar and Indian Ocean Islands</a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagascar and Indian Ocean Islands</a></td>
 						</tr>
 						<tr>
 							<td>French Polynesia</td>
@@ -499,7 +502,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>1.4/4.7</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Georgia</td>
@@ -508,7 +511,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>1.2/1.6</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a>, <a onclick="open_hotspot('caucasus')" href="">Caucasus</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a>, <a href="hotspots/caucasus.pdf">Caucasus</a></td>
 						</tr>
 						<tr>
 							<td>Ghana</td>
@@ -517,7 +520,7 @@
 							<td>original strategy only (2002)</td>
 							<td>yes</td>
 							<td>1.4/2</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Greece</td>
@@ -526,7 +529,7 @@
 							<td>original plan (2014)</td>
 							<td>no</td>
 							<td>1.6/4.4</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Grenada</td>
@@ -535,7 +538,7 @@
 							<td>original plan (2000)</td>
 							<td>no</td>
 							<td>2/3</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Guadeloupe</td>
@@ -544,7 +547,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>0.5/3.2</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Guam (USA)</td>
@@ -553,7 +556,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Guatemala</td>
@@ -562,7 +565,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>1/1.9</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Guinea</td>
@@ -571,7 +574,7 @@
 							<td>under revision</td>
 							<td>na</td>
 							<td>2.1/1.4</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Haiti</td>
@@ -580,7 +583,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>0.3/0.6</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Hawaii (USA)</td>
@@ -589,7 +592,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Honduras</td>
@@ -598,7 +601,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>1.8/1.7</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>India</td>
@@ -607,7 +610,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>0.5/1.2</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagasgar and Indian Ocean Islands</a></td>
+							<td><a href="hotspots/western_ghats_sri_lanka.pdf">Western Ghats and Sri Lanka</a></td>
 						</tr>
 						<tr>
 							<td>Indian Ocean Territories (Australia)</td>
@@ -616,7 +619,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Indonesia</td>
@@ -625,7 +628,7 @@
 							<td>revised plan (2003)</td>
 							<td>no</td>
 							<td>1.3/1.6</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a>, <a onclick="open_hotspot('wallacea')" href="">Wallacea</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a>, <a href="hotspots/wallacea.pdf">Wallacea</a></td>
 						</tr>
 						<tr>
 							<td>Iran, Islamic Republic of</td>
@@ -634,7 +637,7 @@
 							<td>original plan (2006)</td>
 							<td>NBSAP inaccesible</td>
 							<td>0.9/2.8</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a>, <a onclick="open_hotspot('caucasus')" href="">Caucasus</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a>, <a href="hotspots/caucasus.pdf">Caucasus</a></td>
 						</tr>
 						<tr>
 							<td>Iraq</td>
@@ -643,7 +646,7 @@
 							<td>original plan (2015)</td>
 							<td>no</td>
 							<td>0.3/1.9</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Israel</td>
@@ -652,7 +655,7 @@
 							<td>original plan (2009)</td>
 							<td>no</td>
 							<td>6.2/6.2</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Italy</td>
@@ -661,7 +664,7 @@
 							<td>original plan (2010)</td>
 							<td>no</td>
 							<td>1.1/4.6</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Jamaica</td>
@@ -670,7 +673,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>0.4/1.9</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Japan</td>
@@ -679,7 +682,7 @@
 							<td>revised plan (2012)</td>
 							<td>no</td>
 							<td>0.7/5</td>
-							<td><a onclick="open_hotspot('japan')" href="">Japan</a></td>
+							<td><a href="hotspots/japan.pdf">Japan</a></td>
 						</tr>
 						<tr>
 							<td>Jordan</td>
@@ -688,7 +691,7 @@
 							<td>revised plan (2015)</td>
 							<td>yes</td>
 							<td>0.2/2.1</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Kazakhstan</td>
@@ -697,7 +700,7 @@
 							<td>original plan (1999)</td>
 							<td>no</td>
 							<td>3.4/5.6</td>
-							<td><a onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a></td>
+							<td><a href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a></td>
 						</tr>
 						<tr>
 							<td>Kenya</td>
@@ -706,7 +709,7 @@
 							<td>under revision</td>
 							<td>no</td>
 							<td>0.5/1</td>
-							<td><a onclick="open_hotspot('africa')" href="">Coastal Forests of Eastern Africa</a>, <a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/coastal_forests_of_eastern_africa.pdf">Coastal Forests of Eastern Africa</a>, <a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Kiribati</td>
@@ -715,7 +718,7 @@
 							<td>original plan (2006)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Kosovo</td>
@@ -724,16 +727,16 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Lao People's Democratic Republic</td>
 							<td>139</td>
 							<td>148</td>
-							<td><span style="color:red">revised plan (2016)</span></td>
+							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>1.6/1.2</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma </a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma </a></td>
 						</tr>
 						<tr>
 							<td>Lebanon</td>
@@ -742,7 +745,7 @@
 							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>0.3/3.8</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Liberia</td>
@@ -751,7 +754,7 @@
 							<td>original plan (2003)</td>
 							<td>yes</td>
 							<td>2.6/1.2</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Libya</td>
@@ -760,7 +763,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>0.7/3.7</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Macedonia TFYR</td>
@@ -769,7 +772,7 @@
 							<td>under revision</td>
 							<td>na</td>
 							<td>1.5/3.3</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Madagascar</td>
@@ -778,7 +781,7 @@
 							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>2.6/1</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagascar and Indian Ocean Islands</a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagascar and Indian Ocean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Malawi</td>
@@ -787,16 +790,16 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>0.7/0.8</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Malaysia</td>
 							<td>54</td>
 							<td>63</td>
-							<td><span style="color:red">revised plan (2016)</span></td>
+							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>2.4/3.7</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma</a>, <a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma</a>, <a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Malta</td>
@@ -805,7 +808,7 @@
 							<td>original plan (2012)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a id="basin" onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a id="basin" href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Marshall Islands</td>
@@ -814,7 +817,7 @@
 							<td>original plan (2000)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Martinique</td>
@@ -823,7 +826,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>0.4/2.1</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Mauritius</td>
@@ -832,7 +835,7 @@
 							<td>original plan (2006)</td>
 							<td>no</td>
 							<td>0.7/3.5</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagasgar and Indian Ocean Islands</a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagasgar and Indian Ocean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Mexico</td>
@@ -841,7 +844,7 @@
 							<td>original plan (2000)</td>
 							<td>yes</td>
 							<td>1.3/2.9</td>
-							<td><a onclick="open_hotspot('california')" href="">Californian Floristic Province</a>, <a onclick="open_hotspot('madrean')" href="">Madrean Pine-Oak Woodlands</a>, <a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/california_floristic_province.pdf">Californian Floristic Province</a>, <a href="hotspots/madrean_woodlands.pdf">Madrean Pine-Oak Woodlands</a>, <a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Micronesia, Federated States of</td>
@@ -850,7 +853,7 @@
 							<td>original plan (2002)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Monserrat</td>
@@ -859,7 +862,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Montenegro</td>
@@ -868,7 +871,7 @@
 							<td>original plan (2010)</td>
 							<td>no</td>
 							<td>3.2/3.8</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Morocco</td>
@@ -877,7 +880,7 @@
 							<td>revised plan (2016)</td>
 							<td>yes</td>
 							<td>0.7/1.7</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Mozambique</td>
@@ -886,7 +889,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>2.1/0.9</td>
-							<td><a onclick="open_hotspot('africa')" href="">Coastal Forests of Eastern Africa</a>, <a nclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a>, <a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/coastal_forests_of_eastern_africa.pdf">Coastal Forests of Eastern Africa</a>, <a onclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a>, <a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Myanmar</td>
@@ -895,7 +898,7 @@
 							<td>revised plan (2015)</td>
 							<td>yes</td>
 							<td>1.8/1.4</td>
-							<td><a onclick="open_hotspot('himalaya')" href="">Himalaya</a>, <a onclick="open_hotspot('china')" href="">Mountains of South West China</a>, <a onclick="open_hotspot('indo')" href="">Indo-Burma</a></td>
+							<td><a href="hotspots/himalaya.pdf">Himalaya</a>, <a href="hotspots/mountains_of_southwest_china.pdf">Mountains of South West China</a>, <a href="hotspots/indo-burma.pdf">Indo-Burma</a></td>
 						</tr>
 						<tr>
 							<td>Namibia</td>
@@ -904,7 +907,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>6.9/2.5</td>
-							<td><a onclick="open_hotspot('karoo')" href="">Succulent Karoo</a></td>
+							<td><a href="hotspots/succulent_karoo.pdf">Succulent Karoo</a></td>
 						</tr>
 						<tr>
 							<td>Nauru</td>
@@ -913,7 +916,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>0.2/2.9</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Nepal</td>
@@ -922,16 +925,16 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>0.6/1</td>
-							<td><a onclick="open_hotspot('himalaya')" href="">Himalaya</a></td>
+							<td><a href="hotspots/himalaya.pdf">Himalaya</a></td>
 						</tr>
 						<tr>
-							<td>Netherlands Curaçao</td>
+							<td>Netherlands Cura&#231;ao</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands </a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands </a></td>
 						</tr>
 						<tr>
 							<td>New Caledonia (France)</td>
@@ -940,7 +943,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>7.7/3.6</td>
-							<td><a onclick="open_hotspot('caledonia')" href="">New Caledonia</a></td>
+							<td><a href="hotspots/new_caledonia.pdf">New Caledonia</a></td>
 						</tr>
 						<tr>
 							<td>New Zealand</td>
@@ -949,7 +952,7 @@
 							<td>under revision</td>
 							<td>na</td>
 							<td>10.1/5.6</td>
-							<td><a onclick="open_hotspot('zealand')" href="">New Zealand</a></td>
+							<td><a href="hotspots/new_zealand.pdf">New Zealand</a></td>
 						</tr>
 						<tr>
 							<td>Nicaragua</td>
@@ -958,7 +961,7 @@
 							<td>revised plan (2016)</td>
 							<td>no</td>
 							<td>2.3/1.4</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a></td>
 						</tr>
 						<tr>
 							<td>Nicobar Islands (India)</td>
@@ -967,7 +970,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Nigeria</td>
@@ -976,7 +979,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>0.7/1.2</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Niue (New Zealand)</td>
@@ -985,7 +988,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Norfolk Island (Australia)</td>
@@ -994,7 +997,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('zealand')" href="">New Zealand</a></td>
+							<td><a href="hotspots/new_zealand.pdf">New Zealand</a></td>
 						</tr>
 						<tr>
 							<td>Northern Mariana Islands (USA)</td>
@@ -1003,7 +1006,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Oman</td>
@@ -1012,7 +1015,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>1.9/7.5</td>
-							<td><a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Pakistan</td>
@@ -1021,7 +1024,7 @@
 							<td>original plan (1999)</td>
 							<td>no</td>
 							<td>0.4/0.8</td>
-							<td><a onclick="open_hotspot('himalaya')" href="">Himalaya</a></td>
+							<td><a href="hotspots/himalaya.pdf">Himalaya</a></td>
 						</tr>
 						<tr>
 							<td>Palauna</td>
@@ -1030,7 +1033,7 @@
 							<td>original plan (2005)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Panama</td>
@@ -1039,7 +1042,7 @@
 							<td>original plan (2000)</td>
 							<td>no</td>
 							<td>2.9/2.8</td>
-							<td><a onclick="open_hotspot('meso')" href="">Mesoamerica</a>, <a onclick="open_hotspot('tumbes')" href="">Tumbes-Choco-Magdalena</a></td>
+							<td><a href="hotspots/mesoamerica.pdf">Mesoamerica</a>, <a href="hotspots/tumbes-choco-magdalena.pdf">Tumbes-Choco-Magdalena</a></td>
 						</tr>
 						<tr>
 							<td>Papua New Guinea</td>
@@ -1048,7 +1051,7 @@
 							<td>original plan (2007)</td>
 							<td>no</td>
 							<td>3.9/1.9</td>
-							<td><a onclick="open_hotspot('wallacea')" href="">Wallacea</a>, <a onclick="open_hotspot('melanesian')" href="">East Melanesian Islands</a></td>
+							<td><a href="hotspots/wallacea.pdf">Wallacea</a>, <a href="hotspots/east_melanesian_islands.pdf">East Melanesian Islands</a></td>
 						</tr>
 						<tr>
 							<td>Paraguay</td>
@@ -1057,7 +1060,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>10.5/4.2</td>
-							<td><a onclick="open_hotspot('atlantic')" href="">Atlantic Forest</a>, <a onclick="open_hotspot('cerrado')" href="">Cerrado</a></td>
+							<td><a href="hotspots/atlantic_forests.pdf">Atlantic Forest</a>, <a href="hotspots/cerrado.pdf">Cerrado</a></td>
 						</tr>
 						<tr>
 							<td>Peru</td>
@@ -1066,7 +1069,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>4/2.3</td>
-							<td><a onclick="open_hotspot('tumbes')" href="">Tumbes-Choco-Magdalena</a></td>
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes</a>, <a href="hotspots/tumbes-choco-magdalena.pdf">Tumbes-Choco-Magdalena</a></td>
 						</tr>
 						<tr>
 							<td>Philippines</td>
@@ -1084,7 +1087,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia </a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia </a></td>
 						</tr>
 						<tr>
 							<td>Portugal</td>
@@ -1093,7 +1096,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>1.5/3.9</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Puerto Rico (USA)</td>
@@ -1102,7 +1105,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Rwanda</td>
@@ -1111,16 +1114,16 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>0.5/0.9</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
-							<td>Saint Barthélemy (France)</td>
+							<td>Saint Barth&#233;lemy (France)</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Saint Kitts and Nevis</td>
@@ -1129,7 +1132,7 @@
 							<td>revised plan (2014)</td>
 							<td>yes</td>
 							<td>0.6/4.9</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Saint Lucia</td>
@@ -1138,7 +1141,7 @@
 							<td>naunder revision</td>
 							<td>no</td>
 							<td>0.3/2.5</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Saint Vincent and the Grenadines</td>
@@ -1147,7 +1150,7 @@
 							<td>original plan (2004)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Samoa</td>
@@ -1156,7 +1159,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>1.9/2.8</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Sao Tome and Principe</td>
@@ -1165,7 +1168,7 @@
 							<td>original plan (2005)</td>
 							<td>no</td>
 							<td>0.9/1.5</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Saudi Arabia</td>
@@ -1174,7 +1177,7 @@
 							<td>original plan (2005)</td>
 							<td>no</td>
 							<td>0.5/5.6</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Seychelles</td>
@@ -1183,7 +1186,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('madagascar')" href="">Madagasgar and Indian Ocean Islands </a></td>
+							<td><a href="hotspots/madagascar.pdf">Madagasgar and Indian Ocean Islands </a></td>
 						</tr>
 						<tr>
 							<td>Sierra Leone</td>
@@ -1192,7 +1195,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>1.2/1.2</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Singapore</td>
@@ -1201,7 +1204,7 @@
 							<td>revised plan (2009)</td>
 							<td>no</td>
 							<td>0.01/8</td>
-							<td><a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Slovenia</td>
@@ -1210,7 +1213,7 @@
 							<td>original strategy only (2001)</td>
 							<td>no</td>
 							<td>2.4/5.8</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Solomon Islands</td>
@@ -1219,7 +1222,7 @@
 							<td>original plan (2009)</td>
 							<td>no</td>
 							<td>4.4/1.3</td>
-							<td><a onclick="open_hotspot('melanesian')" href="">East Melanesian Islands</a></td>
+							<td><a href="hotspots/east_melanesian_islands.pdf">East Melanesian Islands</a></td>
 						</tr>
 						<tr>
 							<td>Somalia</td>
@@ -1228,7 +1231,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>1.3/1.2</td>
-							<td><a onclick="open_hotspot('africa')" href="">Coastal Forests of Eastern Africa</a></td>
+							<td><a href="hotspots/coastal_forests_of_eastern_africa.pdf">Coastal Forests of Eastern Africa</a></td>
 						</tr>
 						<tr>
 							<td>South Africa</td>
@@ -1237,7 +1240,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>1.3/3.3</td>
-							<td><a onclick="open_hotspot('cape')" href="">Cape Floristic Region</a>, <a nclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a>, <a onclick="open_hotspot('karoo')" href="">Succulent Karoo</a></td>
+							<td><a href="hotspots/cape_floristic_region.pdf">Cape Floristic Region</a>, <a onclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a>, <a href="hotspots/succulent_karoo.pdf">Succulent Karoo</a></td>
 						</tr>
 						<tr>
 							<td>South Sudan</td>
@@ -1246,7 +1249,7 @@
 							<td>in progress</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Spain</td>
@@ -1255,7 +1258,7 @@
 							<td>revised plan (2011)</td>
 							<td>no</td>
 							<td>1.3/3.7</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Sri Lanka</td>
@@ -1264,7 +1267,7 @@
 							<td>original plan (1998)</td>
 							<td>no</td>
 							<td>0.4/1.3</td>
-							<td><a onclick="open_hotspot('ghats')" href="">Western Ghats and Sri Lanka</a></td>
+							<td><a href="hotspots/western_ghats_sri_lanka.pdf">Western Ghats and Sri Lanka</a></td>
 						</tr>
 						<tr>
 							<td>Sudan</td>
@@ -1273,7 +1276,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Swaziland</td>
@@ -1282,7 +1285,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>0.9/2</td>
-							<td><a nclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a></td>
+							<td><a onclick="open_hotspot('albany')" href="">Maputaland Pondoland Albany</a></td>
 						</tr>
 						<tr>
 							<td>Syrian Arab Republic</td>
@@ -1291,7 +1294,7 @@
 							<td>original plan (2002)</td>
 							<td>no</td>
 							<td>0.6/1.5</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a></td>
 						</tr>
 						<tr>
 							<td>Tajikistan</td>
@@ -1300,7 +1303,7 @@
 							<td>original plan (2003)</td>
 							<td>no</td>
 							<td>0.5/0.9</td>
-							<td ><a id="asia" onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a></td>
+							<td ><a id="asia" href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a></td>
 						</tr>
 						<tr>
 							<td>Tanzania, United Republic of </td>
@@ -1309,7 +1312,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>1.1/1.3</td>
-							<td><a onclick="open_hotspot('africa')" href="">Coastal Forests of Eastern Africa</a>, <a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/coastal_forests_of_eastern_africa.pdf">Coastal Forests of Eastern Africa</a>, <a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>Thailand</td>
@@ -1318,7 +1321,7 @@
 							<td>revised plan (2008)</td>
 							<td>no</td>
 							<td>1.2/2.7</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma</a>, <a onclick="open_hotspot('sundaland')" href="">Sundaland</a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma</a>, <a href="hotspots/sundaland.pdf">Sundaland</a></td>
 						</tr>
 						<tr>
 							<td>Timor-Leste</td>
@@ -1327,7 +1330,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>1.8/0.5</td>
-							<td><a onclick="open_hotspot('wallacea')" href="">Wallacea</a></td>
+							<td><a href="hotspots/wallacea.pdf">Wallacea</a></td>
 						</tr>
 						<tr>
 							<td>Togo</td>
@@ -1336,7 +1339,7 @@
 							<td>revised plan (2014)</td>
 							<td>yes</td>
 							<td>0.5/1.1</td>
-							<td><a onclick="open_hotspot('guinean')" href="">Guinean Forests of West Africa</a></td>
+							<td><a href="hotspots/guinean_forests_of_west_africa.pdf">Guinean Forests of West Africa</a></td>
 						</tr>
 						<tr>
 							<td>Tonga</td>
@@ -1345,7 +1348,7 @@
 							<td>original plan (2006)</td>
 							<td>no</td>
 							<td>1.5/2.7</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Trinidad and Tobago</td>
@@ -1354,7 +1357,7 @@
 							<td>original plan (2001)</td>
 							<td>no</td>
 							<td>1.6/7.9</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Tunisia</td>
@@ -1363,7 +1366,7 @@
 							<td>under revision</td>
 							<td>no</td>
 							<td>0.9/2.3</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin</a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin</a></td>
 						</tr>
 						<tr>
 							<td>Turkey</td>
@@ -1372,7 +1375,7 @@
 							<td>revised plan (2007)</td>
 							<td>no</td>
 							<td>1.5/3.3</td>
-							<td><a onclick="open_hotspot('basin')" href="">Mediterranean Basin </a></td>
+							<td><a href="hotspots/mediterranean_basin.pdf">Mediterranean Basin </a></td>
 						</tr>
 						<tr>
 							<td>Turkmenistan</td>
@@ -1381,7 +1384,7 @@
 							<td>under revision</td>
 							<td>no</td>
 							<td>2.8/5.5</td>
-							<td><a onclick="open_hotspot('irano')" href="">Irano Anatolian</a>, <a id="asia" onclick="open_hotspot('asia')" href="">Mountains of Central Asia</a></td>
+							<td><a href="hotspots/irano-anatolian.pdf">Irano Anatolian</a>, <a id="asia" href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia</a></td>
 						</tr>
 						<tr>
 							<td>Tuvalu</td>
@@ -1390,7 +1393,7 @@
 							<td>original plan (2013)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Uganda</td>
@@ -1399,7 +1402,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>0.6/1.2</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 						<tr>
 							<td>United States Minor Outlying Islands (USA)</td>
@@ -1408,7 +1411,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>United States of America</td>
@@ -1417,7 +1420,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>3.8/8.2</td>
-							<td><a onclick="open_hotspot('california')" href="">Californian Floristic Province</a>, <a onclick="open_hotspot('madrean')" href="">Madrean Pine-Oak Woodlands</a></td>
+							<td><a href="hotspots/california_floristic_province.pdf">Californian Floristic Province</a>, <a href="hotspots/madrean_woodlands.pdf">Madrean Pine-Oak Woodlands</a></td>
 						</tr>
 						<tr>
 							<td>United States Virgin Islands (USA)</td>
@@ -1426,16 +1429,16 @@
 							<td>na</td>
 							<td>na</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('caribbean')" href="">Caribbean Islands</a></td>
+							<td><a href="hotspots/caribbean_islands.pdf">Caribbean Islands</a></td>
 						</tr>
 						<tr>
 							<td>Uzbekistan</td>
 							<td>153</td>
 							<td>118</td>
-							<td><span style="color:red">na</span></td>
+							<td>na</td>
 							<td>na</td>
 							<td>0.9/1.9</td>
-							<td><a onclick="open_hotspot('asia')" href="">Mountains of Central Asia </a></td>
+							<td><a href="hotspots/mountains_of_central_asia.pdf" href="">Mountains of Central Asia </a></td>
 						</tr>
 						<tr>
 							<td>Vanuatu</td>
@@ -1444,7 +1447,7 @@
 							<td>original plan (1999)</td>
 							<td>no</td>
 							<td>na</td>
-							<td><a onclick="open_hotspot('melanesian')" href="">East Melanesian Islands</a></td>
+							<td><a href="hotspots/east_melanesian_islands.pdf">East Melanesian Islands</a></td>
 						</tr>
 						<tr>
 							<td>Venezuela, Bolivarian Republic of</td>
@@ -1453,7 +1456,7 @@
 							<td>revised plan (2010)</td>
 							<td>no</td>
 							<td>2.8/3.6</td>
-							<td><a onclick="open_hotspot('andes')" href="">Tropical Andes </a></td>
+							<td><a href="hotspots/tropical_andes.pdf">Tropical Andes </a></td>
 						</tr>
 						<tr>
 							<td>Viet Nam</td>
@@ -1462,7 +1465,7 @@
 							<td>revised plan (2015)</td>
 							<td>yes</td>
 							<td>1/1.7</td>
-							<td><a onclick="open_hotspot('indo')" href="">Indo-Burma</a></td>
+							<td><a href="hotspots/indo-burma.pdf">Indo-Burma</a></td>
 						</tr>
 						<tr>
 							<td>Wallis and Futuna (France)</td>
@@ -1471,7 +1474,7 @@
 							<td>na</td>
 							<td>na</td>
 							<td>1.5/2.1</td>
-							<td><a onclick="open_hotspot('micro')" href="">Polynesia/ Micronesia</a></td>
+							<td><a href="hotspots/polynesia-micronesia.pdf">Polynesia/ Micronesia</a></td>
 						</tr>
 						<tr>
 							<td>Yemen</td>
@@ -1480,7 +1483,7 @@
 							<td>original plan (2005)</td>
 							<td>no</td>
 							<td>0.5/1</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a>, <a onclick="open_hotspot('horn')" href="">Horn of Africa</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a>, <a href="hotspots/horn_of_africa.pdf">Horn of Africa</a></td>
 						</tr>
 						<tr>
 							<td>Zambia</td>
@@ -1489,7 +1492,7 @@
 							<td>revised plan (2015)</td>
 							<td>no</td>
 							<td>2.2/1</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane </a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane </a></td>
 						</tr>
 						<tr>
 							<td>Zimbabwe</td>
@@ -1498,7 +1501,7 @@
 							<td>revised plan (2014)</td>
 							<td>no</td>
 							<td>0.6/1.4</td>
-							<td><a onclick="open_hotspot('afromontane')" href="">Eastern Afromontane</a></td>
+							<td><a href="hotspots/eastern_afromontane.pdf">Eastern Afromontane</a></td>
 						</tr>
 					</tbody>	
 					</table>	

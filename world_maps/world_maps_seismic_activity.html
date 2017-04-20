@@ -6,6 +6,7 @@
 		<link href='../w3stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href='../stylesheet.css' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Hind|Lora:400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>World Maps - Seismic Activity</title>
 	</head>
 		<body>
@@ -16,54 +17,67 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-seismic_winkel3-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">Seismic Activity</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-seismic_winkel3-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">Seismic Activity</h1>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<table class="width_260">
-						<tr><td></td><td>Earthquakes (magnitude)<sup> 1</sup></td></tr>
+						<tr><td></td><td>Earthquakes (magnitude)</td></tr>
 						<tr><td></td><td><img src="../images/World_Maps/legends/seismic-activity-earthquakes.png"></td></tr>
 						<tr><td></td><td>&#60; 5.0 &#62;&#62;&#62;&#62;&#62; 9.0</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td><img class="legend_line" src="../images/World_Maps/legends/seismic-activity-volcanoes.png"></td><td>Volcanoes<sup> 2</sup></br>1,540 from the Holoscene Period (past 10,000 years)</td></tr>
+						<tr><td><img class="legend_line" src="../images/World_Maps/legends/seismic-activity-volcanoes.png"></td><td>Volcanoes</br>1,540 from the Holocene Period (past 10,000 years)</td></tr>
 						<tr><td></br></td></tr>
-						<tr><td></td><td>Age of the Ocean's Lithosphere<sup> 3</sup></td></tr>
+						<tr><td></td><td>Age of the Ocean's Lithosphere</td></tr>
 						<tr><td></td><td><img src="../images/World_Maps/legends/seismic-activity-age-gradient.png"></td></tr>
 						<tr><td></td><td>0 &#62;&#62;&#62;&#62;&#62;&#62; 280 million years</td></tr>
 						<tr><td></br></td></tr>
 						<tr><td></td><td></td></tr>
-						<tr><td><img src="../images/World_Maps/legends/seismic-activity-hotspots.png"></td><td>Hotspots<sup> 4</sup></td></tr>
+						<tr><td><img src="../images/World_Maps/legends/seismic-activity-hotspots.png"></td><td>Hotspots</td></tr>
 					</table>
 				</div>
 
-				<main class="narrow">
-					<h1 id"map_title" class="upcase">Seismic Activity</h1>
-					<h3 class="upcase sub-head">Earthquakes, volcanoes</h3>
-					<p>At its most fundamental level the earth system is determined by the lithosphere: 7 major tectonic plates on average 100 kilometers thick. The continuously diverging and converging plates push up mountain ranges and enfold ocean floors down into lava. Over billions of years, as the earth slowly cools, these forces form terrestrial topography and marine bathymetry, which shapes global climate, species distribution and ultimately human culture. Vast fissures in the ocean floor which filter and regurgitate the ocean are a likely source for the origin of life.
-					</p>
-					<p>The current configuration of continents which we recognize as the outlines of our national and global identities are traceable to 'Pangea', a unified landmass which began separating 175 million years ago. Projecting their current drifts, geophysicists speculate that in 250 million years the earth’s tectonics will create a world known as 'Pangea Ultima', one completely unrecognizable to us. In 500 million years the earth's current terrestrial surface will be entirely reabsorbed in to the magma.
-					</p>
-					<div class="sources">
-						<h3>Mapping Sources</h3>
-						<p><strong>1. </strong> details</p>
-
-						<p><strong>2. </strong>
-						details</p>
-
-						<p><strong>3. </strong>
-						details</p>
-
-						<p><strong>4. </strong>
-						details
+				<main>
+					<div class="text_column shifted_text_map">
+						<!--<h1 class="map_title upcase">Seismic Activity</h1>-->
+						<!--<h3 class="upcase sub-head">Earthquakes, volcanoes</h3>-->
+						<p>At its most fundamental level the earth system is determined by the lithosphere: 7 major tectonic plates on average 100 kilometers thick. The continuously diverging and converging plates push up mountain ranges and enfold ocean floors down into lava. Over billions of years, as the earth slowly cools, these forces form terrestrial topography and marine bathymetry, which shapes global climate, species distribution and ultimately human culture. Vast fissures in the ocean floor which filter and regurgitate the ocean are a likely source for the origin of life.
 						</p>
+						<p>The current configuration of continents which we recognize as the outlines of our national and global identities are traceable to 'Pangea', a unified landmass which began separating 175 million years ago. Projecting their current drifts, geophysicists speculate that in 250 million years the earth's tectonics will create a world known as 'Pangea Ultima', one completely unrecognizable to us. In 500 million years the earth's current terrestrial surface will be entirely reabsorbed in to the magma.
+						</p>
+						<figure>
+							<img src="../images/World_Maps/1200px/world-map-pangea.png">
+							<figcaption class="center_cap">Pangea Ultima (red), Pangea (Green)</figcaption>
+						</figure>
+						<div class="sources">
+							<!--<h3>Mapping Sources</h3>-->
+							<div w3-include-html='../include/mapping_credit.html'></div>
+							<p><strong>1. Earthquakes</strong></p>
+							<p>International Seismological Centre, "The ISC-GEM Global Instrumental Earthquake Catalogue, version 2.0" (Thatcham, United Kingdom: Internatl. Seismol. Cent., 2015), <a target="blank" href="http://www.isc.ac.uk/iscgem/">http://www.isc.ac.uk/iscgem/</a> (accessed June 21, 2015). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+
+							<p><strong>2. Volcanoes</strong></p>
+							<p>E. Venzke (ed.), Global Volcanism Program, "Volcanoes of the World, version 4.4.0" (Smithsonian Institution, 2013), <a target="blank" href="http://dx.doi.org/10.5479/si.GVP.VOTW4-2013">http://dx.doi.org/10.5479/si.GVP.VOTW4-2013</a> (accessed June 27, 2015).</p>
+
+							<p><strong>3. Ocean's Lithosphere</strong></p>
+							<p>R. Dietmar M&uuml;ller, et al., "Age, spreading rates, and spreading symmetry of the world's ocean crust," <i>Geochemistry, Geophysics, Geosystems</i> 9, no. 4 (2008). Available at <a target="blank" href="http://www.ngdc.noaa.gov/mgg/ocean_age/ocean_age_2008.html">http://www.ngdc.noaa.gov/mgg/ocean_age/ocean_age_2008.html</a>.</p>
+
+							<p><strong>4. Hotspots</strong></p>
+							<p>Critical Ecosystem Partnership Fund, "The Biodiversity Hotspots," <a target="blank" href="http://www.cepf.net/resources/hotspots/pages/default.aspx">http://www.cepf.net/resources/hotspots/pages/default.aspx</a> (accessed July 1, 2014). Data made available under the Creative Commons BY-SA 4.0 License: <a target="blank" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">https://creativecommons.org/licenses/by-sa/4.0/legalcode</a>.</p>
+						</div>
 					</div>
-					<!--<div class="endnotes">
-						<p>1. this is an endnote.</br>
-						</p>
-					</div>-->
+					<div class="chapter_nav">
+						<div class="prev_chapter">
+							<a href="world_maps_earthsystem.html"><i class="fa fa-caret-left"></i>&#32;&#32; previous map: earthsystem</a>
+						</div>
+						<div class="next_chapter">
+							<a href="world_maps_atmospheric_currents.html">next map: atmospheric currents &#32;&#32;<i class="fa fa-caret-right"></i></a>
+						</div>
+					</div>
 				</main>
 			</div>
 

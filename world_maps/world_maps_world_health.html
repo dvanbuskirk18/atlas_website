@@ -16,11 +16,13 @@
 				</nav>
 			</header>-->
 			
-			<div id='wrapper'>
-				
-				<div id="map_detail" class="full">
-					<img id="map_image" src="../images/World_Maps/1200px/world-map-health-disease_goode-homolosine-01.png">
+			<div id='subpage_wrapper'>
+				<div w3-include-html="../include/return_maps.html"></div>
+				<h1 id="subpage_title" class="page_title upcase">World Health</h1>
+				<div class="full">
+					<img class="map_image" src="../images/World_Maps/1200px/world-map-health-disease_goode-homolosine-01.png">
 				</div>
+				<!--<h1 class="alt_title upcase">World Health</h1>-->
 				<div class="legend">
 					<!--<img src="images/World_Maps/Atmospheric Currents/AtmosphericCurrents-legend.jpg">-->
 					<!--<div class="side_bar">
@@ -58,12 +60,13 @@
 				</div>
 
 				<main class="narrow">
-					<h1 id"map_title" class="upcase">World Health</h1>
+					<!--<h1 class="map_title upcase">World Health</h1>-->
 					<p>Body Text</p>
 					<p>Body Text 
 					</p>
 					<div class="sources">
-						<h3>Mapping Sources</h3>
+						<!--<h3>Mapping Sources</h3>-->
+						<div w3-include-html='../include/mapping_credit.html'></div>
 						<p><strong>1. </strong> details</p>
 
 						<p><strong>2. </strong>
